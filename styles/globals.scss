@@ -1,0 +1,28 @@
+@use 'vars';
+@use 'normalize.css/normalize.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, ul, ol, menu {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, menu {
+  list-style-type: none
+}
+
+* {
+  box-sizing: border-box;
+}

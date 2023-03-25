@@ -1,0 +1,6 @@
+// This is a partial file for global constants and helpers.
+
+// Helpers
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}

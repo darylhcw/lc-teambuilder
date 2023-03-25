@@ -1,0 +1,94 @@
+
+
+[
+  {
+    "sinner": 1,
+    "name": "LCB Sinner",
+    "affinity": "GLOOM",
+    "passive": 4,
+    "active": 3,
+    "attack1": {
+      "affinity": "GLOOM",
+      "base": 3,
+      "plus": 7,
+      "coins": 1
+    },
+    "attack2": {
+      "affinity": "ENVY",
+      "base": 4,
+      "plus": 4,
+      "coins": 2
+    },
+    "attack3": {
+      "affinity": "SLOTH",
+      "base": 6,
+      "plus": 1,
+      "coins": 3
+    },
+    "defense": {
+      "type": "GUARD",
+      "base": 7,
+      "plus": 3
+    }
+  },
+  {
+    "sinner": 1,
+    "name": "LCB Yi Sang",
+    "affinity": "GLOOM",
+    "passive": 4,
+    "active": 3,
+    "attack1": {
+      "affinity": "GLOOM",
+      "base": 3,
+      "plus": 7,
+      "coins": 1
+    },
+    "attack2": {
+      "affinity": "ENVY",
+      "base": 4,
+      "plus": 4,
+      "coins": 2
+    },
+    "attack3": {
+      "affinity": "SLOTH",
+      "base": 6,
+      "plus": 1,
+      "coins": 3
+    },
+    "defense": {
+      "type": "GUARD",
+      "base": 7,
+      "plus": 3
+    }
+  },
+  {
+    "sinner": 1,
+    "name": "LCB Yi Sang",
+    "affinity": "GLOOM",
+    "passive": 4,
+    "active": 3,
+    "attack1": {
+      "affinity": "GLOOM",
+      "base": 3,
+      "plus": 7,
+      "coins": 1
+    },
+    "attack2": {
+      "affinity": "ENVY",
+      "base": 4,
+      "plus": 4,
+      "coins": 2
+    },
+    "attack3": {
+      "affinity": "SLOTH",
+      "base": 6,
+      "plus": 1,
+      "coins": 3
+    },
+    "defense": {
+      "type": "GUARD",
+      "base": 7,
+      "plus": 3
+    }
+  }
+]
