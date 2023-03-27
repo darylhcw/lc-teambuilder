@@ -12,12 +12,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
+        <title>Limbus Company Team Builder</title>
+        <meta name="description" content="Limbus Company Team Builder" />
 
       {/* Worry about this later if doing PWA.
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
-        <title>Next.js PWA Example</title>
-
         <link rel="manifest" href="/manifest.json" />
         <link
           href="/icons/favicon-16x16.png"
