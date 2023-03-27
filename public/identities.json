@@ -1,94 +1,1808 @@
-
-
 [
   {
     "sinner": 1,
     "name": "LCB Sinner",
-    "affinity": "GLOOM",
-    "passive": 4,
-    "active": 3,
-    "attack1": {
-      "affinity": "GLOOM",
-      "base": 3,
-      "plus": 7,
-      "coins": 1
+    "rarity": 1,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x4"
     },
-    "attack2": {
-      "affinity": "ENVY",
-      "base": 4,
-      "plus": 4,
-      "coins": 2
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x3"
     },
-    "attack3": {
-      "affinity": "SLOTH",
-      "base": 6,
-      "plus": 1,
-      "coins": 3
-    },
-    "defense": {
-      "type": "GUARD",
-      "base": 7,
-      "plus": 3
-    }
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "6",
+        "plus": "+1",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "7",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
   },
   {
     "sinner": 1,
-    "name": "LCB Yi Sang",
-    "affinity": "GLOOM",
-    "passive": 4,
-    "active": 3,
-    "attack1": {
-      "affinity": "GLOOM",
-      "base": 3,
-      "plus": 7,
-      "coins": 1
+    "name": "Seven Section 6",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x4"
     },
-    "attack2": {
-      "affinity": "ENVY",
-      "base": 4,
-      "plus": 4,
-      "coins": 2
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x4"
     },
-    "attack3": {
-      "affinity": "SLOTH",
-      "base": 6,
-      "plus": 1,
-      "coins": 3
-    },
-    "defense": {
-      "type": "GUARD",
-      "base": 7,
-      "plus": 3
-    }
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "5",
+        "plus": "+3",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "9",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
   },
   {
     "sinner": 1,
-    "name": "LCB Yi Sang",
-    "affinity": "GLOOM",
-    "passive": 4,
-    "active": 3,
-    "attack1": {
-      "affinity": "GLOOM",
-      "base": 3,
-      "plus": 7,
-      "coins": 1
+    "name": "Blade Lineage Salsu",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": "x3"
     },
-    "attack2": {
-      "affinity": "ENVY",
-      "base": 4,
-      "plus": 4,
-      "coins": 2
+    "passive": {
+      "affinity": "Pride",
+      "cost": "x4"
     },
-    "attack3": {
-      "affinity": "SLOTH",
-      "base": 6,
-      "plus": 1,
-      "coins": 3
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "7",
+        "plus": "+1",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": "8",
+        "plus": "+1",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "8",
+        "plus": "+8",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Pride",
+      "cost": "x2"
     },
-    "defense": {
-      "type": "GUARD",
-      "base": 7,
-      "plus": 3
-    }
+    "passive": {
+      "affinity": "Pride",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "6",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Lobotomy Corp. Remnant",
+    "rarity": 2,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x2"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": "3",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+3",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+8",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "3",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "W Corp. Cleanup Agent",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "6",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "10",
+        "plus": "+2",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "The One Who Grips",
+    "rarity": 3,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x5"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+3",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+4",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": "6",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "3",
+        "plus": "+3",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "Shi Section 5",
+    "rarity": 2,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": "4",
+        "plus": "+6",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+21",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "3",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "W Corp. Cleanup Agent",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+4",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": "1",
+        "plus": "+2",
+        "coins": "5",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "Seven Section 6",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x4"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "4",
+        "plus": "+12",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "4",
+        "plus": "+5",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "Kurokumo Wakashu",
+    "rarity": 3,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+5",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "base": "8",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "10",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "2",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+8",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+1",
+        "coins": "4",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "Liu Section 6",
+    "rarity": 2,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": "3",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "6",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "5",
+        "plus": "+3",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "N Corp. Großhammer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x4"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "5",
+        "plus": "+1",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "6",
+        "plus": "+3",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": "8",
+        "plus": "+3",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "15",
+        "plus": "-5",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "W Corp. Cleanup Agent",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "5",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+1",
+        "coins": "4",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "12",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "Kurokumo Wakashu",
+    "rarity": 2,
+    "active": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "6",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "9",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "TingTang Gangleader",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "3",
+        "plus": "+5",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+25",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+14",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x5"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+6",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": "7",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "N Corp. Kleinhammer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "3",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "6",
+        "plus": "+8",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+4",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "Shi Section 5",
+    "rarity": 2,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "5",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": "5",
+        "plus": "+6",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "R Corp. 4th Pack Rabbit",
+    "rarity": 3,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "4",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": "3",
+        "plus": "+2",
+        "coins": "5",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x2"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+8",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "7",
+        "plus": "+12",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "7",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "LCCB Assistant Manager",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x2"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+3",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": "4",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "10",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "Shi Section 5",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": "x2"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": "3",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "6",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "R Corp. 4th Pack Reindeer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x4"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "3",
+        "plus": "+5",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": "6",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "2",
+        "plus": "+5",
+        "coins": "4",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "2",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "7",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "LCCB Assistant Manager",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "6",
+        "plus": "+1",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": "7",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "N Corp. Mittelhammer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "3",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "base": "6",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "7",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "Kurokumo Henchwoman",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "5",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "6",
+        "plus": "+3",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "7",
+        "plus": "+16",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "9",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Pride",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": "5",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "7",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Jefe de Los Mariachis",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": "5",
+        "plus": "+1",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "8",
+        "plus": "+11",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "5",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Zwei Section 6",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "6",
+        "plus": "+1",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "7",
+        "plus": "+13",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "10",
+        "plus": "+3",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Blade Lineage Salsu",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+1",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "6",
+        "plus": "+1",
+        "coins": "3",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": "8",
+        "plus": "+14",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": "9",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Counter"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "3",
+        "plus": "+2",
+        "coins": "3",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": "4",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "6",
+        "plus": "+14",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "2",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "Blade Lineage Cutthroat",
+    "rarity": 2,
+    "active": {
+      "affinity": "Pride",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": "x4"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": "6",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": "3",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "G Corp. Head Manager",
+    "rarity": 2,
+    "active": {
+      "affinity": "Sloth",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": "x5"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+6",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "5",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": "6",
+        "plus": "+16",
+        "coins": "1",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "9",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": "3",
+        "plus": "+7",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": "4",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "5",
+        "plus": "+4",
+        "coins": "2",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+2",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Liu Section 6",
+    "rarity": 2,
+    "active": {
+      "affinity": "Sloth",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": "x3"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": "4",
+        "plus": "+2",
+        "coins": "2",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "base": "5",
+        "plus": "+1",
+        "coins": "3",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "4",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": "8",
+        "plus": "+5",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "G Corp. Manager Corporal",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": "x2"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": "x5"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": "4",
+        "plus": "+3",
+        "coins": "2",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Sloth",
+        "base": "6",
+        "plus": "+10",
+        "coins": "1",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": "4",
+        "plus": "+2",
+        "coins": "4",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": "10",
+        "plus": "+4",
+        "coins": "1",
+        "type": "Guard"
+      }
+    ]
   }
 ]

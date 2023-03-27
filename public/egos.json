@@ -1,0 +1,573 @@
+[
+  {
+    "sinner": 1,
+    "name": "Crow's Eye View",
+    "rarity": "ZAYIN",
+    "affinity": "Sloth",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Sloth",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 1,
+    "name": "4th Match Flame",
+    "rarity": "TETH",
+    "affinity": "Wrath",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x5, "
+      },
+      {
+        "affinity": "Sloth",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 1,
+    "name": "Wishing Cairn",
+    "rarity": "TETH",
+    "affinity": "Sloth",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Sloth",
+        "cost": " x4"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Representation Emitter",
+    "rarity": "ZAYIN",
+    "affinity": "Pride",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x4"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Hex Nail",
+    "rarity": "TETH",
+    "affinity": "Envy",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Envy",
+        "cost": " x6"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Fluid Sac",
+    "rarity": "HE",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "La Sangre de Sancho",
+    "rarity": "ZAYIN",
+    "affinity": "Wrath",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "Fluid Sac",
+    "rarity": "HE",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "Forest for the Flames",
+    "rarity": "ZAYIN",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "4th Match Flame",
+    "rarity": "HE",
+    "affinity": "Wrath",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "Chains of Others",
+    "rarity": "ZAYIN",
+    "affinity": "Pride",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "Screwloose Wallop",
+    "rarity": "TETH",
+    "affinity": "Envy",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "Pursuance",
+    "rarity": "HE",
+    "affinity": "Sloth",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "Land of Illusion",
+    "rarity": "ZAYIN",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x5"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "Roseate Desire",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "Bodysack",
+    "rarity": "ZAYIN",
+    "affinity": "Envy",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "Telepole",
+    "rarity": "HE",
+    "affinity": "Envy",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x3, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "Snagharpoon",
+    "rarity": "ZAYIN",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "Roseate Desire",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x4"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "Ardor Blossom Star",
+    "rarity": "HE",
+    "affinity": "Wrath",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x4, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "What is Cast",
+    "rarity": "ZAYIN",
+    "affinity": "Pride",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "Rime Shank",
+    "rarity": "TETH",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": " x5, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "4th Match Flame",
+    "rarity": "HE",
+    "affinity": "Wrath",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x3, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Branch of Knowledge",
+    "rarity": "ZAYIN",
+    "affinity": "Gluttony",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Impending Day",
+    "rarity": "TETH",
+    "affinity": "Wrath",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x3, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "To Páthos Máthos",
+    "rarity": "ZAYIN",
+    "affinity": "Pride",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "Ya Śūnyatā Tad Rūpam",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x2. "
+      },
+      {
+        "affinity": "Sloth",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x2"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "Ebony Stem",
+    "rarity": "HE",
+    "affinity": "Gluttony",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": " x3, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Pride",
+        "cost": " x4"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Legerdemain",
+    "rarity": "ZAYIN",
+    "affinity": "Gluttony",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": " x3"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Suddenly One Day",
+    "rarity": "ZAYIN",
+    "affinity": "Sloth",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": " x3, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Lantern",
+    "rarity": "TETH",
+    "affinity": "Gluttony",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": " x4"
+      }
+    ]
+  }
+]
