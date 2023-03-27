@@ -1,5 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/index.module.scss'
+import { Noto_Sans_KR } from 'next/font/google'
+
+const NotoSansKR = Noto_Sans_KR({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
+
 
 export default function Home() {
   return (
@@ -9,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Limbus Company Team Builder" />
       </Head>
 
-      <div className={styles.container}>
+      <main className={`${NotoSansKR.className} ${styles.container}`}>
         <main className={styles.main}>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -63,7 +70,7 @@ export default function Home() {
             <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
           </a>
         </footer>
-      </div>
+      </main>
     </>
   )
 }
