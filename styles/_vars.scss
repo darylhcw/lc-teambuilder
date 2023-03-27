@@ -1,5 +1,22 @@
 // This is a partial file for global constants and helpers.
 
+// Color
+$page-bg: #171511;
+$board-bg: #331E15;
+$board-light: #A3703F;
+
+$wrath: #EE1D1D;
+$lust: #BA5320;
+$sloth: #CAC202;
+$gluttony: #43762F;
+$gloom: #0BE4E4;
+$pride: #4040E5;
+$envy: #D00DD0;
+
+$text-brown: #DDC3A1;
+$text-yellow: #FBC500;
+$orange-highlight: #FE8C01;
+
 // Helpers
 @function pxToRem($pxValue) {
   @return math.div($pxValue, 16px) * 1rem;
