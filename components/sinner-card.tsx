@@ -16,7 +16,7 @@ export default function SinnerCard(
   sinner,
  }: SinnerCardProps
 ) {
-  const [identity, setIdentity] = useState(idData[0]);
+  const [identity, setIdentity] = useState(getDefaultId(idData));
 
   return (
     <div className={styles.container}>
@@ -25,4 +25,15 @@ export default function SinnerCard(
         />
     </div>
   )
+}
+
+
+function getDefaultId(idData: IdentityData[]) : IdentityData {
+  for (const data of idData) {
+    if (data.name.toLowerCase().includes("lcb ")) {
+      return data;
+    }
+  }
+
+  return idData[0]
 }
