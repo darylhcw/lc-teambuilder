@@ -1,0 +1,18 @@
+@use "vars";
+
+$profile-height: 150px;
+$profile-aspect-ratio: vars.$sinner-card-width / $profile-height;
+
+.container {
+  background: vars.$page-bg;
+  border: 2px solid vars.$board-light;
+  border-radius: 10px;
+}
+
+.sinner-img {
+  width: 100%;
+  aspect-ratio: $profile-aspect-ratio;
+
+  object-position: center 10%;
+  object-fit: cover;
+}

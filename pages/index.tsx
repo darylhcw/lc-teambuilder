@@ -1,6 +1,11 @@
-import Head from 'next/head';
-import styles from '../styles/index.module.scss'
 import { Noto_Sans_KR } from 'next/font/google'
+import { GetStaticPropsContext } from 'next';
+import Board from '@/components/board';
+import SinnerCard from '@/components/sinner-card';
+import { importEgos, importIdentities } from '@/helpers/loadData';
+import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
+import styles from '../styles/index.module.scss';
+
 
 const NotoSansKR = Noto_Sans_KR({
   weight: ['400', '700'],
@@ -8,69 +13,52 @@ const NotoSansKR = Noto_Sans_KR({
 })
 
 
-export default function Home() {
+interface HomeProps {
+  idData : IdentityData[];
+  egoData: EgoData[];
+}
+
+
+export default function Home({idData, egoData} : HomeProps) {
   return (
     <>
-      <Head>
-        <title>Limbus Company Team Builder</title>
-        <meta name="description" content="Limbus Company Team Builder" />
-      </Head>
-
-      <main className={`${NotoSansKR.className} ${styles.container}`}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <p className={styles.description}>
-            Get started by editing{' '}
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
+      <main className={`${NotoSansKR.className} ${styles.main}`}>
+        <Board>
+          <div className={styles["board-container"]}>
+          { SINNER_NUMBERS.map((num) =>
+            <SinnerCard key={num}
+                        sinner={num}
+                        idData={idData.filter(filterIdData(num))}
+                        egoData={egoData.filter(filterEgoData(num))}
+            />
+          )}
           </div>
-        </main>
-
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-          </a>
-        </footer>
+        </Board>
       </main>
     </>
   )
+}
+
+
+function filterIdData(sinner: number) {
+  return (data: IdentityData) => data.sinner == sinner;
+}
+
+function filterEgoData(sinner: number) {
+  return (data: EgoData) => data.sinner == sinner;
+}
+
+
+// We can actually import the JSON directly, but this makes it easier to
+// change if we want to import from somewhere else for each weekly update.
+export async function getStaticProps(context: GetStaticPropsContext) {
+  const identities = await importIdentities();
+  const egos = await importEgos();
+
+  return {
+    props: {
+      idData: identities,
+      egoData: egos,
+    }
+  }
 }

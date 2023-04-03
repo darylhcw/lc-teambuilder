@@ -17,6 +17,12 @@ $text-brown: #DDC3A1;
 $text-yellow: #FBC500;
 $orange-highlight: #FE8C01;
 
+// Sizes
+$sinner-card-width: 224px;
+
+// Breakpoints
+$large-screen: 2560px;
+
 // Helpers
 @function pxToRem($pxValue) {
   @return math.div($pxValue, 16px) * 1rem;
