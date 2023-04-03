@@ -21,7 +21,6 @@
       "@/api/*": ["pages/api/*"],
       "@/styles/*": ["styles/*"],
       "@/types/*": ["types/*"],
-      "@/db/*": ["db/*"],
       "@/hooks/*": ["hooks/*"],
       "@/helpers/*": ["helpers/*"],
     },
