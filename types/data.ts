@@ -9,6 +9,11 @@ type AttackType = "Slash" | "Blunt" | "Pierce";
 type DefenseType = "Guard" | "Dodge" | "Counter";
 type EgoRarity = "ZAYIN" | "TETH" | "HE" | "WAW" | "ALEPH";
 
+export interface TeamMember {
+  id: IdentityData;
+  egos: EgoData[];
+}
+
 export interface IdentityData {
   sinner: SinnerNumber;
   name: string;

@@ -1,8 +1,11 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
+import { useState, useMemo } from 'react';
 import Board from '@/components/board';
 import SinnerCard from '@/components/sinner-card';
-import { importEgos, importIdentities } from '@/helpers/loadData';
+import { TeamReducer } from '@/hooks/teamReducer';
+import { importEgos, importIdentities } from '@/helpers/loadJson';
+import { sinnerNumberToName } from '@/helpers/sinnerData';
 import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
@@ -18,27 +21,39 @@ interface HomeProps {
   egoData: EgoData[];
 }
 
-
 export default function Home({idData, egoData} : HomeProps) {
+  const [team, addMember, removeMember] = TeamReducer();
+
+  const sinnerBoard = useMemo(() => {
+    return (
+      <Board>
+        <div className={styles["board-container"]}>
+          { SINNER_NUMBERS.map((num) =>
+            <SinnerCard key={num}
+                        idData={idData.filter(filterIdData(num))}
+                        egoData={egoData.filter(filterEgoData(num))}
+                        setActiveSinner={addMember}
+                        unsetActiveSinner={removeMember}
+            />
+          )}
+        </div>
+      </Board>
+    )
+  }, [idData, egoData]);
+
   return (
     <>
       <main className={`${NotoSansKR.className} ${styles.main}`}>
-        <Board>
-          <div className={styles["board-container"]}>
-          { SINNER_NUMBERS.map((num) =>
-            <SinnerCard key={num}
-                        sinner={num}
-                        idData={idData.filter(filterIdData(num))}
-                        egoData={egoData.filter(filterEgoData(num))}
-            />
+        { sinnerBoard }
+        <ul>
+          { team.map((member) =>
+            <li>{member.id.name} {sinnerNumberToName(member.id.sinner, true)}</li>
           )}
-          </div>
-        </Board>
+        </ul>
       </main>
     </>
   )
 }
-
 
 function filterIdData(sinner: number) {
   return (data: IdentityData) => data.sinner == sinner;

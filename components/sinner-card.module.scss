@@ -9,6 +9,10 @@ $profile-aspect-ratio: vars.$sinner-card-width / $profile-height;
   border-radius: 10px;
 }
 
+.selected {
+  border: 2px solid vars.$orange-highlight;
+}
+
 .sinner-img {
   width: 100%;
   aspect-ratio: $profile-aspect-ratio;
