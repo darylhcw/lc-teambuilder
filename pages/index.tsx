@@ -6,7 +6,7 @@ import SinnerCard from '@/components/sinner-card';
 import { TeamReducer } from '@/hooks/teamReducer';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { sinnerNumberToName } from '@/helpers/sinnerData';
-import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
+import { SINNER_NUMBERS, IdentityData, EgoData, TeamMember } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
 
@@ -21,8 +21,17 @@ interface HomeProps {
   egoData: EgoData[];
 }
 
+function getDefaultTeam(idData: IdentityData[], egoData: EgoData[]) : TeamMember[] {
+  const lcbYiSang = {
+    id: idData[0],
+    egos: egoData.filter(filterEgoData(1)),
+  }
+  return [lcbYiSang];
+}
+
 export default function Home({idData, egoData} : HomeProps) {
-  const [team, addMember, removeMember] = TeamReducer();
+    // Add first sinner just to let users know we can check and select.
+  const [team, addMember, updateMember, removeMember] = TeamReducer(getDefaultTeam(idData, egoData));
 
   const sinnerBoard = useMemo(() => {
     return (
@@ -34,6 +43,7 @@ export default function Home({idData, egoData} : HomeProps) {
                         egoData={egoData.filter(filterEgoData(num))}
                         setActiveSinner={addMember}
                         unsetActiveSinner={removeMember}
+                        updateActiveSinner={updateMember}
             />
           )}
         </div>
@@ -46,8 +56,8 @@ export default function Home({idData, egoData} : HomeProps) {
       <main className={`${NotoSansKR.className} ${styles.main}`}>
         { sinnerBoard }
         <ul>
-          { team.map((member) =>
-            <li>{member.id.name} {sinnerNumberToName(member.id.sinner, true)}</li>
+          { team.map((member, index) =>
+            <li key={index}>{member.id.name} {sinnerNumberToName(member.id.sinner, true)}</li>
           )}
         </ul>
       </main>

@@ -1,16 +1,27 @@
 @use "vars";
 
-$profile-height: 150px;
+$profile-height: 120px;
+$skill-height: 50px;
 $profile-aspect-ratio: vars.$sinner-card-width / $profile-height;
+$skill-aspect-ratio: vars.$sinner-card-width / $skill-height;
 
 .container {
+  position: relative;  // as ref for absolutely positoned elements within
   background: vars.$page-bg;
   border: 2px solid vars.$board-light;
   border-radius: 10px;
+
+  overflow: hidden;
 }
 
 .selected {
-  border: 2px solid vars.$orange-highlight;
+  border: 4px solid vars.$orange-highlight;
+}
+
+.sinner-rarity {
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 
 .sinner-img {
@@ -19,4 +30,27 @@ $profile-aspect-ratio: vars.$sinner-card-width / $profile-height;
 
   object-position: center 10%;
   object-fit: cover;
+}
+
+.checkbox {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 36px;
+  height: 36px;
+
+  font-size: vars.pxToRem(55px);
+
+  border: 2px solid vars.$board-light;
+  border-radius: 4px;
+
+  &:checked {
+    border: 2px solid vars.$blood-red;
+  }
+}
+
+.skill-container {
+  width: 100%;
+  aspect-ratio: $skill-aspect-ratio;
 }

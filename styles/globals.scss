@@ -27,6 +27,26 @@ ol, ul, menu {
   list-style-type: none
 }
 
+input[type="checkbox"] {
+  appearance: none;
+
+  display: grid;
+  place-content: center;
+  margin: 0;
+
+  color: vars.$blood-red;
+  // font-size: vars.pxToRem(20px);
+
+  background-color: vars.$page-bg;;
+}
+input[type="checkbox"]::before {
+  content: "✘";
+  transform: scale(0);
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
 * {
   box-sizing: border-box;
 }

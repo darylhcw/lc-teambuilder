@@ -8,6 +8,7 @@ interface SinnerCardProps {
   egoData: EgoData[];
   setActiveSinner(member: TeamMember) : void;
   unsetActiveSinner(member: TeamMember) : void;
+  updateActiveSinner(member: TeamMember) : void;
 }
 
 export default function SinnerCard(
@@ -16,10 +17,12 @@ export default function SinnerCard(
   egoData,
   setActiveSinner,
   unsetActiveSinner,
+  updateActiveSinner,
  }: SinnerCardProps
 ) {
+  // Check first card just to let users know it's checkable.
   const [identity, setIdentity] = useState(getDefaultId(idData));
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
 
   function sinnerSelected() {
     const select = !isSelected;
@@ -34,11 +37,19 @@ export default function SinnerCard(
   }
 
   return (
-    <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}
-         onClick={ () => sinnerSelected() }>
-        <img className={styles["sinner-img"]}
-            src={getSinnerIdSrcImg(identity)}
-        />
+    <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
+        <div className={styles["id-data-container"]}>
+          <img className={styles["sinner-rarity"]}
+               src={`/assets/${identity.rarity}star.webp`}
+          />
+          <img className={styles["sinner-img"]}
+               src={getSinnerIdSrcImg(identity)}
+          />
+          <input className={styles.checkbox}
+                 type="checkbox"
+                 checked={isSelected}
+                 onChange={sinnerSelected}/>
+        </div>
     </div>
   )
 }
