@@ -1,13 +1,15 @@
 export const SINNER_NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13] as const
-const SINS = ["Wrath", "Lust", "Sloth", "Gluttony", "Gloom", "Pride", "Envy"] as const
+export const SINS = ["Wrath", "Lust", "Sloth", "Gluttony", "Gloom", "Pride", "Envy"] as const
+export const DEFENSE_TYPES = ["Guard", "Dodge", "Counter"]
 
-type SinnerNumber = typeof SINNER_NUMBERS[number];
-type Sin = typeof SINS[number]
-type Cost = `x${number}`;
-type Plus = `+${number}`;
-type AttackType = "Slash" | "Blunt" | "Pierce";
-type DefenseType = "Guard" | "Dodge" | "Counter";
-type EgoRarity = "ZAYIN" | "TETH" | "HE" | "WAW" | "ALEPH";
+export type SinnerNumber = typeof SINNER_NUMBERS[number];
+export type Sin = typeof SINS[number]
+export type Cost = `x${number}`;
+export type Plus = `+${number}`;
+export type AttackType = "Slash" | "Blunt" | "Pierce";
+export type DefenseType = typeof DEFENSE_TYPES[number];
+export type EgoRarity = "ZAYIN" | "TETH" | "HE" | "WAW" | "ALEPH";
+export type Activation = "Owned" | "Res";
 
 export interface TeamMember {
   id: IdentityData;
@@ -32,17 +34,18 @@ export interface EgoData {
   costs: EgoCost[]
 }
 
-interface Passive {
+export interface Passive {
+  affinity: Sin;
+  cost: Cost;
+  activation: Activation;
+}
+
+export interface EgoCost {
   affinity: Sin;
   cost: Cost;
 }
 
-interface EgoCost {
-  affinity: Sin;
-  cost: Cost;
-}
-
-interface Skill {
+export interface Skill {
   affinity: Sin;
   base: number;
   plus: Plus;

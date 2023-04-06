@@ -1,0 +1,23 @@
+@use 'vars';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative; // ref for absolute positioned images.
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.hexagon {
+  position: absolute;
+  height: 94%;
+}
+
+.skill {
+  position: relative;
+  height: 75%;
+
+  z-index: 1;
+}

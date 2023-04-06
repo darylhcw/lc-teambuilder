@@ -1,12 +1,20 @@
 @use "vars";
+@use "sass:math";
 
 $profile-height: 120px;
 $skill-height: 50px;
-$profile-aspect-ratio: vars.$sinner-card-width / $profile-height;
-$skill-aspect-ratio: vars.$sinner-card-width / $skill-height;
+
+$item-bottom-border: 2px solid vars.$board-light;
+
+// Aspect ratio to set for elems/imgs within the sinner card.
+// To make sure they scale if the card gets wider.
+@function getAspectRatio($elemHeight) {
+  @return math.div(vars.$sinner-card-width, $elemHeight);
+}
 
 .container {
   position: relative;  // as ref for absolutely positoned elements within
+
   background: vars.$page-bg;
   border: 2px solid vars.$board-light;
   border-radius: 10px;
@@ -25,11 +33,14 @@ $skill-aspect-ratio: vars.$sinner-card-width / $skill-height;
 }
 
 .sinner-img {
+  display: block;
   width: 100%;
-  aspect-ratio: $profile-aspect-ratio;
+  aspect-ratio: getAspectRatio($profile-height);
 
   object-position: center 10%;
   object-fit: cover;
+
+  border-bottom: $item-bottom-border;
 }
 
 .checkbox {
@@ -37,10 +48,11 @@ $skill-aspect-ratio: vars.$sinner-card-width / $skill-height;
   top: 5px;
   right: 5px;
 
-  width: 36px;
-  height: 36px;
+  width: 15%;
+  aspect-ratio: 1;
 
   font-size: vars.pxToRem(55px);
+  line-height: 0px; // Needed so aspect-ratio works.
 
   border: 2px solid vars.$board-light;
   border-radius: 4px;
@@ -51,6 +63,60 @@ $skill-aspect-ratio: vars.$sinner-card-width / $skill-height;
 }
 
 .skill-container {
+  // Create new stacking context for mix-blending.
+  position: relative;
+  z-index: 1;
+
   width: 100%;
-  aspect-ratio: $skill-aspect-ratio;
+  padding-right: vars.pxToRem(10px);
+  aspect-ratio: getAspectRatio($skill-height);
+
+  display: flex;
+  gap: vars.pxToRem(2px);
+  align-items: center;
+}
+
+.base {
+  min-width: vars.pxToRem(30px);
+  font-size: vars.pxToRem(20px);
+  text-align: right;
+}
+.plus {
+  min-width: vars.pxToRem(30px);
+  font-size: vars.pxToRem(18px);
+}
+.activation {
+  font-size: vars.pxToRem(16px);
+}
+.multiply {
+  font-size: vars.pxToRem(20px);
+}
+
+.coins-div {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-items: center;
+
+  height: 100%;
+  margin-left: vars.pxToRem(12px);
+}
+
+.passive-div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  aspect-ratio: 1;
+  height: 100%;
+
+  white-space: pre-wrap;
+
+  img {
+    aspect-ratio: 1;
+    height: 70%;
+    margin-right: 2px;
+  }
 }

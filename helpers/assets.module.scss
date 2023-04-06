@@ -1,0 +1,11 @@
+@use 'vars';
+
+:export {
+  wrath: vars.$wrath;
+  lust: vars.$lust;
+  sloth: vars.$sloth;
+  gluttony: vars.$gluttony;
+  gloom: vars.$gloom;
+  pride: vars.$pride;
+  envy: vars.$envy;
+}

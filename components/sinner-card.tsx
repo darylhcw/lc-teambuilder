@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { IdentityData, EgoData, TeamMember } from '@/types/data';
+import SkillHexagon from '@/components/skillHexagon';
+import { IdentityData, EgoData, TeamMember, Skill, Passive } from '@/types/data';
+import { getRarityAsset, getSinTypeAsset, getSinCSSColor } from '@/helpers/assets';
 import { getSinnerEgoSrcImg, getSinnerIdSrcImg } from '@/helpers/sinnerData'
 import styles from './sinner-card.module.scss';
 
@@ -23,6 +25,7 @@ export default function SinnerCard(
   // Check first card just to let users know it's checkable.
   const [identity, setIdentity] = useState(getDefaultId(idData));
   const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
+  const passive = isSelected ? identity.active : identity.passive;
 
   function sinnerSelected() {
     const select = !isSelected;
@@ -38,21 +41,73 @@ export default function SinnerCard(
 
   return (
     <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
-        <div className={styles["id-data-container"]}>
+        {/* <div className={styles["id-data-container"]}> */}
           <img className={styles["sinner-rarity"]}
-               src={`/assets/${identity.rarity}star.webp`}
-          />
-          <img className={styles["sinner-img"]}
-               src={getSinnerIdSrcImg(identity)}
+               src={getRarityAsset(identity.rarity)}
           />
           <input className={styles.checkbox}
                  type="checkbox"
                  checked={isSelected}
                  onChange={sinnerSelected}/>
-        </div>
+          <img className={styles["sinner-img"]}
+                src={getSinnerIdSrcImg(identity)}
+          />
+          { identity.skills.map((skill, index) =>
+              skillRow(skill, passive, index)
+          )}
+        {/* </div> */}
     </div>
   )
 }
+
+function skillRow(skill : Skill, passive: Passive, index: number) {
+  const skillAlpha = 40;
+
+  return (
+    <div key={index}
+         className={styles["skill-container"]}
+         style={{background: getSinCSSColor(skill.affinity, skillAlpha)}}>
+      <p className={styles.base}>{skill.base}</p>
+      <SkillHexagon affinity={skill.affinity}
+                    type={skill.type}
+                    defense={index === 3}
+      />
+      <p className={styles.plus}>{skill.plus}</p>
+      { index === 3 ? passiveDiv(passive) : coinsDiv(skill.coins) }
+      { index < 3 ? <p className={styles.multiply}>{`x${index+1}`}</p> : null }
+    </div>
+  )
+}
+
+function coinsDiv(num: number) {
+  const coinImages = () => {
+    let coins = []
+    for (let i=0; i < num; i++) {
+      coins.push(
+        <img src={"/assets/coin.webp"}/>
+      );
+    }
+
+    return coins;
+  }
+
+  return (
+    <div className={styles["coins-div"]}>
+      { coinImages() }
+    </div>
+  )
+}
+
+function passiveDiv(passive: Passive) {
+  return (
+    <div className={styles["passive-div"]}>
+      <img src={getSinTypeAsset(passive.affinity)}/>
+      {`${passive.activation.substring(0, 3)}\n ${passive.cost}`}
+    </div>
+  )
+}
+
+
 
 function getDefaultId(idData: IdentityData[]) : IdentityData {
   for (const data of idData) {
