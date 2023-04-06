@@ -109,7 +109,7 @@
     "sinner": 3,
     "name": "La Sangre de Sancho",
     "rarity": "ZAYIN",
-    "affinity": "Wrath",
+    "affinity": "Lust",
     "type": "Pierce",
     "costs": [
       {
@@ -140,6 +140,27 @@
       {
         "affinity": "Lust",
         "cost": " x1"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "Telepole",
+    "rarity": "HE",
+    "affinity": "Envy",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": " x1, "
+      },
+      {
+        "affinity": "Gloom",
+        "cost": " x2, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": " x2"
       }
     ]
   },
@@ -200,7 +221,7 @@
   },
   {
     "sinner": 5,
-    "name": "Screwloose Wallop",
+    "name": "You Want To Get Beat? Hurtily?",
     "rarity": "TETH",
     "affinity": "Envy",
     "type": "Blunt",
@@ -482,7 +503,7 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2. "
+        "cost": " x2, "
       },
       {
         "affinity": "Sloth",
@@ -538,7 +559,7 @@
   },
   {
     "sinner": 13,
-    "name": "Suddenly One Day",
+    "name": "Suddenly, One Day",
     "rarity": "ZAYIN",
     "affinity": "Sloth",
     "type": "Blunt",
