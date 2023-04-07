@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.scss'
 import { AppProps } from 'next/app'
+import { TeamProvider } from 'hooks/teamContext';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -33,7 +34,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#317EFB" />
       */}
       </Head>
-      <Component {...pageProps} />
+      <TeamProvider initialState={[]}>
+        <Component {...pageProps} />
+      </TeamProvider>
     </>
   )
 }

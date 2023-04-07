@@ -3,8 +3,9 @@
 
 $profile-height: 120px;
 $skill-height: 50px;
+$passive-height: 35px;
 
-$item-bottom-border: 2px solid vars.$board-light;
+$item-border: 2px solid vars.$board-light;
 
 // Aspect ratio to set for elems/imgs within the sinner card.
 // To make sure they scale if the card gets wider.
@@ -45,7 +46,7 @@ $item-bottom-border: 2px solid vars.$board-light;
   object-position: center 10%;
   object-fit: cover;
 
-  border-bottom: $item-bottom-border;
+  border-bottom: $item-border;
 }
 
 .checkbox {
@@ -136,21 +137,35 @@ $item-bottom-border: 2px solid vars.$board-light;
  * Passives
  *******************************************/
 
+.passive-row {
+  display: flex;
+  width: 100%;
+  aspect-ratio: getAspectRatio($passive-height);
+}
+
 .passive-div {
   display: flex;
+  align-items: center;
   flex-grow: 1;
   justify-content: center;
-  align-items: center;
-  gap: 2px;
 
-  aspect-ratio: 1;
-  height: 100%;
+  font-size: vars.pxToRem(14px);
 
-  white-space: pre-wrap;
+  border-top: $item-border;
+  &:first-of-type {
+    border-right: $item-border;
+  }
 
   img {
+    height: 80%;
     aspect-ratio: 1;
-    height: 70%;
-    margin-right: 2px;
+  }
+}
+
+.passive-insufficient {
+  color: vars.$grey;
+
+  img {
+    filter: grayscale(0.75);
   }
 }

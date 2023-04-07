@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import SkillHexagon from '@/components/skillHexagon';
-import { IdentityData, EgoData, TeamMember, Skill, Passive } from '@/types/data';
-import { getRarityAsset, getSinTypeAsset, getSinCSSColor } from '@/helpers/assets';
+import { IdentityData, EgoData, TeamMember, Skill, Passive, Sin } from '@/types/data';
+import { TeamResourcesContext } from '@/hooks/teamContext';
+import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerEgoSrcImg, getSinnerIdSrcImg } from '@/helpers/sinnerData'
 import styles from './sinner-card.module.scss';
 
@@ -25,7 +26,6 @@ export default function SinnerCard(
   // Check first card just to let users know it's checkable.
   const [identity, setIdentity] = useState(getDefaultId(idData));
   const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
-  const passive = isSelected ? identity.active : identity.passive;
 
   function sinnerSelected() {
     const select = !isSelected;
@@ -53,7 +53,7 @@ export default function SinnerCard(
                 src={getSinnerIdSrcImg(identity)}
           />
           { skillRow(identity) }
-
+          <PassiveRow active={identity.active} passive={identity.passive}/>
         {/* </div> */}
     </div>
   )
@@ -93,11 +93,27 @@ function sinHexCombo(skill: Skill, index: number) {
   )
 }
 
-function passiveDiv(passive: Passive) {
+function PassiveRow({active, passive} : {active: Passive, passive: Passive}) {
+  const resources = useContext(TeamResourcesContext);
+
+  function sufficient(sin: Sin, cost: number) {
+    const resource = resources.get(sin);
+    if (!resource) return false;
+
+    return resource >= cost;
+  }
+
   return (
-    <div className={styles["passive-div"]}>
-      <img src={getSinTypeAsset(passive.affinity)}/>
-      {`${passive.activation.substring(0, 3)}\n ${passive.cost}`}
+    <div className={styles["passive-row"]}>
+      { [active, passive].map((item, index) =>
+        <div key={index}
+             className={sufficient(item.affinity, item.cost)
+                        ? styles["passive-div"]
+                        : `${styles["passive-div"]} ${styles["passive-insufficient"]}`}>
+          <img src={getSinTypeAsset(item.affinity)}/>
+          {`${item.activation.substring(0, 3)}\n x${item.cost}`}
+        </div>
+      )}
     </div>
   )
 }

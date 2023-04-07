@@ -1,9 +1,9 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
-import { useState, useMemo } from 'react';
+import { useEffect, useContext, useMemo } from 'react';
 import Board from '@/components/board';
 import SinnerCard from '@/components/sinner-card';
-import { TeamReducer } from '@/hooks/teamReducer';
+import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { sinnerNumberToName } from '@/helpers/sinnerData';
 import { SINNER_NUMBERS, IdentityData, EgoData, TeamMember } from '@/types/data';
@@ -30,8 +30,16 @@ function getDefaultTeam(idData: IdentityData[], egoData: EgoData[]) : TeamMember
 }
 
 export default function Home({idData, egoData} : HomeProps) {
-    // Add first sinner just to let users know we can check and select.
-  const [team, addMember, updateMember, removeMember] = TeamReducer(getDefaultTeam(idData, egoData));
+  const team = useContext(TeamContext);
+  const dispatchTeam = useContext(TeamDispatchContext);
+  const [addMember, updateMember, removeMember] = TeamDispatchFunctions(dispatchTeam);
+
+  // Select 1 default sinner just to show how it works.
+  useEffect(() => {
+    for (const member of getDefaultTeam(idData, egoData)) {
+      addMember(member);
+    }
+  }, [])
 
   const sinnerBoard = useMemo(() => {
     return (
