@@ -4,8 +4,6 @@ export const DEFENSE_TYPES = ["Guard", "Dodge", "Counter"]
 
 export type SinnerNumber = typeof SINNER_NUMBERS[number];
 export type Sin = typeof SINS[number]
-export type Cost = `x${number}`;
-export type Plus = `+${number}`;
 export type AttackType = "Slash" | "Blunt" | "Pierce";
 export type DefenseType = typeof DEFENSE_TYPES[number];
 export type EgoRarity = "ZAYIN" | "TETH" | "HE" | "WAW" | "ALEPH";
@@ -36,19 +34,19 @@ export interface EgoData {
 
 export interface Passive {
   affinity: Sin;
-  cost: Cost;
+  cost: number;
   activation: Activation;
 }
 
 export interface EgoCost {
   affinity: Sin;
-  cost: Cost;
+  cost: number;
 }
 
 export interface Skill {
   affinity: Sin;
   base: number;
-  plus: Plus;
+  plus: number;
   coins: number;
   type: AttackType | DefenseType
 }

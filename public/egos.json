@@ -8,11 +8,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Sloth",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -25,15 +25,15 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x5, "
+        "cost": "x5, "
       },
       {
         "affinity": "Sloth",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gluttony",
-        "cost": " x1"
+        "cost": "x1"
       }
     ]
   },
@@ -46,11 +46,11 @@
     "costs": [
       {
         "affinity": "Gloom",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Sloth",
-        "cost": " x4"
+        "cost": "x4"
       }
     ]
   },
@@ -63,11 +63,11 @@
     "costs": [
       {
         "affinity": "Gluttony",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Pride",
-        "cost": " x4"
+        "cost": "x4"
       }
     ]
   },
@@ -80,7 +80,7 @@
     "costs": [
       {
         "affinity": "Envy",
-        "cost": " x6"
+        "cost": "x6"
       }
     ]
   },
@@ -93,15 +93,36 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Envy",
-        "cost": " x3"
+        "cost": "x3"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Telepole",
+    "rarity": "HE",
+    "affinity": "Envy",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": "x1, "
+      },
+      {
+        "affinity": "Lust",
+        "cost": "x3, "
+      },
+      {
+        "affinity": "Envy",
+        "cost": "x3"
       }
     ]
   },
@@ -114,11 +135,11 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -131,15 +152,15 @@
     "costs": [
       {
         "affinity": "Gloom",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Lust",
-        "cost": " x1"
+        "cost": "x1"
       }
     ]
   },
@@ -152,15 +173,15 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Envy",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -173,11 +194,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Lust",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -190,11 +211,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -207,15 +228,15 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Envy",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -228,15 +249,15 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Pride",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Envy",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -249,15 +270,15 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -270,11 +291,11 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x5"
+        "cost": "x5"
       }
     ]
   },
@@ -287,11 +308,11 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Envy",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -304,11 +325,11 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Envy",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -321,15 +342,15 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x3, "
+        "cost": "x3, "
       },
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Envy",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -342,11 +363,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -359,11 +380,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Lust",
-        "cost": " x4"
+        "cost": "x4"
       }
     ]
   },
@@ -376,15 +397,15 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x4, "
+        "cost": "x4, "
       },
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Envy",
-        "cost": " x1"
+        "cost": "x1"
       }
     ]
   },
@@ -397,11 +418,11 @@
     "costs": [
       {
         "affinity": "Gloom",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Pride",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -414,11 +435,11 @@
     "costs": [
       {
         "affinity": "Gloom",
-        "cost": " x5, "
+        "cost": "x5, "
       },
       {
         "affinity": "Envy",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -431,15 +452,15 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x3, "
+        "cost": "x3, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Envy",
-        "cost": " x1"
+        "cost": "x1"
       }
     ]
   },
@@ -452,11 +473,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gluttony",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -469,11 +490,11 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": " x3, "
+        "cost": "x3, "
       },
       {
         "affinity": "Lust",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -486,11 +507,11 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -503,15 +524,15 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Sloth",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Pride",
-        "cost": " x2"
+        "cost": "x2"
       }
     ]
   },
@@ -524,19 +545,19 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x2, "
+        "cost": "x2, "
       },
       {
         "affinity": "Gluttony",
-        "cost": " x3, "
+        "cost": "x3, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Pride",
-        "cost": " x4"
+        "cost": "x4"
       }
     ]
   },
@@ -549,11 +570,11 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gluttony",
-        "cost": " x3"
+        "cost": "x3"
       }
     ]
   },
@@ -566,11 +587,11 @@
     "costs": [
       {
         "affinity": "Lust",
-        "cost": " x3, "
+        "cost": "x3, "
       },
       {
         "affinity": "Gloom",
-        "cost": " x1"
+        "cost": "x1"
       }
     ]
   },
@@ -583,11 +604,11 @@
     "costs": [
       {
         "affinity": "Sloth",
-        "cost": " x1, "
+        "cost": "x1, "
       },
       {
         "affinity": "Gluttony",
-        "cost": " x4"
+        "cost": "x4"
       }
     ]
   }

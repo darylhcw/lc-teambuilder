@@ -5,40 +5,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Gloom",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Sloth",
         "base": "6",
-        "plus": "+1",
+        "plus": "1",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "7",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -50,40 +50,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Sloth",
         "base": "5",
-        "plus": "+3",
+        "plus": "3",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "9",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -95,40 +95,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Pride",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Pride",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "7",
-        "plus": "+1",
+        "plus": "1",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Envy",
         "base": "8",
-        "plus": "+1",
+        "plus": "1",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "8",
-        "plus": "+8",
+        "plus": "8",
         "coins": "1",
         "type": "Slash"
       }
@@ -140,40 +140,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Pride",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Pride",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Gluttony",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -185,40 +185,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Lust",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Lust",
         "base": "3",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+3",
+        "plus": "3",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+8",
+        "plus": "8",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "3",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -230,40 +230,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Envy",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Envy",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "10",
-        "plus": "+2",
+        "plus": "2",
         "coins": "1",
         "type": "Guard"
       }
@@ -275,40 +275,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+3",
+        "plus": "3",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Pride",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -320,40 +320,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Lust",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Lust",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Gluttony",
         "base": "3",
-        "plus": "+3",
+        "plus": "3",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -365,40 +365,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Envy",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+21",
+        "plus": "21",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "3",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -410,40 +410,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Envy",
         "base": "1",
-        "plus": "+2",
+        "plus": "2",
         "coins": "5",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -455,40 +455,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -500,40 +500,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Pride",
         "base": "4",
-        "plus": "+12",
+        "plus": "12",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Gluttony",
         "base": "4",
-        "plus": "+5",
+        "plus": "5",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Gluttony",
         "base": "8",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Slash"
       }
@@ -545,40 +545,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Lust",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+5",
+        "plus": "5",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Lust",
         "base": "8",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "10",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Guard"
       }
@@ -590,40 +590,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Sloth",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Sloth",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "2",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+8",
+        "plus": "8",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+1",
+        "plus": "1",
         "coins": "4",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -635,40 +635,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Lust",
         "base": "3",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "5",
-        "plus": "+3",
+        "plus": "3",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -680,40 +680,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Wrath",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "5",
-        "plus": "+1",
+        "plus": "1",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Wrath",
         "base": "6",
-        "plus": "+3",
+        "plus": "3",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Pride",
         "base": "8",
-        "plus": "+3",
+        "plus": "3",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Wrath",
         "base": "15",
-        "plus": "-5",
+        "plus": "5",
         "coins": "1",
         "type": "Pierce"
       }
@@ -725,40 +725,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Envy",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Envy",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Gloom",
         "base": "5",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+1",
+        "plus": "1",
         "coins": "4",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "12",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -770,40 +770,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Sloth",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Sloth",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -815,40 +815,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Lust",
-      "cost": "Cost :",
-      "activation": "x3 Res"
+      "cost": "3",
+      "activation": "Res"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "Cost :",
-      "activation": "x4 Owned"
+      "cost": "4",
+      "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Sloth",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "9",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -860,40 +860,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Wrath",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "3",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Lust",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -905,40 +905,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "3",
-        "plus": "+5",
+        "plus": "5",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+25",
+        "plus": "25",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+14",
+        "plus": "14",
         "coins": "1",
         "type": "Dodge"
       }
@@ -950,40 +950,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Envy",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Envy",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Envy",
         "base": "7",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Blunt"
       }
@@ -995,40 +995,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Envy",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "3",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Gloom",
         "base": "6",
-        "plus": "+8",
+        "plus": "8",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -1040,40 +1040,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "5",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Envy",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Slash"
       }
@@ -1085,40 +1085,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Gluttony",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Pierce"
       },
       {
         "affinity": "Envy",
         "base": "3",
-        "plus": "+2",
+        "plus": "2",
         "coins": "5",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -1130,40 +1130,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x6",
+      "cost": "6",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Wrath",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+8",
+        "plus": "8",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "7",
-        "plus": "+12",
+        "plus": "12",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "7",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -1175,40 +1175,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+3",
+        "plus": "3",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "Pride",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "10",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -1220,40 +1220,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Envy",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Envy",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Envy",
         "base": "3",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Lust",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "6",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Envy",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Slash"
       }
@@ -1265,40 +1265,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "3",
-        "plus": "+5",
+        "plus": "5",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Envy",
         "base": "6",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "2",
-        "plus": "+5",
+        "plus": "5",
         "coins": "4",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -1310,40 +1310,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Wrath",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "2",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "7",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Slash"
       }
@@ -1355,40 +1355,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Envy",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Envy",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gluttony",
         "base": "6",
-        "plus": "+1",
+        "plus": "1",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Envy",
         "base": "7",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -1400,40 +1400,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Wrath",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Wrath",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "3",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Lust",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "7",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Pierce"
       }
@@ -1445,40 +1445,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Lust",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "5",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "6",
-        "plus": "+3",
+        "plus": "3",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "7",
-        "plus": "+16",
+        "plus": "16",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "9",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       }
@@ -1490,40 +1490,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Pride",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Pride",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Pride",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Envy",
         "base": "5",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "7",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Slash"
       }
@@ -1535,40 +1535,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Envy",
         "base": "5",
-        "plus": "+1",
+        "plus": "1",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "8",
-        "plus": "+11",
+        "plus": "11",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "5",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -1580,40 +1580,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Gloom",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": "6",
-        "plus": "+1",
+        "plus": "1",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "7",
-        "plus": "+13",
+        "plus": "13",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "10",
-        "plus": "+3",
+        "plus": "3",
         "coins": "1",
         "type": "Guard"
       }
@@ -1625,40 +1625,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Pride",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Pride",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+1",
+        "plus": "1",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Wrath",
         "base": "6",
-        "plus": "+1",
+        "plus": "1",
         "coins": "3",
         "type": "Slash"
       },
       {
         "affinity": "Pride",
         "base": "8",
-        "plus": "+14",
+        "plus": "14",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Wrath",
         "base": "9",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Pierce"
       }
@@ -1670,40 +1670,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Sloth",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Sloth",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "3",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Pierce"
       },
       {
         "affinity": "Pride",
         "base": "4",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Gloom",
         "base": "6",
-        "plus": "+14",
+        "plus": "14",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "2",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -1715,40 +1715,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Pride",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Pride",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "Pride",
         "base": "6",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "None",
         "base": "3",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Dodge"
       }
@@ -1760,40 +1760,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Sloth",
-      "cost": "x2",
+      "cost": "2",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Sloth",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+6",
+        "plus": "6",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Gluttony",
         "base": "5",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Gloom",
         "base": "6",
-        "plus": "+16",
+        "plus": "16",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "9",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Guard"
       }
@@ -1805,40 +1805,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Res"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "6",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "5",
-        "plus": "+5",
+        "plus": "5",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "6",
-        "plus": "+2",
+        "plus": "2",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "13",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Guard"
       }
@@ -1850,40 +1850,40 @@
     "rarity": 1,
     "active": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Gloom",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gloom",
         "base": "3",
-        "plus": "+7",
+        "plus": "7",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Gluttony",
         "base": "4",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Pierce"
       },
       {
         "affinity": "Sloth",
         "base": "5",
-        "plus": "+4",
+        "plus": "4",
         "coins": "2",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+2",
+        "plus": "2",
         "coins": "1",
         "type": "Guard"
       }
@@ -1895,40 +1895,40 @@
     "rarity": 2,
     "active": {
       "affinity": "Sloth",
-      "cost": "x3",
+      "cost": "3",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Sloth",
-      "cost": "x5",
+      "cost": "5",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Wrath",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "2",
         "type": "Blunt"
       },
       {
         "affinity": "Lust",
         "base": "5",
-        "plus": "+1",
+        "plus": "1",
         "coins": "3",
         "type": "Blunt"
       },
       {
         "affinity": "Sloth",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Blunt"
       },
       {
         "affinity": "None",
         "base": "8",
-        "plus": "+5",
+        "plus": "5",
         "coins": "1",
         "type": "Guard"
       }
@@ -1940,40 +1940,40 @@
     "rarity": 3,
     "active": {
       "affinity": "Gluttony",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "passive": {
       "affinity": "Gluttony",
-      "cost": "x4",
+      "cost": "4",
       "activation": "Owned"
     },
     "skills": [
       {
         "affinity": "Gluttony",
         "base": "4",
-        "plus": "+3",
+        "plus": "3",
         "coins": "2",
         "type": "Slash"
       },
       {
         "affinity": "Sloth",
         "base": "6",
-        "plus": "+10",
+        "plus": "10",
         "coins": "1",
         "type": "Slash"
       },
       {
         "affinity": "Lust",
         "base": "4",
-        "plus": "+2",
+        "plus": "2",
         "coins": "4",
         "type": "Pierce"
       },
       {
         "affinity": "None",
         "base": "10",
-        "plus": "+4",
+        "plus": "4",
         "coins": "1",
         "type": "Guard"
       }
