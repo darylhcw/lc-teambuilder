@@ -1,22 +1,22 @@
 @use 'vars';
 
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  position: relative; // ref for absolute positioned images.
+  position: relative; // ref for absolutely positoned images.
   height: 100%;
   aspect-ratio: 1;
 }
 
 .hexagon {
-  position: absolute;
-  height: 94%;
+  height: 100%;
 }
 
 .skill {
-  position: relative;
+  position: absolute;
   height: 75%;
 
   z-index: 1;

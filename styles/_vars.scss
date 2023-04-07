@@ -21,10 +21,11 @@ $text-yellow: #FBC500;
 $orange-highlight: #FE8C01;
 
 // Sizes
-$sinner-card-width: 224px;
+$sinner-card-width: 200px;
 
 // Breakpoints
 $large-screen: 2560px;
+$mobile-screen: 720px;
 
 // Helpers
 @function pxToRem($pxValue) {

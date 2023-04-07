@@ -26,10 +26,15 @@ $item-bottom-border: 2px solid vars.$board-light;
   border: 4px solid vars.$orange-highlight;
 }
 
+/*********************************************
+ * Sinner Profile
+ ********************************************/
+
 .sinner-rarity {
   position: absolute;
   top: 2px;
   left: 2px;
+  height: clamp(30px, 2.5vw,60px);
 }
 
 .sinner-img {
@@ -62,45 +67,74 @@ $item-bottom-border: 2px solid vars.$board-light;
   }
 }
 
-.skill-container {
-  // Create new stacking context for mix-blending.
-  position: relative;
-  z-index: 1;
+/*********************************************
+ * Skills
+ ********************************************/
 
+.skill-row {
+  display: flex;
+  justify-content: stretch;
   width: 100%;
-  padding-right: vars.pxToRem(10px);
   aspect-ratio: getAspectRatio($skill-height);
 
-  display: flex;
-  gap: vars.pxToRem(2px);
-  align-items: center;
+  font-size: vars.pxToRem(17px);
 }
 
-.base {
-  min-width: vars.pxToRem(30px);
-  font-size: vars.pxToRem(20px);
-  text-align: right;
-}
-.plus {
-  min-width: vars.pxToRem(30px);
-  font-size: vars.pxToRem(18px);
-}
-.activation {
-  font-size: vars.pxToRem(16px);
-}
-.multiply {
-  font-size: vars.pxToRem(20px);
-}
-
-.coins-div {
+.skill-container {
   display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+
+  &:first-of-type {
+    flex-grow: 3;
+    margin-left: 5%;
+  }
+  &:nth-of-type(2) {
+    flex-grow: 2;
+  }
+  &:nth-of-type(3) {
+    flex-grow: 1;
+    margin-right: 5%;
+  }
 
   height: 100%;
-  margin-left: vars.pxToRem(12px);
 }
+
+.skill-container-icons {
+  position: relative;  // only as ref for absolutely positioned elems.
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.skill-affinity-icon {
+  height: 80%;
+  aspect-ratio: 1;
+  z-index: 2;
+}
+.stack-1 {
+  position: absolute;
+  right: 25%;
+  z-index: 1;
+}
+.stack-2 {
+  position: absolute;
+  right: 50%;
+  z-index: 0;
+}
+
+.hex {
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  z-index: 3;
+}
+
+/********************************************
+ * Passives
+ *******************************************/
 
 .passive-div {
   display: flex;

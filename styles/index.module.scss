@@ -3,10 +3,13 @@
 $sinner-card-gap: 5px;
 
 .main {
-  margin: 0 10px;
-  max-width: vars.$large-screen;
+  margin: 0 28px;
   @media (min-width: (vars.$large-screen + 1px)) {
     margin: 0 auto;
+    max-width: vars.$large-screen;
+  }
+  @media (max-width: vars.$mobile-screen) {
+    margin: 0 12px;
   }
 }
 

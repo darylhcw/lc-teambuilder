@@ -52,48 +52,43 @@ export default function SinnerCard(
           <img className={styles["sinner-img"]}
                 src={getSinnerIdSrcImg(identity)}
           />
-          { identity.skills.map((skill, index) =>
-              skillRow(skill, passive, index)
-          )}
+          { skillRow(identity) }
+
         {/* </div> */}
     </div>
   )
 }
 
-function skillRow(skill : Skill, passive: Passive, index: number) {
-  const skillAlpha = 40;
-
+function skillRow(identity: IdentityData) {
   return (
-    <div key={index}
-         className={styles["skill-container"]}
-         style={{background: getSinCSSColor(skill.affinity, skillAlpha)}}>
-      <p className={styles.base}>{skill.base}</p>
-      <SkillHexagon affinity={skill.affinity}
-                    type={skill.type}
-                    defense={index === 3}
-      />
-      <p className={styles.plus}>{skill.plus}</p>
-      { index === 3 ? passiveDiv(passive) : coinsDiv(skill.coins) }
-      { index < 3 ? <p className={styles.multiply}>{`x${index+1}`}</p> : null }
+    <div className={styles["skill-row"]}>
+      { identity.skills.map((skill, index) =>
+          index < 3 ? sinHexCombo(skill, index) : null
+      )}
     </div>
   )
 }
 
-function coinsDiv(num: number) {
-  const coinImages = () => {
-    let coins = []
-    for (let i=0; i < num; i++) {
-      coins.push(
-        <img src={"/assets/coin.webp"}/>
-      );
-    }
-
-    return coins;
-  }
-
+function sinHexCombo(skill: Skill, index: number) {
   return (
-    <div className={styles["coins-div"]}>
-      { coinImages() }
+    <div key={index} className={styles["skill-container"]}>
+      <div className={styles["skill-container-icons"]}>
+        <img className={styles["skill-affinity-icon"]}
+             src={getSinTypeAsset(skill.affinity)}/>
+        { index <= 1
+          ? <img className={`${styles["skill-affinity-icon"]} ${styles["stack-1"]}`}
+                 src={getSinTypeAsset(skill.affinity)}/>
+          : null
+        }
+        { index === 0
+          ? <img className={`${styles["skill-affinity-icon"]} ${styles["stack-2"]}`}
+                 src={getSinTypeAsset(skill.affinity)}/>
+          : null
+        }
+        <div className={styles.hex}>
+          <SkillHexagon affinity={skill.affinity} type={skill.type}/>
+        </div>
+      </div>
     </div>
   )
 }
@@ -106,8 +101,6 @@ function passiveDiv(passive: Passive) {
     </div>
   )
 }
-
-
 
 function getDefaultId(idData: IdentityData[]) : IdentityData {
   for (const data of idData) {

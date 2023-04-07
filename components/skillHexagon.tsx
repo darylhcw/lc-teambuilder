@@ -5,10 +5,10 @@ import styles from './skillHexagon.module.scss';
 interface SkillHexagonProps {
   affinity: Sin;
   type: AttackType | DefenseType;
-  defense: boolean;
+  defense?: boolean;
 }
 
-export default function SkillHexagon({affinity, type, defense} : SkillHexagonProps) {
+export default function SkillHexagon({affinity, type, defense=false} : SkillHexagonProps) {
   return (
     <div className={styles.container}>
       <img className={styles.hexagon}
