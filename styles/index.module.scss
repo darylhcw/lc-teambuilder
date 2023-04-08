@@ -1,9 +1,9 @@
 @use 'vars';
 
-$sinner-card-gap: 5px;
+$sinner-card-gap: 8px;
 
 .main {
-  margin: 0 28px;
+  margin: 0 40px;
   @media (min-width: (vars.$large-screen + 1px)) {
     margin: 0 auto;
     max-width: vars.$large-screen;

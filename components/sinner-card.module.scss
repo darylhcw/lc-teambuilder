@@ -1,9 +1,9 @@
 @use "vars";
 @use "sass:math";
 
-$profile-height: 120px;
-$skill-height: 50px;
-$passive-height: 35px;
+$profile-height: 90px;
+$skill-height: 36px;
+$passive-height: 28px;
 
 $item-border: 2px solid vars.$board-light;
 
@@ -18,7 +18,7 @@ $item-border: 2px solid vars.$board-light;
 }
 
 .selected {
-  border: 4px solid vars.$orange-highlight;
+  border: 2px solid vars.$orange-highlight;
 }
 
 /*********************************************
@@ -35,7 +35,7 @@ $item-border: 2px solid vars.$board-light;
 .sinner-img {
   display: block;
   width: 100%;
-  aspect-ratio: getAspectRatio($profile-height);
+  aspect-ratio: vars.getSinnerCardAspectRatio($profile-height);
 
   object-position: center 15%;
   object-fit: cover;
