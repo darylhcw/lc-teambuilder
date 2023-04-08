@@ -11,8 +11,10 @@ export type EgoRarity = typeof EGO_RARITIES[number]
 export type Activation = "Owned" | "Res";
 
 export interface TeamMember {
+  sinner: SinnerNumber;
   id: IdentityData;
   egos: EgoData[];
+  active: boolean;
 }
 
 export interface IdentityData {

@@ -1,12 +1,12 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
-import { useEffect, useContext, useMemo } from 'react';
+import { useContext, useMemo } from 'react';
 import Board from '@/components/board';
 import SinnerCard from '@/components/sinner-card';
 import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { sinnerNumberToName } from '@/helpers/sinnerData';
-import { SINNER_NUMBERS, IdentityData, EgoData, TeamMember } from '@/types/data';
+import { SINNER_NUMBERS, SinnerNumber, IdentityData, EgoData, TeamMember } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
 
@@ -21,25 +21,11 @@ interface HomeProps {
   egoData: EgoData[];
 }
 
-function getDefaultTeam(idData: IdentityData[], egoData: EgoData[]) : TeamMember[] {
-  const lcbYiSang = {
-    id: idData[0],
-    egos: egoData.filter(filterEgoData(1)),
-  }
-  return [lcbYiSang];
-}
 
-export default function Home({idData, egoData} : HomeProps) {
+export default function Index({idData, egoData} : HomeProps) {
   const team = useContext(TeamContext);
   const dispatchTeam = useContext(TeamDispatchContext);
-  const [addMember, updateMember, removeMember] = TeamDispatchFunctions(dispatchTeam);
-
-  // Select 1 default sinner just to show how it works.
-  useEffect(() => {
-    for (const member of getDefaultTeam(idData, egoData)) {
-      addMember(member);
-    }
-  }, [])
+  const [setActive, updateId] = TeamDispatchFunctions(dispatchTeam);
 
   const sinnerBoard = useMemo(() => {
     return (
@@ -49,9 +35,8 @@ export default function Home({idData, egoData} : HomeProps) {
             <SinnerCard key={num}
                         idData={idData.filter(filterIdData(num))}
                         egoData={egoData.filter(filterEgoData(num))}
-                        setActiveSinner={addMember}
-                        unsetActiveSinner={removeMember}
-                        updateActiveSinner={updateMember}
+                        setSinnerActive={setActive}
+                        updateSinnerId={updateId}
             />
           )}
         </div>
@@ -62,10 +47,16 @@ export default function Home({idData, egoData} : HomeProps) {
   return (
     <>
       <main className={`${NotoSansKR.className} ${styles.main}`}>
-        { sinnerBoard }
+          { sinnerBoard }
         <ul>
-          { team.map((member, index) =>
-            <li key={index}>{member.id.name} {sinnerNumberToName(member.id.sinner, true)}</li>
+          { team.filter((member) => member.active)
+                .map((member, index) =>
+                  (
+                    <div key={index}>
+                      <li>{member.id.name} {sinnerNumberToName(member.sinner, true)}</li>
+                      { member.egos.map((ego) => <p key={ego.name}>{ego.name}</p>) }
+                    </div>
+                  )
           )}
         </ul>
       </main>
@@ -73,11 +64,11 @@ export default function Home({idData, egoData} : HomeProps) {
   )
 }
 
-function filterIdData(sinner: number) {
+function filterIdData(sinner: SinnerNumber) {
   return (data: IdentityData) => data.sinner == sinner;
 }
 
-function filterEgoData(sinner: number) {
+function filterEgoData(sinner: SinnerNumber) {
   return (data: EgoData) => data.sinner == sinner;
 }
 

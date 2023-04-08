@@ -1,0 +1,542 @@
+[
+  {
+    "sinner": 1,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 6,
+        "plus": 1,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 7,
+        "plus": 3,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Pride",
+      "cost": 2,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 6,
+        "plus": 2,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Lust",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 3,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 5,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 2,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 5,
+        "plus": 8,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 1,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 8,
+        "plus": 3,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 2,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Envy",
+      "cost": 4,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 6,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 5,
+        "plus": 8,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 7,
+        "plus": 12,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 7,
+        "plus": 3,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 2,
+        "plus": 2,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "type": "Slash"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "type": "Slash"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 6,
+        "plus": 14,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": 8,
+        "plus": 2,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  }
+]

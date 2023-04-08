@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import SkillHexagon from '@/components/skillHexagon';
 import EgoComponent from '@/components/ego-component';
-import { IdentityData, EgoData, TeamMember, Skill, Passive, Sin } from '@/types/data';
+import { IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
 import { TeamResourcesContext } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
@@ -10,61 +10,59 @@ import styles from './sinner-card.module.scss';
 interface SinnerCardProps {
   idData: IdentityData[];
   egoData: EgoData[];
-  setActiveSinner(member: TeamMember) : void;
-  unsetActiveSinner(member: TeamMember) : void;
-  updateActiveSinner(member: TeamMember) : void;
+  setSinnerActive: (sinner: SinnerNumber, active: boolean) => void,
+  updateSinnerId: (identity: IdentityData) => void,
 }
 
 export default function SinnerCard(
  {
   idData,
   egoData,
-  setActiveSinner,
-  unsetActiveSinner,
-  updateActiveSinner,
+  setSinnerActive,
+  updateSinnerId,
  }: SinnerCardProps
 ) {
   // Check first card just to let users know it's checkable.
   const [identity, setIdentity] = useState(getDefaultId(idData));
-  const [selectedEgos, setSelectedEgos] = useState<EgoData[]>([]);
   const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
 
   function sinnerSelected() {
     const select = !isSelected;
     setIsSelected(!isSelected);
-
-    const mem = { id:identity, egos:selectedEgos};
-    if (select) {
-      setActiveSinner(mem);
-    } else {
-      unsetActiveSinner(mem);
-    }
+    setSinnerActive(identity.sinner, select);
   }
 
   return (
     <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
         {/* <div className={styles["id-data-container"]}> */}
-          <img className={styles["sinner-rarity"]}
-               src={getRarityAsset(identity.rarity)}
-               alt={`${identity.rarity}-star rarity`}
-          />
-          <input className={styles.checkbox}
-                 type="checkbox"
-                 checked={isSelected}
-                 onChange={sinnerSelected}/>
-          <img className={styles["sinner-img"]}
-               src={getSinnerIdSrcImg(identity)}
-               alt={identity.name}
-          />
+          { sinnerProfile(identity, isSelected, sinnerSelected) }
           { skillRow(identity) }
           <PassiveRow active={identity.active} passive={identity.passive}/>
-          <EgoComponent egoData={egoData}
-                        currentEgos={selectedEgos}
-                        setEgos={setSelectedEgos}/>
+          <EgoComponent sinner={identity.sinner} egoData={egoData}/>
         {/* </div> */}
     </div>
   )
 }
+
+function sinnerProfile(identity: IdentityData, isSelected: boolean, sinnerSelected: () => void) {
+  return (
+    <>
+      <img className={styles["sinner-rarity"]}
+           src={getRarityAsset(identity.rarity)}
+           alt={`${identity.rarity}-star rarity`}
+      />
+      <input className={styles.checkbox}
+             type="checkbox"
+             checked={isSelected}
+             onChange={sinnerSelected}/>
+      <img className={styles["sinner-img"]}
+           src={getSinnerIdSrcImg(identity)}
+           alt={identity.name}
+      />
+    </>
+  )
+}
+
 
 function skillRow(identity: IdentityData) {
   return (

@@ -1,26 +1,33 @@
 import { useState, useContext } from 'react';
+import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
-import { EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
+import { SinnerNumber, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
 import styles from './ego-component.module.scss';
 
 interface EgoComponentProps {
+  sinner: SinnerNumber;
   egoData : EgoData[];
-  currentEgos: EgoData[];
-  setEgos: (egos: EgoData[]) => void;
 }
 
-export default function EgoComponent({egoData, currentEgos, setEgos} : EgoComponentProps) {
+export default function EgoComponent({sinner, egoData} : EgoComponentProps) {
+  const team = useContext(TeamContext);
+  const memberEgos = team.find((member) => member.sinner === sinner)?.egos;
+
+  const dispatch = useContext(TeamDispatchContext);
+  const [egoSelected] = EgoDispatchFunctions(dispatch);
+
+
   function getEgo(rarity: EgoRarity) {
-    //*** CHANGE TO currentEgos later! ***/
     return egoData.find((ego) => ego.rarity === rarity);
+    // return memberEgos?.find((ego) => ego.rarity === rarity);
   }
 
   function egoRow(egoRarity: EgoRarity) {
     const ego = getEgo(egoRarity);
 
     return (
-      <div key={egoRarity} className={styles["ego-row"]}>
+      <div key={egoRarity} className={styles["ego-row"]} onClick={() => ego ? egoSelected(ego) : {} }>
         <div className={styles["char-block"]}>
           <img src={getEgoRarityAsset(egoRarity)}
                alt={egoRarity}/>
