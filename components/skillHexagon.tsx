@@ -12,8 +12,10 @@ export default function SkillHexagon({affinity, type, defense=false} : SkillHexa
   return (
     <div className={styles.container}>
       <img className={styles.hexagon}
+           alt={affinity}
            src={getSinTypeHexAsset(affinity)}/>
       <img className={styles.skill}
+           alt={type}
            src={getSkillTypeAsset(type, defense)}/>
     </div>
   )
