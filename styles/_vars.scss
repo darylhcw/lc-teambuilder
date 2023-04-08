@@ -32,3 +32,9 @@ $mobile-screen: 720px;
 @function pxToRem($pxValue) {
   @return math.div($pxValue, 16px) * 1rem;
 }
+
+// Aspect ratio to set for elems/imgs within the sinner card.
+// To make sure they scale if the card gets wider.
+@function getSinnerCardAspectRatio($elemHeight) {
+  @return math.div($sinner-card-width, $elemHeight);
+}

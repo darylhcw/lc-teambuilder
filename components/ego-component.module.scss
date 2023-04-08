@@ -1,0 +1,64 @@
+@use 'vars';
+
+$ego-row-height: 25px;
+$item-border: 1px solid vars.$board-light;
+
+.container {
+  // width: 100%;
+}
+
+.ego-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+
+  width: 100%;
+  aspect-ratio: vars.getSinnerCardAspectRatio($ego-row-height);
+
+  border-top: $item-border;
+
+  img {
+    object-fit: cover;
+    height: 96%;
+    aspect-ratio: 1;
+    border-radius: 25% 0 0 25%;
+  }
+}
+
+.char-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 96%;
+  min-width: 12%;
+
+  background: vars.$board-light;
+  border-radius: 0 4px 4px 0;
+
+  img {
+    height: 75%;
+  }
+}
+
+.ego-name {
+  color: vars.$grey;
+  color: vars.$text-brown;
+  font-size: vars.pxToRem(18px);
+  line-height: $ego-row-height;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media(max-width: vars.$mobile-screen) {
+    font-size: vars.pxToRem(16px);
+  }
+
+  mix-blend-mode: exclusion;
+}
+
+.insufficient {
+  color: vars.$grey;
+}

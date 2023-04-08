@@ -1,9 +1,10 @@
 import { useState, useContext } from 'react';
 import SkillHexagon from '@/components/skillHexagon';
+import EgoComponent from '@/components/ego-component';
 import { IdentityData, EgoData, TeamMember, Skill, Passive, Sin } from '@/types/data';
 import { TeamResourcesContext } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
-import { getSinnerEgoSrcImg, getSinnerIdSrcImg } from '@/helpers/sinnerData'
+import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
 import styles from './sinner-card.module.scss';
 
 interface SinnerCardProps {
@@ -25,13 +26,14 @@ export default function SinnerCard(
 ) {
   // Check first card just to let users know it's checkable.
   const [identity, setIdentity] = useState(getDefaultId(idData));
+  const [selectedEgos, setSelectedEgos] = useState<EgoData[]>([]);
   const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
 
   function sinnerSelected() {
     const select = !isSelected;
     setIsSelected(!isSelected);
 
-    const mem = { id:identity, egos:egoData};
+    const mem = { id:identity, egos:selectedEgos};
     if (select) {
       setActiveSinner(mem);
     } else {
@@ -56,6 +58,9 @@ export default function SinnerCard(
           />
           { skillRow(identity) }
           <PassiveRow active={identity.active} passive={identity.passive}/>
+          <EgoComponent egoData={egoData}
+                        currentEgos={selectedEgos}
+                        setEgos={setSelectedEgos}/>
         {/* </div> */}
     </div>
   )
@@ -124,11 +129,6 @@ function PassiveRow({active, passive} : {active: Passive, passive: Passive}) {
 }
 
 function getDefaultId(idData: IdentityData[]) : IdentityData {
-  for (const data of idData) {
-    if (data.name.toLowerCase().includes("lcb ")) {
-      return data;
-    }
-  }
-
-  return idData[0]
+  const lcb = idData.find((id) => id.name.toLowerCase().includes("lcb "));
+  return lcb ? lcb : idData[0];
 }

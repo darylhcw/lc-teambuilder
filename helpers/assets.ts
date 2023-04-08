@@ -1,4 +1,4 @@
-import { DEFENSE_TYPES, AttackType, DefenseType, Sin } from '@/types/data';
+import { DEFENSE_TYPES, AttackType, DefenseType, Sin, EgoRarity } from '@/types/data';
 import css from './assets.module.scss';
 
 
@@ -44,9 +44,24 @@ function getSinCSSColor(sin: Sin, alpha: number=255) {
   return color + alpha.toString(16);
 }
 
+function getEgoRarityAsset(egoRarity: EgoRarity, bright : boolean=false) {
+  let name;
+  switch(egoRarity) {
+    case "ZAYIN": name = "zayin"; break;
+    case "TETH": name = "teth"; break;
+    case "HE": name = "he"; break;
+    case "WAW": name = "waw"; break;
+    case "ALEPH": name = "aleph"; break;
+  }
+  if (bright) name += "-bright"
+
+  return `/assets/${name}.webp`;
+}
+
 
 export {
   getRarityAsset,
+  getEgoRarityAsset,
   getSkillTypeAsset,
   getSinTypeHexAsset,
   getSinTypeAsset,

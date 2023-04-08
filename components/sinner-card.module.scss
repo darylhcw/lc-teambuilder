@@ -7,12 +7,6 @@ $passive-height: 35px;
 
 $item-border: 2px solid vars.$board-light;
 
-// Aspect ratio to set for elems/imgs within the sinner card.
-// To make sure they scale if the card gets wider.
-@function getAspectRatio($elemHeight) {
-  @return math.div(vars.$sinner-card-width, $elemHeight);
-}
-
 .container {
   position: relative;  // as ref for absolutely positoned elements within
 
@@ -43,7 +37,7 @@ $item-border: 2px solid vars.$board-light;
   width: 100%;
   aspect-ratio: getAspectRatio($profile-height);
 
-  object-position: center 10%;
+  object-position: center 15%;
   object-fit: cover;
 
   border-bottom: $item-border;
@@ -76,7 +70,7 @@ $item-border: 2px solid vars.$board-light;
   display: flex;
   justify-content: stretch;
   width: 100%;
-  aspect-ratio: getAspectRatio($skill-height);
+  aspect-ratio: vars.getSinnerCardAspectRatio($skill-height);
 
   font-size: vars.pxToRem(17px);
 }
@@ -140,7 +134,7 @@ $item-border: 2px solid vars.$board-light;
 .passive-row {
   display: flex;
   width: 100%;
-  aspect-ratio: getAspectRatio($passive-height);
+  aspect-ratio: vars.getSinnerCardAspectRatio($passive-height);
 }
 
 .passive-div {
