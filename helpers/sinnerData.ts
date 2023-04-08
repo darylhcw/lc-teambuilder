@@ -20,6 +20,12 @@ function sinnerNumberToName(number: number, caps: boolean=false) {
 
 function getSinnerEgoSrcImg(ego: EgoData) {
   const sinner = sinnerNumberToName(ego.sinner);
+
+  // Special case for some egos with chars unusable in filenames.
+  if (ego.filename) {
+    return `/sinners/${sinner}/ego/${ego.filename}.webp`;
+  }
+
   const egoName = ego.name.toLowerCase();
   return `/sinners/${sinner}/ego/${egoName}.webp`;
 }

@@ -2,6 +2,7 @@
   {
     "sinner": 1,
     "name": "Crow's Eye View",
+    "filename": "crow_s eye view",
     "rarity": "ZAYIN",
     "affinity": "Sloth",
     "type": "Pierce",
@@ -243,6 +244,7 @@
   {
     "sinner": 5,
     "name": "You Want To Get Beat? Hurtily?",
+    "filename": "you want to get beat hurtily",
     "rarity": "TETH",
     "affinity": "Envy",
     "type": "Blunt",
