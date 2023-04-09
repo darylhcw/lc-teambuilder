@@ -1,8 +1,0 @@
-@use "vars";
-
-.board {
-  padding: 10px;
-  background: vars.$board-bg;
-  border: 2px solid vars.$board-light;
-  border-radius: 20px;
-}

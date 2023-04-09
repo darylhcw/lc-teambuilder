@@ -1,7 +1,6 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
 import { useContext, useMemo } from 'react';
-import Board from '@/components/Board';
 import SinnerCard from '@/components/SinnerCard';
 import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
@@ -29,18 +28,16 @@ export default function Index({idData, egoData} : HomeProps) {
 
   const sinnerBoard = useMemo(() => {
     return (
-      <Board>
-        <div className={styles["board-container"]}>
-          { SINNER_NUMBERS.map((num) =>
-            <SinnerCard key={num}
-                        idData={idData.filter(filterIdData(num))}
-                        egoData={egoData.filter(filterEgoData(num))}
-                        setSinnerActive={setActive}
-                        updateSinnerId={updateId}
-            />
-          )}
-        </div>
-      </Board>
+      <div className={`${styles["sinner-board"]} board`}>
+        { SINNER_NUMBERS.map((num) =>
+          <SinnerCard key={num}
+                      idData={idData.filter(filterIdData(num))}
+                      egoData={egoData.filter(filterEgoData(num))}
+                      setSinnerActive={setActive}
+                      updateSinnerId={updateId}
+          />
+        )}
+      </div>
     )
   }, [idData, egoData]);
 

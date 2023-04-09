@@ -4,16 +4,16 @@ $sinner-card-gap: 8px;
 
 .main {
   margin: 0 40px;
+  max-width: vars.$large-screen;
   @media (min-width: (vars.$large-screen + 1px)) {
     margin: 0 auto;
-    max-width: vars.$large-screen;
   }
   @media (max-width: vars.$mobile-screen) {
     margin: 0 12px;
   }
 }
 
-.board-container {
+.sinner-board {
   display: grid;
   grid-template-columns:
     repeat(auto-fit,
@@ -23,4 +23,6 @@ $sinner-card-gap: 8px;
       )
     );
   grid-gap: $sinner-card-gap;
+
+  padding: 10px;
 }

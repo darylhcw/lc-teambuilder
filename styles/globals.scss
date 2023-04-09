@@ -1,6 +1,10 @@
 @use 'vars';
 @use 'normalize.css/normalize.css';
 
+
+/**
+ * Reset/Defaults.
+ */
 html,
 body {
   padding: 0;
@@ -35,8 +39,6 @@ input[type="checkbox"] {
   margin: 0;
 
   color: vars.$blood-red;
-  // font-size: vars.pxToRem(20px);
-
   background-color: vars.$page-bg;;
 }
 input[type="checkbox"]::before {
@@ -49,4 +51,18 @@ input[type="checkbox"]:checked::before {
 
 * {
   box-sizing: border-box;
+}
+
+
+/**
+ * Global reusable.
+ */
+.board {
+  background: vars.$board-bg;
+  border: 2px solid vars.$board-light;
+  border-radius: 20px;
+}
+.board-dark {
+  @extend .board;
+  background: vars.$page-bg;
 }
