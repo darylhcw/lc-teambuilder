@@ -1,8 +1,8 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
 import { useContext, useMemo } from 'react';
-import Board from '@/components/board';
-import SinnerCard from '@/components/sinner-card';
+import Board from '@/components/Board';
+import SinnerCard from '@/components/SinnerCard';
 import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { sinnerNumberToName } from '@/helpers/sinnerData';

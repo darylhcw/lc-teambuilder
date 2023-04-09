@@ -1,11 +1,11 @@
 import { useState, useContext } from 'react';
-import SkillHexagon from '@/components/skillHexagon';
-import EgoComponent from '@/components/ego-component';
+import SkillHexagon from '@/components/SkillHexagon';
+import EgoComponent from '@/components/EgoComponent';
 import { IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
 import { TeamResourcesContext } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
-import styles from './sinner-card.module.scss';
+import styles from './SinnerCard.module.scss';
 
 interface SinnerCardProps {
   idData: IdentityData[];

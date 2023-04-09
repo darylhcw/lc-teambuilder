@@ -3,7 +3,7 @@ import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
 import { SinnerNumber, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
-import styles from './ego-component.module.scss';
+import styles from './EgoComponent.module.scss';
 
 interface EgoComponentProps {
   sinner: SinnerNumber;
