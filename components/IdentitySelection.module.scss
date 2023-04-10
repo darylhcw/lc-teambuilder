@@ -1,0 +1,83 @@
+@use 'vars';
+
+$id-card-width: vars.$sinner-card-width;
+$id-card-height: 1.5*$id-card-width + 8px;
+
+// The purpose of the separate board is just for the scrollbar
+// - So it is inside the rounded corners.
+.board {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.container {
+  // Height/Widths are for aesthetically "padding" the scrollbar inside the board
+  height: 96%;
+  width: 98%;
+  @media(max-width: vars.$mobile-screen) {
+    height: 92%;
+    width: 94%;
+  }
+
+  padding: 1rem 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  overflow-y: auto;
+}
+
+.id-container {
+  position: relative;  // ref for absolutely positioned kids.
+
+  border-radius: 20px;
+  border: 2px solid vars.$board-light;
+  overflow: hidden;
+}
+
+.id-rarity {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: clamp(30px, 2.5vw, 60px);
+  z-index: 1;
+}
+
+.id-image {
+  display: block;
+  width: $id-card-width;
+  max-width: 100%;
+  min-height: $id-card-height;
+
+  object-fit: stretch;
+}
+
+.id-name {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background: linear-gradient(#FFFFFF00 0%, #{vars.$page-bg}BB 20%, #{vars.$page-bg});
+
+  p {
+    width: 85%;
+    min-width: 150px;
+    padding: vars.pxToRem(8px);
+
+    color: vars.$text-yellow;
+    font-size: vars.pxToRem(20px);
+    font-weight: bold;
+    text-align: right;
+  }
+}

@@ -4,6 +4,7 @@ import styles from './Modal.module.scss'
 
 // Ensure only one modal open at a time;
 let modalIsOpen = false;
+const MODAL_ID = "THE-MODAL";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -11,8 +12,6 @@ interface ModalProps {
 }
 
 export default function Modal({children, closeModal} : ModalProps) {
-  if (modalIsOpen) return null;
-
   useEffect(() => {
     modalOpen();
     return () => modalClosed();
@@ -25,7 +24,7 @@ export default function Modal({children, closeModal} : ModalProps) {
   return (
     <>
       { createPortal(
-          <div className={styles.overlay} onClick={closeModal ? closeModal : () => {}}>
+          <div id={MODAL_ID} className={styles.overlay} onClick={closeModal ? closeModal : () => {}}>
             <div className={styles.container} onClick={preventBubbleUp}>
               {children}
             </div>

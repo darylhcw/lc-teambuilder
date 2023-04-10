@@ -29,7 +29,7 @@ $item-border: 2px solid vars.$board-light;
   position: absolute;
   top: 2px;
   left: 2px;
-  height: clamp(30px, 2.5vw,60px);
+  height: clamp(30px, 2.5vw, 60px);
 }
 
 .sinner-img {
@@ -41,6 +41,10 @@ $item-border: 2px solid vars.$board-light;
   object-fit: cover;
 
   border-bottom: $item-border;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .checkbox {
@@ -51,7 +55,7 @@ $item-border: 2px solid vars.$board-light;
   width: 15%;
   aspect-ratio: 1;
 
-  font-size: vars.pxToRem(55px);
+  font-size: clamp(vars.pxToRem(50px), 4vw, vars.pxToRem(80px));
   line-height: 0px; // Needed so aspect-ratio works.
 
   border: 2px solid vars.$board-light;

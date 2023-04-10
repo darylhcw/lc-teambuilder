@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react';
+import IdentitySelection from '@/components/IdentitySelection';
 import SkillHexagon from '@/components/SkillHexagon';
 import EgoComponent from '@/components/EgoComponent';
 import { IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
@@ -26,40 +27,49 @@ export default function SinnerCard(
   const [identity, setIdentity] = useState(getDefaultId(idData));
   const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
 
+  const [showIdModal, setShowIdModal] = useState(false);
+
   function sinnerSelected() {
     const select = !isSelected;
     setIsSelected(!isSelected);
     setSinnerActive(identity.sinner, select);
   }
 
+  function sinnerProfile() {
+    return (
+      <>
+        <img className={styles["sinner-rarity"]}
+             src={getRarityAsset(identity.rarity)}
+             alt={`${identity.rarity}-star rarity`}
+        />
+        <input className={styles.checkbox}
+               type="checkbox"
+               checked={isSelected}
+               onChange={sinnerSelected}/>
+        <img className={styles["sinner-img"]}
+             src={getSinnerIdSrcImg(identity)}
+             alt={identity.name}
+             onClick={() => setShowIdModal(!showIdModal)}
+        />
+      </>
+    )
+  }
+
   return (
     <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
-        {/* <div className={styles["id-data-container"]}> */}
-          { sinnerProfile(identity, isSelected, sinnerSelected) }
-          { skillRow(identity) }
-          <PassiveRow active={identity.active} passive={identity.passive}/>
-          <EgoComponent sinner={identity.sinner} egoData={egoData}/>
-        {/* </div> */}
-    </div>
-  )
-}
+        {/* Modals -- layout independent of rest of content. */}
+        { showIdModal
+          ? <IdentitySelection identity={identity} idData={idData}
+                               setIdentity={setIdentity}
+                               setModalOpen={setShowIdModal}/>
+          : null
+        }
 
-function sinnerProfile(identity: IdentityData, isSelected: boolean, sinnerSelected: () => void) {
-  return (
-    <>
-      <img className={styles["sinner-rarity"]}
-           src={getRarityAsset(identity.rarity)}
-           alt={`${identity.rarity}-star rarity`}
-      />
-      <input className={styles.checkbox}
-             type="checkbox"
-             checked={isSelected}
-             onChange={sinnerSelected}/>
-      <img className={styles["sinner-img"]}
-           src={getSinnerIdSrcImg(identity)}
-           alt={identity.name}
-      />
-    </>
+        { sinnerProfile() }
+        { skillRow(identity) }
+        <PassiveRow active={identity.active} passive={identity.passive}/>
+        <EgoComponent sinner={identity.sinner} egoData={egoData}/>
+    </div>
   )
 }
 
