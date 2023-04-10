@@ -24,6 +24,7 @@ export interface IdentityData {
   active: Passive;
   passive: Passive;
   skills: Skill[];
+  filename?: string;
 }
 
 export interface EgoData {

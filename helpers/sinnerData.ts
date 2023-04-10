@@ -32,6 +32,12 @@ function getSinnerEgoSrcImg(ego: EgoData) {
 
 function getSinnerIdSrcImg(id: IdentityData) {
   const sinner = sinnerNumberToName(id.sinner);
+
+  // Special case for some egos with chars unusable in filenames.
+  if (id.filename) {
+    return `/sinners/${sinner}/identities/${id.filename}.webp`;
+  }
+
   const idName = id.name.toLocaleLowerCase();
   return `/sinners/${sinner}/identities/${idName}.webp`;
 }
