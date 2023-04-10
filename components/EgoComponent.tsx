@@ -36,7 +36,7 @@ export default function EgoComponent({sinner, egoData} : EgoComponentProps) {
              style={ ego ? {color: getSinCSSColor(ego.affinity)} : {} }>
           { ego?.name }
         </div>
-          { ego ? <img src={getSinnerEgoSrcImg(ego)} className={styles["ego-img"]}/> : null }
+          { ego && <img src={getSinnerEgoSrcImg(ego)} className={styles["ego-img"]}/>}
       </div>
     )
   }

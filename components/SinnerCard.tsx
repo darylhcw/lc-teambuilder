@@ -59,10 +59,9 @@ export default function SinnerCard(
     <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
         {/* Modals -- layout independent of rest of content. */}
         { showIdModal
-          ? <IdentitySelection identity={identity} idData={idData}
+           && <IdentitySelection identity={identity} idData={idData}
                                setIdentity={setIdentity}
                                setModalOpen={setShowIdModal}/>
-          : null
         }
 
         { sinnerProfile() }
@@ -78,7 +77,7 @@ function skillRow(identity: IdentityData) {
   return (
     <div className={styles["skill-row"]}>
       { identity.skills.map((skill, index) =>
-          index < 3 ? sinHexCombo(skill, index) : null
+          index < 3 && sinHexCombo(skill, index)
       )}
     </div>
   )
@@ -92,16 +91,14 @@ function sinHexCombo(skill: Skill, index: number) {
              src={getSinTypeAsset(skill.affinity)}
              alt={skill.affinity}/>
         { index <= 1
-          ? <img className={`${styles["skill-affinity-icon"]} ${styles["stack-1"]}`}
-                 src={getSinTypeAsset(skill.affinity)}
-                 alt={skill.affinity}/>
-          : null
+            && <img className={`${styles["skill-affinity-icon"]} ${styles["stack-1"]}`}
+                    src={getSinTypeAsset(skill.affinity)}
+                    alt={skill.affinity}/>
         }
         { index === 0
-          ? <img className={`${styles["skill-affinity-icon"]} ${styles["stack-2"]}`}
-                 src={getSinTypeAsset(skill.affinity)}
-                 alt={skill.affinity}/>
-          : null
+            && <img className={`${styles["skill-affinity-icon"]} ${styles["stack-2"]}`}
+                    src={getSinTypeAsset(skill.affinity)}
+                    alt={skill.affinity}/>
         }
         <div className={styles.hex}>
           <SkillHexagon affinity={skill.affinity} type={skill.type}/>
