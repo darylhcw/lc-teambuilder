@@ -87,7 +87,7 @@ function teamReducer(team: TeamMember[], action: TeamEditAction) {
     }
     case "update-id": {
       return team.map((member) => {
-        return member.sinner === action.identity.sinner ? {...member, identity: action.identity }: member;
+        return member.sinner === action.identity.sinner ? {...member, id: action.identity }: member;
       })
     }
     case "update-ego": {
