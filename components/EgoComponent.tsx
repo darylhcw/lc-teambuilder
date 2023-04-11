@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
+import EgoSelection from '@/components/EgoSelection';
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
 import { SinnerNumber, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
@@ -16,6 +17,8 @@ export default function EgoComponent({sinner, egoData} : EgoComponentProps) {
 
   const dispatch = useContext(TeamDispatchContext);
   const [egoSelected] = EgoDispatchFunctions(dispatch);
+
+  const [showEgoModal, setShowEgoModal] = useState(false);
 
 
   function getEgo(rarity: EgoRarity) {
@@ -36,14 +39,24 @@ export default function EgoComponent({sinner, egoData} : EgoComponentProps) {
              style={ ego ? {color: getSinCSSColor(ego.affinity)} : {} }>
           { ego?.name }
         </div>
-          { ego && <img src={getSinnerEgoSrcImg(ego)} className={styles["ego-img"]}/>}
+          { ego &&
+              <img src={getSinnerEgoSrcImg(ego)}
+                   alt={ego.name}/>
+          }
       </div>
     )
   }
 
   return (
-    <div className={styles.container}>
-      { EGO_RARITIES.map((item) => egoRow(item)) }
-    </div>
+    <>
+      {/* Modals -- layout independent of rest of content. */}
+      { showEgoModal && <EgoSelection egoData={egoData}
+                                      setModalOpen={setShowEgoModal}/>
+      }
+      <div className={styles.container}
+           onClick={() => setShowEgoModal(!showEgoModal)}>
+        { EGO_RARITIES.map((item) => egoRow(item)) }
+      </div>
+    </>
   )
 }

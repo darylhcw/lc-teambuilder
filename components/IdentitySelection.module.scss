@@ -1,10 +1,11 @@
 @use 'vars';
 
 $id-card-width: vars.$sinner-card-width;
-$id-card-height: 1.5*$id-card-width + 8px;
-
 $id-card-width-mobile: vars.$sinner-card-width*2/3;
+$id-card-height: 1.5*$id-card-width + 8px;
 $id-card-height-mobile: 1.5*$id-card-width-mobile + 4px;
+
+$id-costs-displacement: vars.pxToRem(30px);
 
 $id-card-border: 2px solid vars.$board-light;
 
@@ -13,6 +14,10 @@ $id-card-border: 2px solid vars.$board-light;
 .board {
   height: 100%;
   width: 100%;
+  padding: 1.5rem 1rem;
+  @media(max-width: vars.$mobile-screen) {
+    padding: 1rem 0.5rem;
+  }
 
   display: flex;
   align-items: center;
@@ -22,32 +27,31 @@ $id-card-border: 2px solid vars.$board-light;
 }
 
 .container {
-  // Height/Widths are for aesthetically "padding" the scrollbar inside the board
-  height: 96%;
+  max-height: 90vh;  // Need for scroll
   width: 98%;
   @media(max-width: vars.$small-screen) {
-    height: 92%;
     width: 94%;
   }
+  padding-right: $id-costs-displacement + 0.1rem;
 
-  padding: 1rem 0;
-
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax($id-card-width, 1fr));
   gap: 3rem;
 
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
 .id-container {
-  display: flex;
-  align-items: flex-start;
+  position: relative; // ref for absolutely positioned kids.
 }
 
 .id-container-left {
   position: relative;  // ref for absolutely positioned kids.
 
-  border-radius: 20px 0 20px 20px;
+  border-radius: 20px;
   border: $id-card-border;
   overflow: hidden;
 }
@@ -63,11 +67,12 @@ $id-card-border: 2px solid vars.$board-light;
 .id-image {
   display: block;
   width: $id-card-width;
-  max-width: 100%;
   min-height: $id-card-height;
   @media(max-width: vars.$mobile-screen) {
     width: $id-card-width-mobile;
-    min-height: initial;
+    min-height: 0;
+
+    max-width: 100%;
   }
 
   object-fit: stretch;
@@ -101,9 +106,15 @@ $id-card-border: 2px solid vars.$board-light;
 }
 
 .id-container-right {
-  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: 1%;
+  right: - $id-costs-displacement;
+  z-index: 1;
+
+  background: vars.$page-bg;
+
+  border-radius: 20px;
   border: $id-card-border;
-  border-left: none;
 
   div {
     display: flex;

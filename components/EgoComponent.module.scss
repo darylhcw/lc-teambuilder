@@ -51,7 +51,7 @@ $item-border: 1px solid vars.$board-light;
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  @media(max-width: vars.$mobile-screen) {
+  @media(max-width: vars.$small-screen) {
     font-size: vars.pxToRem(16px);
   }
 

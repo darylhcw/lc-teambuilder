@@ -1,0 +1,163 @@
+@use 'vars';
+
+$ego-card-width: vars.$sinner-card-width*1.5;
+$ego-card-width-mobile: vars.$sinner-card-width;
+$ego-card-height: $ego-card-width;
+$ego-card-height-mobile: $ego-card-width-mobile;
+
+$ego-card-border: 2px solid vars.$board-light;
+
+// The purpose of the separate board is just for the scrollbar
+// - So it is inside the rounded corners.
+.board {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  @media(max-width: vars.$mobile-screen) {
+    padding: 1rem 0.5rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.container {
+  max-height: 90vh;  // Need for scroll
+  width: 98%;
+  @media(max-width: vars.$small-screen) {
+    width: 94%;
+  }
+  padding-right: 0.5rem;
+
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax($ego-card-width, 1fr));
+  gap: 3rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.ego-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ego-container-main {
+  position: relative;  // ref for absolutely positioned kids.
+}
+
+.ego-image-container {
+  width: $ego-card-width;
+  min-height: $ego-card-height;
+  @media(max-width: vars.$mobile-screen) {
+    width: $ego-card-width-mobile;
+    min-height: $ego-card-height-mobile;
+  }
+
+  background: linear-gradient(
+    #{vars.$page-bg},
+    #FFFFFF00 30%,
+    #{vars.$page-bg}10 70%,
+    #{vars.$page-bg}
+  );
+
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.ego-image {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  mix-blend-mode: overlay;
+}
+
+.ego-rarity {
+  position: absolute;
+  top: 27px;
+  left: 35px;
+  height: 25px;
+  z-index: 1;
+
+  transform: rotate(-20deg);
+}
+
+.ego-affinity {
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  height: 35px;
+  width: 35px;
+  z-index: 1;
+
+  transform: rotate(-20deg);
+}
+
+.ego-name {
+  position: absolute;
+  bottom: 5%;;
+  width: 100%;
+  max-width: $ego-card-width;
+
+  color: vars.$text-yellow;
+  font-weight: bold;
+  font-size: vars.pxToRem(20px);
+  line-height: vars.pxToRem(30px);
+  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  z-index: 1;
+}
+
+.ego-costs {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  @media(max-width: vars.$mobile-screen) {
+    // right: 20px;
+  }
+  max-height: $ego-card-height;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #{vars.$page-bg}CC;
+
+  border-radius: 20px;
+  border: $ego-card-border;
+
+  transform: rotate(5deg);
+}
+
+.cost-and-text {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+
+  min-height: 0; // allow shirnking
+  width: 100%;
+  padding: 0.3rem;
+
+  img {
+    width: 38px;
+    @media(max-width: vars.$mobile-screen) {
+      width: 28px;
+    }
+  }
+
+  p {
+    font-size: vars.pxToRem(18px);
+    font-weight: bold;
+    @media(max-width: vars.$mobile-screen) {
+      font-size: vars.pxToRem(14px);
+    }
+  }
+}
