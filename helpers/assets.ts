@@ -58,10 +58,24 @@ function getEgoRarityAsset(egoRarity: EgoRarity, bright : boolean=false) {
   return `/assets/${name}.webp`;
 }
 
+function getEgoRarityLabelAsset(egoRarity: EgoRarity, bright : boolean=false) {
+  let name;
+  switch(egoRarity) {
+    case "ZAYIN": name = "zayin"; break;
+    case "TETH": name = "teth"; break;
+    case "HE": name = "he"; break;
+    case "WAW": name = "waw"; break;
+    case "ALEPH": name = "aleph"; break;
+  }
+
+  return `/assets/${name}-label.webp`;
+}
+
+
 
 export {
   getRarityAsset,
-  getEgoRarityAsset,
+  getEgoRarityAsset, getEgoRarityLabelAsset,
   getSkillTypeAsset,
   getSinTypeHexAsset,
   getSinTypeAsset,
