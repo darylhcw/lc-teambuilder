@@ -20,7 +20,7 @@ $id-card-height: 1.5*$id-card-width + 8px;
   // Height/Widths are for aesthetically "padding" the scrollbar inside the board
   height: 96%;
   width: 98%;
-  @media(max-width: vars.$mobile-screen) {
+  @media(max-width: vars.$small-screen) {
     height: 92%;
     width: 94%;
   }

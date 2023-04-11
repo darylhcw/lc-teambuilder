@@ -8,7 +8,7 @@ $sinner-card-gap: 8px;
   @media (min-width: (vars.$large-screen + 1px)) {
     margin: 0 auto;
   }
-  @media (max-width: vars.$mobile-screen) {
+  @media (max-width: vars.$small-screen) {
     margin: 0 12px;
   }
 }

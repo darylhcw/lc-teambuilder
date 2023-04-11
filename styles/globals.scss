@@ -86,7 +86,7 @@ $scrollbar-w-mobile: 3px;
     background: vars.$grey;
   }
 
-  @media (max-width: vars.$mobile-screen) {
+  @media (max-width: vars.$small-screen) {
     &::-webkit-scrollbar {
       width: $scrollbar-w-mobile;
     }

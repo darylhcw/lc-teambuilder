@@ -24,7 +24,7 @@
   justify-content: center;
 
   margin: 0 vars.pxToRem(80px);
-  @media (max-width: vars.$mobile-screen) {
+  @media (max-width: vars.$small-screen) {
     margin: 0 vars.pxToRem(24px);
   }
 }

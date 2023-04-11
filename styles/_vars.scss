@@ -26,7 +26,8 @@ $sinner-card-width: 200px;
 
 // Breakpoints
 $large-screen: 2560px;
-$mobile-screen: 720px;
+$small-screen: 720px;
+$mobile-screen: 450px;
 
 // Helpers
 @function pxToRem($pxValue) {
