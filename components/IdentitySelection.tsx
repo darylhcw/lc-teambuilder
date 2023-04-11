@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import Modal from '@/components/Modal';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData';
-import { getRarityAsset } from '@/helpers/assets'
+import { getRarityAsset, getSinTypeAsset } from '@/helpers/assets'
 import { IdentityData } from '@/types/data';
 import styles from './IdentitySelection.module.scss';
 
@@ -28,17 +28,28 @@ export default function IdentitySelection({identity, idData, setIdentity, setMod
 
   function idCard(identity: IdentityData) {
     return (
-      <div key={identity.name} className={styles["id-container"]}
-           onClick={() => idUpdate(identity)}>
-        <img className={styles["id-rarity"]}
-             src={getRarityAsset(identity.rarity)}
-             alt={String(identity.rarity)}/>
-        <div className={styles["id-name"]}>
-          <p>{identity.name}</p>
+      <div key={identity.name} className={styles["id-container"]}>
+        <div className={styles["id-container-left"]}
+            onClick={() => idUpdate(identity)}>
+          <img className={styles["id-rarity"]}
+              src={getRarityAsset(identity.rarity)}
+              alt={String(identity.rarity)}/>
+          <div className={styles["id-name"]}>
+            <p>{identity.name}</p>
+          </div>
+          <img className={styles["id-image"]}
+              src={getSinnerIdSrcImg(identity)}
+              alt={`picture of ${identity.name}`}/>
         </div>
-        <img className={styles["id-image"]}
-             src={getSinnerIdSrcImg(identity)}
-             alt={`picture of ${identity.name}`}/>
+        <div className={styles["id-container-right"]}>
+          { identity.skills.map((skill, index) =>
+              index < 3 &&
+                <div key={index}>
+                  <img src={getSinTypeAsset(skill.affinity)} alt={skill.affinity}/>
+                  <p>{`x${3-index}`}</p>
+                </div>
+          )}
+        </div>
       </div>
     )
   }

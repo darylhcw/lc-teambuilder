@@ -3,6 +3,11 @@
 $id-card-width: vars.$sinner-card-width;
 $id-card-height: 1.5*$id-card-width + 8px;
 
+$id-card-width-mobile: vars.$sinner-card-width*2/3;
+$id-card-height-mobile: 1.5*$id-card-width-mobile + 4px;
+
+$id-card-border: 2px solid vars.$board-light;
+
 // The purpose of the separate board is just for the scrollbar
 // - So it is inside the rounded corners.
 .board {
@@ -29,16 +34,21 @@ $id-card-height: 1.5*$id-card-width + 8px;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 
   overflow-y: auto;
 }
 
 .id-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.id-container-left {
   position: relative;  // ref for absolutely positioned kids.
 
-  border-radius: 20px;
-  border: 2px solid vars.$board-light;
+  border-radius: 20px 0 20px 20px;
+  border: $id-card-border;
   overflow: hidden;
 }
 
@@ -46,7 +56,7 @@ $id-card-height: 1.5*$id-card-width + 8px;
   position: absolute;
   top: 4px;
   left: 4px;
-  height: clamp(30px, 2.5vw, 60px);
+  height: clamp(30px, 2vw, 45px);
   z-index: 1;
 }
 
@@ -55,6 +65,10 @@ $id-card-height: 1.5*$id-card-width + 8px;
   width: $id-card-width;
   max-width: 100%;
   min-height: $id-card-height;
+  @media(max-width: vars.$mobile-screen) {
+    width: $id-card-width-mobile;
+    min-height: initial;
+  }
 
   object-fit: stretch;
 }
@@ -79,5 +93,39 @@ $id-card-height: 1.5*$id-card-width + 8px;
     font-size: vars.pxToRem(20px);
     font-weight: bold;
     text-align: right;
+
+    @media(max-width: vars.$mobile-screen) {
+      font-size: vars.pxToRem(16px);
+    }
+  }
+}
+
+.id-container-right {
+  border-radius: 0 20px 20px 0;
+  border: $id-card-border;
+  border-left: none;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+
+  img {
+    width: 38px;
+    @media(max-width: vars.$mobile-screen) {
+      width: 28px;
+    }
+  }
+
+  p {
+    font-size: vars.pxToRem(18px);
+    font-weight: bold;
+    @media(max-width: vars.$mobile-screen) {
+      font-size: vars.pxToRem(14px);
+    }
   }
 }
