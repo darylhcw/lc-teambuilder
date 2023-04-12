@@ -1,11 +1,11 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
-import { useContext, useMemo } from 'react';
-import SinnerCard from '@/components/SinnerCard';
-import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
+import { useContext, memo } from 'react';
+import { TeamContext } from '@/hooks/teamContext';
+import TeamBoard from '@/components/TeamBoard';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { sinnerNumberToName } from '@/helpers/sinnerData';
-import { SINNER_NUMBERS, SinnerNumber, IdentityData, EgoData, TeamMember } from '@/types/data';
+import { IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
 
@@ -20,53 +20,15 @@ interface HomeProps {
   egoData: EgoData[];
 }
 
-
 export default function Index({idData, egoData} : HomeProps) {
-  const team = useContext(TeamContext);
-  const dispatchTeam = useContext(TeamDispatchContext);
-  const [setActive, updateId] = TeamDispatchFunctions(dispatchTeam);
-
-  const sinnerBoard = useMemo(() => {
-    return (
-      <div className={`${styles["sinner-board"]} board`}>
-        { SINNER_NUMBERS.map((num) =>
-          <SinnerCard key={num}
-                      idData={idData.filter(filterIdData(num))}
-                      egoData={egoData.filter(filterEgoData(num))}
-                      setSinnerActive={setActive}
-                      updateSinnerId={updateId}
-          />
-        )}
-      </div>
-    )
-  }, [idData, egoData]);
-
   return (
     <>
       <main className={`${NotoSansKR.className} ${styles.main}`}>
-          { sinnerBoard }
-        <ul>
-          { team.filter((member) => member.active)
-                .map((member, index) =>
-                  (
-                    <div key={index}>
-                      <li>{member.id.name} {sinnerNumberToName(member.sinner, true)}</li>
-                      { member.egos.map((ego) => <p key={ego.name}>{ego.name}</p>) }
-                    </div>
-                  )
-          )}
-        </ul>
+          <TeamBoard idData={idData} egoData={egoData}/>
+          <TeamList/>
       </main>
     </>
   )
-}
-
-function filterIdData(sinner: SinnerNumber) {
-  return (data: IdentityData) => data.sinner == sinner;
-}
-
-function filterEgoData(sinner: SinnerNumber) {
-  return (data: EgoData) => data.sinner == sinner;
 }
 
 
@@ -82,4 +44,23 @@ export async function getStaticProps(context: GetStaticPropsContext) {
       egoData: egos,
     }
   }
+}
+
+
+function TeamList()  {
+  const team = useContext(TeamContext);
+
+  return (
+    <ul>
+      { team.filter((member) => member.active)
+            .map((member, index) =>
+              (
+                <div key={index}>
+                  <li>{member.id.name} {sinnerNumberToName(member.sinner, true)}</li>
+                  { member.egos.map((ego) => <p key={ego.name}>{ego.name}</p>) }
+                </div>
+              )
+      )}
+    </ul>
+  )
 }

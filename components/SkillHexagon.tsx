@@ -1,6 +1,6 @@
 import { Sin, AttackType, DefenseType } from '@/types/data';
 import { getSkillTypeAsset, getSinTypeHexAsset } from '@/helpers/assets';
-import styles from './skillHexagon.module.scss';
+import styles from './SkillHexagon.module.scss';
 
 interface SkillHexagonProps {
   affinity: Sin;
