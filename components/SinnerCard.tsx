@@ -2,38 +2,32 @@ import { useState, useContext } from 'react';
 import IdentitySelection from '@/components/IdentitySelection';
 import SkillHexagon from '@/components/SkillHexagon';
 import EgoComponent from '@/components/EgoComponent';
-import { IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
-import { TeamResourcesContext } from '@/hooks/teamContext';
+import { TeamDispatchContext, TeamResourcesContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
+import { TeamMember, IdentityData, EgoData, Skill, Passive, Sin } from '@/types/data';
 import styles from './SinnerCard.module.scss';
 
-interface SinnerCardProps {
+export interface SinnerCardProps {
+  member: TeamMember;
   idData: IdentityData[];
   egoData: EgoData[];
-  setSinnerActive: (sinner: SinnerNumber, active: boolean) => void,
-  updateSinnerId: (identity: IdentityData) => void,
 }
 
 export default function SinnerCard(
  {
+  member,
   idData,
   egoData,
-  setSinnerActive,
-  updateSinnerId,
  }: SinnerCardProps
 ) {
   // Check first card just to let users know it's checkable.
-  const [identity, setIdentity] = useState(getDefaultId(idData));
-  const [isSelected, setIsSelected] = useState(identity.sinner === 1 ? true : false);
+  const identity = member.id;
+
+  const teamDispatch = useContext(TeamDispatchContext);
+  const [setActive, _] = TeamDispatchFunctions(teamDispatch);
 
   const [showIdModal, setShowIdModal] = useState(false);
-
-  function sinnerSelected() {
-    const select = !isSelected;
-    setIsSelected(!isSelected);
-    setSinnerActive(identity.sinner, select);
-  }
 
   function sinnerProfile() {
     return (
@@ -44,8 +38,8 @@ export default function SinnerCard(
         />
         <input className={styles.checkbox}
                type="checkbox"
-               checked={isSelected}
-               onChange={sinnerSelected}/>
+               checked={member.active}
+               onChange={() => setActive(identity.sinner, !member.active)}/>
         <img className={styles["sinner-img"]}
              src={getSinnerIdSrcImg(identity)}
              alt={identity.name}
@@ -56,18 +50,17 @@ export default function SinnerCard(
   }
 
   return (
-    <div className={`${styles.container} ${isSelected ? styles.selected : ""}`}>
+    <div className={`${styles.container} ${member.active ? styles.selected : ""}`}>
         {/* Modals -- layout independent of rest of content. */}
         { showIdModal
            && <IdentitySelection identity={identity} idData={idData}
-                               setIdentity={setIdentity}
-                               setModalOpen={setShowIdModal}/>
+                                 setModalOpen={setShowIdModal}/>
         }
 
         { sinnerProfile() }
         { skillRow(identity) }
         <PassiveRow active={identity.active} passive={identity.passive}/>
-        <EgoComponent sinner={identity.sinner} egoData={egoData}/>
+        <EgoComponent member={member} egoData={egoData}/>
     </div>
   )
 }
@@ -131,9 +124,4 @@ function PassiveRow({active, passive} : {active: Passive, passive: Passive}) {
       )}
     </div>
   )
-}
-
-function getDefaultId(idData: IdentityData[]) : IdentityData {
-  const lcb = idData.find((id) => id.name.toLowerCase().includes("lcb "));
-  return lcb ? lcb : idData[0];
 }

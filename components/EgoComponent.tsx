@@ -3,27 +3,24 @@ import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/
 import EgoSelection from '@/components/EgoSelection';
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
-import { SinnerNumber, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
+import { TeamMember, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
 import styles from './EgoComponent.module.scss';
 
 interface EgoComponentProps {
-  sinner: SinnerNumber;
+  member: TeamMember;
   egoData : EgoData[];
 }
 
-export default function EgoComponent({sinner, egoData} : EgoComponentProps) {
-  const team = useContext(TeamContext);
-  const memberEgos = team.find((member) => member.sinner === sinner)?.egos;
+export default function EgoComponent({member, egoData} : EgoComponentProps) {
+  const memberEgos = member.egos;
 
   const dispatch = useContext(TeamDispatchContext);
   const [egoSelected] = EgoDispatchFunctions(dispatch);
 
   const [showEgoModal, setShowEgoModal] = useState(false);
 
-
   function getEgo(rarity: EgoRarity) {
-    return egoData.find((ego) => ego.rarity === rarity);
-    // return memberEgos?.find((ego) => ego.rarity === rarity);
+    return memberEgos?.find((ego) => ego.rarity === rarity);
   }
 
   function egoRow(egoRarity: EgoRarity) {

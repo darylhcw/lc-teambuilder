@@ -1,7 +1,5 @@
 @use 'vars';
 
-$sinner-card-gap: 8px;
-
 .main {
   margin: 0 40px;
   max-width: vars.$large-screen;
@@ -11,18 +9,4 @@ $sinner-card-gap: 8px;
   @media (max-width: vars.$small-screen) {
     margin: 0 12px;
   }
-}
-
-.sinner-board {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit,
-      minmax(
-        max(vars.$sinner-card-width, (100% - 5*$sinner-card-gap)/6),
-        1fr
-      )
-    );
-  grid-gap: $sinner-card-gap;
-
-  padding: 10px;
 }

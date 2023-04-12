@@ -10,27 +10,21 @@ import styles from './IdentitySelection.module.scss';
 interface IdSelectionProps {
   identity: IdentityData;
   idData : IdentityData[];
-  setIdentity: (identity: IdentityData) => void;
   setModalOpen: (open : boolean) => void;
 }
 
 // Use setIdentity instead of just SinnerCard consuming context is just to prevent rerendering all 12 cards.
 // More of an exercise -- it's actually super fast either way.
-export default function IdentitySelection({identity, idData, setIdentity, setModalOpen} : IdSelectionProps) {
+export default function IdentitySelection({identity, idData, setModalOpen} : IdSelectionProps) {
   const team = useContext(TeamContext);
   const teamDispatch = useContext(TeamDispatchContext);
   const [_, updateId] = TeamDispatchFunctions(teamDispatch);
-
-  function idUpdate(identity: IdentityData) {
-    setIdentity(identity);
-    updateId(identity);
-  }
 
   function idCard(identity: IdentityData) {
     return (
       <div key={identity.name} className={styles["id-container"]}>
         <div className={styles["id-container-left"]}
-            onClick={() => idUpdate(identity)}>
+            onClick={() => updateId(identity)}>
           <img className={styles["id-rarity"]}
               src={getRarityAsset(identity.rarity)}
               alt={String(identity.rarity)}/>

@@ -1,0 +1,17 @@
+@use 'vars';
+
+$sinner-card-gap: 8px;
+
+.sinner-board {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit,
+      minmax(
+        max(vars.$sinner-card-width, (100% - 5*$sinner-card-gap)/6),
+        1fr
+      )
+    );
+  grid-gap: $sinner-card-gap;
+
+  padding: 10px;
+}
