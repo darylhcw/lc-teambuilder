@@ -42,9 +42,23 @@ function getSinnerIdSrcImg(id: IdentityData) {
   return `/sinners/${sinner}/identities/${idName}.webp`;
 }
 
+function identityEquals(a?: IdentityData, b?: IdentityData) {
+  if (!a || !b) return false;
+
+  // TODO: Use ids instead of name compares
+  return a.name === b.name;
+}
+
+function egoEquals(a?: EgoData, b?: EgoData) {
+  if (!a || !b) return false;
+
+  // TODO: Use ids instead of name compares
+  return a.name === b.name;
+}
+
 
 export {
   sinnerNumberToName,
-  getSinnerEgoSrcImg,
-  getSinnerIdSrcImg,
+  getSinnerEgoSrcImg, getSinnerIdSrcImg,
+  identityEquals, egoEquals,
 }
