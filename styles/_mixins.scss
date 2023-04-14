@@ -38,3 +38,23 @@
 
   }
 }
+
+@mixin gray-filter {
+  filter: grayscale(0.8);
+
+  // Grayscale is what we actually want.
+  // Overlay is for old brows.
+  @supports not (filter: grayscale(1)) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      opacity: 0.66;
+      background: vars.$grey;
+    }
+  }
+}

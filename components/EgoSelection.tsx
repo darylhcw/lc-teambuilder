@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
 import Modal from '@/components/Modal';
-import { getSinnerEgoSrcImg } from '@/helpers/sinnerData';
+import Button from '@/components/Button';
+import { getSinnerEgoSrcImg, egoEquals } from '@/helpers/sinnerData';
 import { getEgoRarityLabelAsset, getSinTypeAsset } from '@/helpers/assets'
 import { EgoData } from '@/types/data';
 import styles from './EgoSelection.module.scss';
@@ -17,11 +18,27 @@ export default function IdentitySelection({egoData, setModalOpen} : EgoSelection
   const teamDispatch = useContext(TeamDispatchContext);
   const [egoSelected] = EgoDispatchFunctions(teamDispatch);
 
+  const sinner = egoData[0]?.sinner;
+  const activeEgos = team.find((member) => member.sinner === sinner)?.egos;
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>, ego: EgoData) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      egoSelected(ego);
+    }
+  }
+
   function egoCard(ego: EgoData) {
+    const active = activeEgos?.find((activeEgo) => egoEquals(activeEgo, ego)) !== undefined;
+
     return (
       <div key={ego.name} className={styles["ego-container"]}>
-        <div key={ego.name} className={styles["ego-container-main"]}
-            onClick={() => egoSelected(ego)}>
+        <div key={ego.name}
+             className={`${styles["ego-container-main"]} ${active ? styles.active : ""}`}
+             onClick={() => egoSelected(ego)}
+             onKeyDown={ (e) => handleKeyDown(e, ego)}
+             tabIndex={0}
+             onMouseDown={e => e.preventDefault()}>
           <img className={styles["ego-rarity"]}
               src={getEgoRarityLabelAsset(ego.rarity)}
               alt={String(ego.rarity)}/>
@@ -41,7 +58,7 @@ export default function IdentitySelection({egoData, setModalOpen} : EgoSelection
                 <p>{`x${cost.cost}`}</p>
               </div>
           )}
-        </div>
+          </div>
         </div>
       </div>
     )
@@ -50,9 +67,15 @@ export default function IdentitySelection({egoData, setModalOpen} : EgoSelection
   return (
     <Modal closeModal={() => setModalOpen(false)}>
       <div className={`${styles.board} board-dark`}>
+        <Button onClick={() => setModalOpen(false)}>
+          X
+        </Button>
         <div className={`${styles.container} sleek-scrollbar`}>
           { egoData.map((ego) => egoCard(ego))}
         </div>
+        <Button onClick={() => setModalOpen(false)}>
+          Done
+        </Button>
       </div>
     </Modal>
   )

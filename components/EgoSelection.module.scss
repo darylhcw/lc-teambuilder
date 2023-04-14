@@ -1,27 +1,46 @@
 @use 'vars';
+@use 'mixins';
 
 $ego-card-width: vars.$sinner-card-width*1.5;
 $ego-card-width-mobile: vars.$sinner-card-width;
 $ego-card-height: $ego-card-width;
 $ego-card-height-mobile: $ego-card-width-mobile;
 
+// Secret to allow scale transform without messing things up.
+// 6px to allow for 2deg rotation for mad style.
+$ego-card-transform-factor: 1.1;
+$ego-card-margin: $ego-card-height*($ego-card-transform-factor - 1)/2 + 6px;
+
 $ego-card-border: 2px solid vars.$board-light;
+
+$button-h: vars.$button-h;
+$button-margin: 1rem;
 
 // The purpose of the separate board is just for the scrollbar
 // - So it is inside the rounded corners.
 .board {
   height: 100%;
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   @media(max-width: vars.$mobile-screen) {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
   }
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: $button-margin;
 
   overflow: hidden;
+
+  button {
+    &:first-of-type {
+      align-self: flex-end;
+    }
+    &:last-of-type {
+      align-self: flex-start;
+    }
+  }
 }
 
 .container {
@@ -43,12 +62,57 @@ $ego-card-border: 2px solid vars.$board-light;
 }
 
 .ego-container {
+  margin: $ego-card-margin 0;
   display: flex;
   align-items: flex-start;
 }
 
 .ego-container-main {
+  isolation: isolate;
   position: relative;  // ref for absolutely positioned kids.
+
+  &:not(.active) {
+    .ego-image-container, .ego-rarity, .ego-name, .ego-affinity, .ego-costs {
+      @include mixins.gray-filter;
+    }
+  }
+
+  &:hover, &:focus {
+    cursor: pointer;
+    outline: none;
+    transform: scale($ego-card-transform-factor) rotate(-2deg);
+
+    .ego-image-container {
+      @include mixins.highlight-effect;
+      border-radius: 50%;
+      &:after {
+        border-radius: 50%;
+      }
+    }
+
+    .ego-name, .ego-rarity, .ego-affinity {
+      filter: none;
+    }
+
+    .ego-costs {
+      border-color: vars.$orange-highlight;
+    }
+  }
+
+  @media (max-width: vars.$mobile-screen) {
+    margin: 0;
+    &:hover, &:focus {
+      transform: none;
+    }
+  }
+}
+.active {
+  .ego-container-main {
+    filter: none;
+    &::after {
+      opacity: 0;
+    }
+  }
 }
 
 .ego-image-container {
@@ -121,9 +185,6 @@ $ego-card-border: 2px solid vars.$board-light;
   position: absolute;
   top: 20px;
   right: 0px;
-  @media(max-width: vars.$mobile-screen) {
-    // right: 20px;
-  }
   max-height: $ego-card-height;
 
   display: flex;

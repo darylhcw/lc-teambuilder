@@ -21,7 +21,6 @@ export default function SinnerCard(
   egoData,
  }: SinnerCardProps
 ) {
-  // Check first card just to let users know it's checkable.
   const identity = member.id;
 
   const teamDispatch = useContext(TeamDispatchContext);
@@ -53,7 +52,7 @@ export default function SinnerCard(
     <div className={`${styles.container} ${member.active ? styles.selected : ""}`}>
         {/* Modals -- layout independent of rest of content. */}
         { showIdModal
-           && <IdentitySelection identity={identity} idData={idData}
+           && <IdentitySelection idData={idData}
                                  setModalOpen={setShowIdModal}/>
         }
 
