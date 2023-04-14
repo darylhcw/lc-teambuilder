@@ -1,0 +1,40 @@
+@use 'vars';
+
+// Mixins
+// - Prefer mixin instead of something in globals if there a tendency
+//   to override something from the mixin a little bit or
+//   add a little extra (easier to read in the css file).
+@mixin hover-focus-highlight {
+  &:hover, &:focus {
+    cursor: pointer;
+    outline: none;
+
+    @include highlight-effect;
+  }
+}
+
+@mixin highlight-effect {
+  color: vars.$orange-highlight;
+  border: 2px solid vars.$orange-highlight;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: vars.$orange-highlight;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+
+    // Prefer mix-blend-mode otherwise you get "pointy corners"
+    // if element has border-radius.
+    @supports not (mix-blend-mode: overlay) {
+      opacity: 0.15;
+      background: vars.$orange-highlight;
+    }
+
+  }
+}
