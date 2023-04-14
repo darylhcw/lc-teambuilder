@@ -1,0 +1,30 @@
+@use 'vars';
+@use 'mixins';
+
+
+.button {
+  @include mixins.hover-focus-highlight;
+
+  position: relative; // for overlay.
+
+  height: vars.$button-h;
+  padding: 0.3rem 1rem;
+
+  color: vars.$text-brown;
+  font-size: vars.pxToRem(20px);
+  font-weight: bold;
+
+  background: vars.$page-bg;
+  border-radius: 15px;
+  border: 2px solid vars.$board-light;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @media (max-width: vars.$mobile-screen) {
+    height: vars.$button-h-mobile;
+    padding: 0.3rem 0.7rem;
+    font-size: vars.pxToRem(16px);
+  }
+}
