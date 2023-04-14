@@ -6,6 +6,7 @@ type TeamEditAction =
   | {type: "set-active", sinner: SinnerNumber, active: boolean}
   | {type: "update-id", identity: IdentityData}
   | {type: "update-ego", ego: EgoData}
+  | {type: "set-egos", egos: EgoData[]}
 
 const TeamContext = createContext<TeamMember[]>([]);
 const TeamResourcesContext = createContext<Map<Sin, number>>(new Map());
@@ -67,15 +68,25 @@ function TeamDispatchFunctions(dispatchTeam : React.Dispatch<TeamEditAction>)
   return [setActive, updateId];
 }
 
-function EgoDispatchFunctions(dispatchTeam: React.Dispatch<TeamEditAction>) {
+function EgoDispatchFunctions(dispatchTeam: React.Dispatch<TeamEditAction>)
+ : [
+    (ego: EgoData) => void,
+    (egos: EgoData[]) => void
+   ]
+{
   const egoSelected = (ego: EgoData) => {
     dispatchTeam({
       type: 'update-ego',
       ego: ego,
     });
   }
-
-  return [egoSelected]
+  const setEgos = (egos: EgoData[]) => {
+    dispatchTeam({
+      type: 'set-egos',
+      egos: egos,
+    });
+  }
+  return [egoSelected, setEgos]
 }
 
 function teamReducer(team: TeamMember[], action: TeamEditAction) {
@@ -106,6 +117,21 @@ function teamReducer(team: TeamMember[], action: TeamEditAction) {
 
       return team.map((member) => {
         return member.sinner === action.ego.sinner ? {...member, egos:newEgos }: member;
+      })
+    }
+    case "set-egos": {
+      const first = action.egos[0];
+      if (!first) return team;
+
+      const sinner = first.sinner;
+      const updatedMember = team.find((member) => member.sinner === sinner);
+      if (!updatedMember) {
+        console.error("Missing member for ego update!", sinner);
+        return team;
+      }
+
+      return team.map((member) => {
+        return member.sinner === first.sinner ? {...member, egos:action.egos }: member;
       })
     }
   }
