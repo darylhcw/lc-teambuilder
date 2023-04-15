@@ -27,7 +27,7 @@ $item-border: 2px solid vars.$board-light;
 }
 .not-selected {
   &:not(:hover, :focus, :active) {
-    .skill-row, .sinner-img-container {
+    .sinner-rarity, skill-row, .sinner-img-container {
       @include mixins.gray-filter;
     }
   }

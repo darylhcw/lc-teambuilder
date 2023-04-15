@@ -9,17 +9,6 @@ import styles from './TeamBoard.module.scss';
 // Important. Make sure the BOARD does NOT consume team context.
 // The individual components should unless we wanna enter the rerender blender zone.
 export default function TeamBoard({idData, egoData} : {idData: IdentityData[], egoData: EgoData[]}) {
-  const teamDispatch = useContext(TeamDispatchContext);
-  const [_, setEgos] = EgoDispatchFunctions(teamDispatch);
-
-  // Set initial egos.
-  useEffect(() => {
-    for (const num of SINNER_NUMBERS) {
-      const firstEgo = egoData.find((ego) => ego.sinner === num);
-      if (firstEgo) setEgos([firstEgo]);
-    }
-  }, [])
-
   const sinnerCards = SINNER_NUMBERS.map((num) => SinnerCardForMember(SinnerCard, num));
 
   return (

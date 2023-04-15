@@ -157,7 +157,7 @@ function initialTeamMembers() : TeamMember[] {
   return members;
 }
 
-// Put here so ts doesn't complete and we don't have to deal with a null.
+// Put here so ts doesn't complain and we don't have to deal with a null.
 function initialDispatch(action: TeamEditAction) {
   console.error(`Tried to call dispatch without TeamReducer setup!! \n
                  Please ensure TeamProvider component is created before creating/doing any dispatch actions!\n

@@ -1,12 +1,20 @@
 @use 'vars';
 
+$board-max-width: 1720px;
+
 .main {
-  margin: 0 40px;
-  max-width: vars.$large-screen;
-  @media (min-width: (vars.$large-screen + 1px)) {
-    margin: 0 auto;
+  margin: 16px 40px;
+  max-width: $board-max-width;
+  @media (min-width: ($board-max-width)) {
+    margin: 16px auto;
   }
   @media (max-width: vars.$small-screen) {
     margin: 0 12px;
   }
+}
+
+.board-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
 }

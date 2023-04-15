@@ -20,11 +20,6 @@ function passiveSufficient(resources: TeamResources, passive?: Passive) {
 function egoSufficient(resources: TeamResources, ego?: EgoData) {
   if (!ego) return false;
 
-  if (ego.name.includes("row")) {
-    console.log(ego.costs);
-    console.log(resources);
-  }
-
   for (const cost of ego.costs) {
     const resource = resources.get(cost.affinity);
     if (!resource) return false;

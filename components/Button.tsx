@@ -15,6 +15,7 @@ export default function Button({
   return (
     <button
       className={styles.button}
+      onMouseDown={e => e.preventDefault()}
       onClick={onClick}
       disabled={disabled}
     >
