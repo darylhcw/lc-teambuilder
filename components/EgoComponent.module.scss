@@ -1,6 +1,6 @@
 @use 'vars';
 
-$ego-row-height: 22px;
+$ego-row-height: 28px;
 $item-border: 1px solid vars.$board-light;
 
 .container {
@@ -45,7 +45,7 @@ $item-border: 1px solid vars.$board-light;
   color: vars.$grey;
   color: vars.$text-brown;
   font-size: vars.pxToRem(18px);
-  line-height: $ego-row-height + 5px;
+  line-height: $ego-row-height;
 
   overflow: hidden;
   text-overflow: ellipsis;
