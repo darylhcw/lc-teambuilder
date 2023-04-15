@@ -1,10 +1,19 @@
 @use 'vars';
+@use 'mixins';
 
 $ego-row-height: 28px;
 $item-border: 1px solid vars.$board-light;
 
 .container {
-  // width: 100%;
+  position: relative;
+  @include mixins.hover-focus-highlight(true);
+
+  &:hover, &:focus {
+    border: none;
+    &::before {
+      border-radius: 0 0 5px 5px;
+    }
+  }
 }
 
 .ego-row {

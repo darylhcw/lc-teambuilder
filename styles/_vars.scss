@@ -31,6 +31,9 @@ $large-screen: 2560px;
 $small-screen: 720px;
 $mobile-screen: 450px;
 
+// Other constants
+$before-highlight-border-z: 2;
+
 // Helpers
 @function pxToRem($pxValue) {
   @return math.div($pxValue, 16px) * 1rem;

@@ -49,7 +49,7 @@ $button-margin: 1rem;
   @media(max-width: vars.$small-screen) {
     width: 94%;
   }
-  padding-right: 0.5rem;
+  padding: 0 $ego-card-margin;
 
   display: grid;
   justify-items: center;
@@ -62,7 +62,7 @@ $button-margin: 1rem;
 }
 
 .ego-container {
-  margin: $ego-card-margin 0;
+  margin: $ego-card-margin;
   display: flex;
   align-items: flex-start;
 }

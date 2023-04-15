@@ -8,7 +8,7 @@ const MODAL_ID = "THE-MODAL";
 
 interface ModalProps {
   children: React.ReactNode;
-  closeModal?: () => void;
+  closeModal: () => void;
 }
 
 export default function Modal({children, closeModal} : ModalProps) {
@@ -21,10 +21,19 @@ export default function Modal({children, closeModal} : ModalProps) {
     e.stopPropagation();
   }
 
+  function handleKeydown(e: React.KeyboardEvent) {
+    if (e.key == 'Escape') {
+      e.preventDefault();
+      closeModal();
+    }
+  }
+
   return (
     <>
       { createPortal(
-          <div id={MODAL_ID} className={styles.overlay} onClick={closeModal ? closeModal : () => {}}>
+          <div id={MODAL_ID} className={styles.overlay}
+               onClick={closeModal}
+               onKeyDown={handleKeydown}>
             <div className={styles.container} onClick={preventBubbleUp}>
               {children}
             </div>
@@ -43,8 +52,9 @@ export default function Modal({children, closeModal} : ModalProps) {
  *   = Extremely basic focus trap for our use case.
  *   = We don't need to worry about accessibility for LC players.
  */
-const FOCUSABLE = "input:not([disabled])";
+const FOCUSABLE = "input:not([disabled]), *[tabindex]";
 let focusRemoved : [Element, string | null][] = [] ;
+let lastFocus : Element | null;
 
 function modalOpen() {
   modalIsOpen = true;
@@ -57,11 +67,18 @@ function modalOpen() {
 
   const focusableElements = main.querySelectorAll(FOCUSABLE);
   focusableElements.forEach(elem => {
+    if (document.activeElement === elem) lastFocus = elem;
+
     const original = elem.getAttribute("tabindex");
     elem.setAttribute("tabindex", "-1");
-
     focusRemoved.push([elem, original])
   });
+
+  const modalElem = document.body.querySelector(`#${MODAL_ID}`);
+  const modalFocusable = modalElem?.querySelector(FOCUSABLE);
+  if (lastFocus) {
+    (modalFocusable as HTMLElement)?.focus()
+  }
 }
 
 function modalClosed() {
@@ -76,6 +93,8 @@ function modalClosed() {
       elem.removeAttribute("tabindex");
     }
   }
+  (lastFocus as HTMLElement)?.focus();
 
   focusRemoved = [];
+  lastFocus = null;
 }

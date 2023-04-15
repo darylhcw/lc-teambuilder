@@ -23,6 +23,13 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
     return memberEgos?.find((ego) => ego.rarity === rarity);
   }
 
+  function handleKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (e.key == 'Enter') {
+      e.preventDefault();
+      setShowEgoModal(!showEgoModal);
+    }
+  }
+
   function egoRow(egoRarity: EgoRarity) {
     const ego = getEgo(egoRarity);
 
@@ -51,7 +58,10 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
                                       setModalOpen={setShowEgoModal}/>
       }
       <div className={styles.container}
-           onClick={() => setShowEgoModal(!showEgoModal)}>
+           tabIndex={0}
+           onKeyDown={handleKeyDown}
+           onClick={() => setShowEgoModal(!showEgoModal)}
+           onMouseDown={e => e.preventDefault()}>
         { EGO_RARITIES.map((item) => egoRow(item)) }
       </div>
     </>

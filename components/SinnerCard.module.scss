@@ -1,4 +1,5 @@
 @use "vars";
+@use "mixins";
 @use "sass:math";
 
 $profile-height: 90px;
@@ -16,10 +17,15 @@ $item-border: 2px solid vars.$board-light;
 
   overflow: hidden;
 }
-
 .selected {
   border: 2px solid vars.$orange-highlight;
 }
+
+.top-container {
+  @include mixins.hover-focus-highlight(true);
+  position: relative;
+}
+
 
 /*********************************************
  * Sinner Profile
@@ -29,7 +35,7 @@ $item-border: 2px solid vars.$board-light;
   position: absolute;
   top: 2px;
   left: 2px;
-  z-index: 1;
+  z-index: vars.$before-highlight-border-z - 1;
   height: clamp(30px, 2.5vw, 60px);
 }
 
@@ -37,7 +43,7 @@ $item-border: 2px solid vars.$board-light;
   position: absolute;
   top: 5px;
   right: 5px;
-  z-index: 1;
+  z-index: vars.$before-highlight-border-z + 1;
 
   width: 15%;
   aspect-ratio: 1;
@@ -52,6 +58,14 @@ $item-border: 2px solid vars.$board-light;
     border: 2px solid vars.$blood-red;
   }
 
+  &:hover, &:focus {
+    outline: none;
+    border: 4px solid vars.$orange-highlight;
+    &::after {
+      content: "✘";
+      color: #{vars.$orange-highlight}80;
+    }
+  }
 }
 
 .sinner-img-container {

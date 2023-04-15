@@ -5,7 +5,7 @@ import EgoComponent from '@/components/EgoComponent';
 import { TeamDispatchContext, TeamResourcesContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
-import { TeamMember, IdentityData, EgoData, Skill, Passive, Sin } from '@/types/data';
+import { TeamMember, IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
 import styles from './SinnerCard.module.scss';
 
 export interface SinnerCardProps {
@@ -28,6 +28,20 @@ export default function SinnerCard(
 
   const [showIdModal, setShowIdModal] = useState(false);
 
+  function handleKeyDownChkBox(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      setActive(identity.sinner, !member.active);
+    }
+  }
+
+  function handleKeyDownTop(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (e.key == 'Enter') {
+      e.preventDefault();
+      setShowIdModal(!showIdModal);
+    }
+  }
+
   function sinnerProfile() {
     return (
       <>
@@ -35,15 +49,10 @@ export default function SinnerCard(
              src={getRarityAsset(identity.rarity)}
              alt={`${identity.rarity}-star rarity`}
         />
-        <input className={styles.checkbox}
-               type="checkbox"
-               checked={member.active}
-               onChange={() => setActive(identity.sinner, !member.active)}/>
         <div className={styles["sinner-img-container"]}>
           <img className={styles["sinner-img"]}
               src={getSinnerIdSrcImg(identity)}
               alt={identity.name}
-              onClick={() => setShowIdModal(!showIdModal)}
           />
           <div className={styles["sinner-name"]}>
             <p>{identity.name}</p>
@@ -56,14 +65,25 @@ export default function SinnerCard(
   return (
     <div className={`${styles.container} ${member.active ? styles.selected : ""}`}>
         {/* Modals -- layout independent of rest of content. */}
-        { showIdModal
+              { showIdModal
            && <IdentitySelection idData={idData}
                                  setModalOpen={setShowIdModal}/>
         }
-
-        { sinnerProfile() }
-        { skillRow(identity) }
-        <PassiveRow active={identity.active} passive={identity.passive}/>
+        <div className={styles["top-container"]}
+             onMouseDown={(e) => e.preventDefault()}
+             onClick={() => setShowIdModal(!showIdModal)}
+             tabIndex={0}
+             onKeyDown={handleKeyDownTop}>
+          { sinnerProfile() }
+          { skillRow(identity) }
+          <PassiveRow active={identity.active} passive={identity.passive}/>
+        </div>
+        <input className={styles.checkbox}
+               type="checkbox"
+               checked={member.active}
+               onMouseDown={(e) => e.preventDefault()}
+               onKeyDown={handleKeyDownChkBox}
+               onChange={() => setActive(identity.sinner, !member.active)}/>
         <EgoComponent member={member} egoData={egoData}/>
     </div>
   )

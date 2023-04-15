@@ -4,12 +4,31 @@
 // - Prefer mixin instead of something in globals if there a tendency
 //   to override something from the mixin a little bit or
 //   add a little extra (easier to read in the css file).
-@mixin hover-focus-highlight {
+@mixin hover-focus-highlight($before-border: false) {
   &:hover, &:focus {
     cursor: pointer;
     outline: none;
 
     @include highlight-effect;
+
+    @if $before-border == true {
+      @include highlight-before-border;
+      border: none;
+    }
+  }
+}
+
+@mixin highlight-before-border {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 4px solid vars.$orange-highlight;
+
+    z-index: vars.$before-highlight-border-z;
   }
 }
 
