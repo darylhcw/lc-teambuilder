@@ -15,23 +15,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <title>Limbus Company Team Builder</title>
         <meta name="description" content="Limbus Company Team Builder" />
+        <link rel="icon" type="image/png" href="/favicon-180x180.png" sizes="180x180" />
+        <link rel="icon" type="image/png" href="/favicon-180x180.png" sizes="180x180" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="/favicon.ico"/>
 
       {/* Worry about this later if doing PWA.
         <link rel="manifest" href="/manifest.json" />
-        <link
-          href="/icons/favicon-16x16.png"
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-        />
-        <link
-          href="/icons/favicon-32x32.png"
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-        />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
-        <meta name="theme-color" content="#317EFB" />
       */}
       </Head>
       <TeamProvider initialState={[]}>
