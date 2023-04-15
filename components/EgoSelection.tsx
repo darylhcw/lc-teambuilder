@@ -70,7 +70,7 @@ export default function IdentitySelection({egoData, setModalOpen} : EgoSelection
         <Button onClick={() => setModalOpen(false)}>
           X
         </Button>
-        <div className={`${styles.container} sleek-scrollbar`}>
+        <div className={`${styles.container}`}>
           { egoData.map((ego) => egoCard(ego))}
         </div>
         <Button onClick={() => setModalOpen(false)}>

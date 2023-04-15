@@ -75,7 +75,7 @@ export default function IdentitySelection({idData, setModalOpen} : IdSelectionPr
         <Button onClick={() => setModalOpen(false)}>
           X
         </Button>
-        <div className={`${styles.container} sleek-scrollbar`}>
+        <div className={`${styles.container}`}>
           { idData.map((identity) => idCard(identity))}
         </div>
         <Button onClick={() => setModalOpen(false)}>

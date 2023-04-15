@@ -46,6 +46,8 @@ $button-margin-mobile: 1rem;
 }
 
 .container {
+  @include mixins.orange-scrollbar;
+
   // Need max-h for scroll.
   max-height: calc(90vh - 2*vars.$button-h - 2*$button-margin);
   @media (max-width:vars.$mobile-screen) {
