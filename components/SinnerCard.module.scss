@@ -18,12 +18,30 @@ $item-border: 2px solid vars.$board-light;
   overflow: hidden;
 }
 .selected {
-  border: 2px solid vars.$orange-highlight;
+  border: 4px solid vars.$blood-red;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    border: 2px solid vars.$blood-red;
+  }
 }
 
 .top-container {
   @include mixins.hover-focus-highlight(true);
   position: relative;
+}
+.not-selected {
+  &:not(:hover, :focus, :active) {
+    .skill-row, .sinner-img-container {
+      @include mixins.gray-filter;
+    }
+  }
 }
 
 
@@ -45,10 +63,13 @@ $item-border: 2px solid vars.$board-light;
   right: 5px;
   z-index: vars.$before-highlight-border-z + 1;
 
-  width: 15%;
+  width: 20%;
   aspect-ratio: 1;
 
-  font-size: clamp(vars.pxToRem(50px), 4vw, vars.pxToRem(80px));
+  font-size: clamp(vars.pxToRem(55px), 4.2vw, vars.pxToRem(90px));
+  @media (max-width: vars.$mobile-screen) {
+    font-size: 70px;
+  }
   line-height: 0px; // Needed so aspect-ratio works.
 
   border: 2px solid vars.$board-light;
@@ -211,9 +232,5 @@ $item-border: 2px solid vars.$board-light;
 }
 
 .passive-insufficient {
-  color: vars.$grey;
-
-  img {
-    filter: grayscale(0.75);
-  }
+  @include mixins.gray-filter;
 }

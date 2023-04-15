@@ -17,6 +17,8 @@ export interface TeamMember {
   active: boolean;
 }
 
+export type TeamResources = Map<Sin, number>;
+
 export interface IdentityData {
   sinner: SinnerNumber;
   name: string;

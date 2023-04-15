@@ -58,8 +58,8 @@
   }
 }
 
-@mixin gray-filter {
-  filter: grayscale(0.8);
+@mixin gray-filter($strength: 0.8) {
+  filter: grayscale($strength);
 
   // Grayscale is what we actually want.
   // Overlay is for old brows.

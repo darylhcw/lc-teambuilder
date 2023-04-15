@@ -1,8 +1,9 @@
 import { useState, useContext } from 'react';
-import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { TeamResourcesContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
 import EgoSelection from '@/components/EgoSelection';
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
+import { egoSufficient } from '@/helpers/costCalcs'
 import { TeamMember, EgoData, EgoRarity, EGO_RARITIES } from '@/types/data';
 import styles from './EgoComponent.module.scss';
 
@@ -14,6 +15,7 @@ interface EgoComponentProps {
 export default function EgoComponent({member, egoData} : EgoComponentProps) {
   const memberEgos = member.egos;
 
+  const resources = useContext(TeamResourcesContext);
   const dispatch = useContext(TeamDispatchContext);
   const [egoSelected] = EgoDispatchFunctions(dispatch);
 
@@ -32,20 +34,23 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
 
   function egoRow(egoRarity: EgoRarity) {
     const ego = getEgo(egoRarity);
+    const sufficient = egoSufficient(resources, ego);
 
     return (
       <div key={egoRarity} className={styles["ego-row"]} onClick={() => ego ? egoSelected(ego) : {} }>
         <div className={styles["char-block"]}>
-          <img src={getEgoRarityAsset(egoRarity)}
+          <img src={getEgoRarityAsset(egoRarity, sufficient)}
                alt={egoRarity}/>
         </div>
         <div className={styles["ego-name"]}
-             style={ ego ? {color: getSinCSSColor(ego.affinity)} : {} }>
+             style={ ego && sufficient ? {color: getSinCSSColor(ego.affinity)} : {} }>
           { ego?.name }
         </div>
           { ego &&
-              <img src={getSinnerEgoSrcImg(ego)}
-                   alt={ego.name}/>
+              <img className={styles["ego-img"]}
+                   src={getSinnerEgoSrcImg(ego)}
+                   alt={ego.name}
+                   style={sufficient ? { filter: "grayScale(0)"} : {}}/>
           }
       </div>
     )

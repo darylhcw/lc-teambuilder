@@ -5,6 +5,7 @@ import EgoComponent from '@/components/EgoComponent';
 import { TeamDispatchContext, TeamResourcesContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
+import { passiveSufficient } from '@/helpers/costCalcs'
 import { TeamMember, IdentityData, EgoData, Skill, Passive, Sin, SinnerNumber } from '@/types/data';
 import styles from './SinnerCard.module.scss';
 
@@ -69,7 +70,7 @@ export default function SinnerCard(
            && <IdentitySelection idData={idData}
                                  setModalOpen={setShowIdModal}/>
         }
-        <div className={styles["top-container"]}
+        <div className={`${styles["top-container"]} ${member.active ? "" : styles["not-selected"]}` }
              onMouseDown={(e) => e.preventDefault()}
              onClick={() => setShowIdModal(!showIdModal)}
              tabIndex={0}
@@ -128,18 +129,11 @@ function sinHexCombo(skill: Skill, index: number) {
 function PassiveRow({active, passive} : {active: Passive, passive: Passive}) {
   const resources = useContext(TeamResourcesContext);
 
-  function sufficient(sin: Sin, cost: number) {
-    const resource = resources.get(sin);
-    if (!resource) return false;
-
-    return resource >= cost;
-  }
-
   return (
     <div className={styles["passive-row"]}>
       { [active, passive].map((item, index) =>
         <div key={index}
-             className={sufficient(item.affinity, item.cost)
+             className={passiveSufficient(resources, item)
                         ? styles["passive-div"]
                         : `${styles["passive-div"]} ${styles["passive-insufficient"]}`}>
           <img src={getSinTypeAsset(item.affinity)} alt={item.affinity}/>

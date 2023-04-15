@@ -26,12 +26,6 @@ $item-border: 1px solid vars.$board-light;
   aspect-ratio: vars.getSinnerCardAspectRatio($ego-row-height);
 
   border-top: $item-border;
-
-  img {
-    object-fit: cover;
-    height: 98%;
-    aspect-ratio: 1;
-  }
 }
 
 .char-block {
@@ -69,4 +63,12 @@ $item-border: 1px solid vars.$board-light;
 
 .insufficient {
   color: vars.$grey;
+}
+
+.ego-img {
+  object-fit: cover;
+  height: 98%;
+  aspect-ratio: 1;
+
+  filter: grayScale(0.75);
 }

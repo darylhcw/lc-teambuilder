@@ -23,6 +23,7 @@ function TeamProvider({
 
   const teamResources = new Map<Sin, number>();
   for (const member of team) {
+    if (!member.active) continue;
     member.id.skills.forEach((skill, index) => {
       const sin = skill.affinity;
       const resources = 3 - index;
