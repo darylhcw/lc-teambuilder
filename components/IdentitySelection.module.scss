@@ -146,7 +146,11 @@ $button-margin-mobile: 1rem;
   display: flex;
   justify-content: flex-end;
 
-  background: linear-gradient(#FFFFFF00 0%, #{vars.$page-bg}BB 20%, #{vars.$page-bg});
+  background: linear-gradient(
+    #FFFFFF00 0%,
+    #{vars.$page-bg}BB 20%,
+    #{vars.$page-bg}
+  );
 
   p {
     width: 85%;

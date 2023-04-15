@@ -39,11 +39,16 @@ export default function SinnerCard(
                type="checkbox"
                checked={member.active}
                onChange={() => setActive(identity.sinner, !member.active)}/>
-        <img className={styles["sinner-img"]}
-             src={getSinnerIdSrcImg(identity)}
-             alt={identity.name}
-             onClick={() => setShowIdModal(!showIdModal)}
-        />
+        <div className={styles["sinner-img-container"]}>
+          <img className={styles["sinner-img"]}
+              src={getSinnerIdSrcImg(identity)}
+              alt={identity.name}
+              onClick={() => setShowIdModal(!showIdModal)}
+          />
+          <div className={styles["sinner-name"]}>
+            <p>{identity.name}</p>
+          </div>
+        </div>
       </>
     )
   }
