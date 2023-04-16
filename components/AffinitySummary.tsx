@@ -47,7 +47,7 @@ function SkillSummaryBoard() {
 
 
   return (
-    <div className={`${styles["summary-board"]} board-dark`}>
+    <section className={`${styles["summary-board"]} board-dark`}>
       <h2>ATK AFFINITIES:</h2>
       <div className={styles["sin-container"]}>
         { SINS.map((sin) =>
@@ -65,7 +65,7 @@ function SkillSummaryBoard() {
               </div>
           )}
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -102,7 +102,7 @@ function EgoSummaryBoard() {
   }
 
   return (
-    <div className={`${styles["summary-board"]} board-dark`}>
+    <section className={`${styles["summary-board"]} board-dark`}>
       <h2>EGO AFFINITIES:</h2>
       <div className={styles["sin-container"]}>
         { SINS.map((sin) =>
@@ -120,6 +120,6 @@ function EgoSummaryBoard() {
               </div>
           )}
       </div>
-    </div>
+    </section>
   )
 }

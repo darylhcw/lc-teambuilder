@@ -12,7 +12,7 @@ export default function TeamBoard({idData, egoData} : {idData: IdentityData[], e
   const sinnerCards = SINNER_NUMBERS.map((num) => SinnerCardForMember(SinnerCard, num));
 
   return (
-    <div className={`${styles["sinner-board"]} board`}>
+    <section className={`${styles["sinner-board"]} board`}>
       { sinnerCards.map((Card, index) => {
         const num = convertIndexToSinnerNum(index);
          return (
@@ -23,7 +23,7 @@ export default function TeamBoard({idData, egoData} : {idData: IdentityData[], e
          )
         }
       )}
-    </div>
+    </section>
   )
 }
 
