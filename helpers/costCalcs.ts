@@ -1,9 +1,6 @@
 import { TeamResources, EgoData, Passive } from '@/types/data';
 
-/**
- * All cost functions here receive TeamResources which is obtained
- * from consuming TeamResourcesContext in a component and passing it here.
- */
+// Obtain TeamResources from consuming the context and pass it here.
 function passiveSufficient(resources: TeamResources, passive?: Passive) {
   if (!passive) return false;
 
@@ -13,10 +10,6 @@ function passiveSufficient(resources: TeamResources, passive?: Passive) {
   return resource >= passive.cost;
 }
 
-/**
- * All cost functions here receive TeamResources which is obtained
- * from consuming TeamResourcesContext in a component and passing it here.
- */
 function egoSufficient(resources: TeamResources, ego?: EgoData) {
   if (!ego) return false;
 
@@ -30,7 +23,21 @@ function egoSufficient(resources: TeamResources, ego?: EgoData) {
   return true;
 }
 
+function getEgoResourcesMap(egoData: EgoData[]) {
+  const resources : TeamResources = new Map();
+  for (const ego of egoData) {
+    for (const cost of ego.costs) {
+      const old = resources.get(cost.affinity) ?? 0;
+      resources.set(cost.affinity, old + cost.cost);
+    }
+  }
+
+  return resources;
+}
+
+
 
 export {
-  passiveSufficient, egoSufficient
+  passiveSufficient, egoSufficient,
+  getEgoResourcesMap,
 }

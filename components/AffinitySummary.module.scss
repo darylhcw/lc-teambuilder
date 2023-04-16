@@ -1,0 +1,52 @@
+@use 'vars';
+
+.summary-board {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "sins attacks";
+  column-gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+
+  h2 {
+    grid-area: header;
+    margin-bottom: 1rem;
+
+    font-weight: normal;
+    color: vars.$text-yellow;
+    font-size: vars.pxToRem(36px);
+    @media (max-width: vars.$mobile-screen) {
+      font-size: vars.pxToRem(24px);
+    }
+  }
+}
+
+.summary-items-container {
+  display: flex;
+  flex-direction: column;
+}
+.sins-container {
+  @extend .summary-items-container;
+  grid-area: sins;
+}
+.attacks-container {
+  @extend .summary-items-container;
+  grid-area: attacks;
+}
+
+.image-cost-pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  span {
+    font-size: vars.pxToRem(24px);
+  }
+  img {
+    width: 35px;
+    margin-right: 0.5rem;
+  }
+}

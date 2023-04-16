@@ -1,12 +1,11 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
 import { useEffect, useContext } from 'react';
-import { TeamContext, TeamDispatchContext,
-  TeamDispatchFunctions, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { TeamDispatchContext, TeamDispatchFunctions, EgoDispatchFunctions } from '@/hooks/teamContext';
 import TeamBoard from '@/components/TeamBoard';
 import Button from '@/components/Button';
+import AffinitySummary from '@/components/AffinitySummary';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
-import { sinnerNumberToName } from '@/helpers/sinnerData';
 import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
@@ -54,28 +53,9 @@ export default function Index({idData, egoData} : HomeProps) {
               Reset Team
             </Button>
           </div>
-          <TeamList/>
+          <AffinitySummary/>
       </main>
     </>
-  )
-}
-
-
-function TeamList()  {
-  const team = useContext(TeamContext);
-
-  return (
-    <ul>
-      { team.filter((member) => member.active)
-            .map((member, index) =>
-              (
-                <div key={index}>
-                  <li>{member.id.name} {sinnerNumberToName(member.sinner, true)}</li>
-                  { member.egos.map((ego) => <p key={ego.name}>{ego.name}</p>) }
-                </div>
-              )
-      )}
-    </ul>
   )
 }
 

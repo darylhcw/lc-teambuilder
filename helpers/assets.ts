@@ -13,8 +13,9 @@ function getSkillTypeAsset(type: AttackType | DefenseType, defense: boolean) {
   return `/assets/${type.toLowerCase()}.webp`;
 }
 
-function getSinTypeHexAsset(affinity: Sin) {
-  return `/assets/hex-${affinity.toLowerCase()}.svg`;
+function getSinTypeHexAsset(affinity?: Sin) {
+  const name = affinity ? affinity : "none";
+  return `/assets/hex-${name.toLowerCase()}.svg`;
 }
 
 function getSinTypeAsset(sin: Sin) {
