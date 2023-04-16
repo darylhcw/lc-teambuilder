@@ -1,8 +1,8 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import IdentitySelection from '@/components/IdentitySelection';
 import SkillHexagon from '@/components/SkillHexagon';
 import EgoComponent from '@/components/EgoComponent';
-import { TeamDispatchContext, TeamResourcesContext, TeamDispatchFunctions } from '@/hooks/teamContext';
+import { useTeamDispatchContext, useTeamResourcesContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import { getRarityAsset, getSinTypeAsset} from '@/helpers/assets';
 import { getSinnerIdSrcImg } from '@/helpers/sinnerData'
 import { passiveSufficient } from '@/helpers/costCalcs'
@@ -24,7 +24,7 @@ export default function SinnerCard(
 ) {
   const identity = member.id;
 
-  const teamDispatch = useContext(TeamDispatchContext);
+  const teamDispatch = useTeamDispatchContext();
   const [setActive, _] = TeamDispatchFunctions(teamDispatch);
 
   const [showIdModal, setShowIdModal] = useState(false);
@@ -127,7 +127,7 @@ function sinHexCombo(skill: Skill, index: number) {
 }
 
 function PassiveRow({active, passive} : {active: Passive, passive: Passive}) {
-  const resources = useContext(TeamResourcesContext);
+  const resources = useTeamResourcesContext();
 
   return (
     <div className={styles["passive-row"]}>

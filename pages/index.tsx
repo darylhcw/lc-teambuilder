@@ -1,7 +1,7 @@
 import { Noto_Sans_KR } from 'next/font/google'
 import { GetStaticPropsContext } from 'next';
-import { useEffect, useContext } from 'react';
-import { TeamDispatchContext, TeamDispatchFunctions, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { useEffect } from 'react';
+import { useTeamDispatchContext, TeamDispatchFunctions, EgoDispatchFunctions } from '@/hooks/teamContext';
 import TeamBoard from '@/components/TeamBoard';
 import Button from '@/components/Button';
 import AffinitySummary from '@/components/AffinitySummary';
@@ -22,7 +22,7 @@ interface HomeProps {
 }
 
 export default function Index({idData, egoData} : HomeProps) {
-  const teamDispatch = useContext(TeamDispatchContext);
+  const teamDispatch = useTeamDispatchContext();
   const [setActive, updateId] = TeamDispatchFunctions(teamDispatch)
   const [_, setEgos] = EgoDispatchFunctions(teamDispatch);
 

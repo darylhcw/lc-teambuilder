@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { useTeamContext, useTeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
 import Modal from '@/components/Modal';
 import Button from '@/components/Button';
 import { getSinnerEgoSrcImg, egoEquals } from '@/helpers/sinnerData';
@@ -14,8 +13,8 @@ interface EgoSelectionProps {
 }
 
 export default function IdentitySelection({egoData, setModalOpen} : EgoSelectionProps) {
-  const team = useContext(TeamContext);
-  const teamDispatch = useContext(TeamDispatchContext);
+  const team = useTeamContext();
+  const teamDispatch = useTeamDispatchContext();
   const [egoSelected] = EgoDispatchFunctions(teamDispatch);
 
   const sinner = egoData[0]?.sinner;

@@ -1,6 +1,6 @@
-import { useEffect, useContext, memo } from 'react';
+import { memo } from 'react';
 import SinnerCard, { SinnerCardProps } from '@/components/SinnerCard';
-import { TeamContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { useTeamContext, useTeamDispatchContext } from '@/hooks/teamContext';
 import { SINNER_NUMBERS, SinnerNumber, IdentityData, EgoData } from '@/types/data';
 
 import styles from './TeamBoard.module.scss';
@@ -35,7 +35,7 @@ function SinnerCardForMember(WrappedSinnerCard: React.ComponentType<SinnerCardPr
 
   const SinnerCardForMember =  (props: any) => {
     const index = sinner >= 10 ? sinner - 2 : sinner - 1;
-    const member = useContext(TeamContext)[index];
+    const member = useTeamContext()[index];
 
     return (
       <MemoisedSinnerCard {...props} member={member}/>

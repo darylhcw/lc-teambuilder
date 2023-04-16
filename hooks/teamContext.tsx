@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import { useContext, createContext, useReducer } from 'react';
 import initialIdData from './initialTeam.json';
 import { TeamMember, IdentityData, EgoData, Sin, SINNER_NUMBERS, SinnerNumber } from '@/types/data';
 
@@ -44,6 +44,18 @@ function TeamProvider({
       </TeamDispatchContext.Provider>
     </TeamContext.Provider>
   );
+}
+
+function useTeamContext() {
+  return useContext(TeamContext);
+}
+
+function useTeamResourcesContext() {
+  return useContext(TeamResourcesContext);
+}
+
+function useTeamDispatchContext() {
+  return useContext(TeamDispatchContext);
 }
 
 
@@ -166,7 +178,7 @@ function initialDispatch(action: TeamEditAction) {
 
 
 export {
-  TeamContext, TeamDispatchContext, TeamResourcesContext,
+  useTeamContext, useTeamDispatchContext, useTeamResourcesContext,
   TeamProvider,
   TeamDispatchFunctions, EgoDispatchFunctions,
 }

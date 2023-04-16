@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { TeamContext, TeamResourcesContext } from '@/hooks/teamContext';
+import { useTeamContext, useTeamResourcesContext } from '@/hooks/teamContext';
 import SkillHexagon from '@/components/SkillHexagon';
 import { getSinTypeAsset } from '@/helpers/assets'
 import { getEgoResourcesMap } from '@/helpers/costCalcs'
@@ -18,8 +17,8 @@ export default function AffinitySummary() {
 }
 
 function SkillSummaryBoard() {
-  const team = useContext(TeamContext);
-  const teamResources = useContext(TeamResourcesContext)
+  const team = useTeamContext();
+  const teamResources = useTeamResourcesContext();
 
   let slash = 0;
   let blunt = 0;
@@ -71,7 +70,7 @@ function SkillSummaryBoard() {
 }
 
 function EgoSummaryBoard() {
-  const team = useContext(TeamContext);
+  const team = useTeamContext();
 
   const activeMemberEgos : EgoData[] = [];
   for (const member of team) {

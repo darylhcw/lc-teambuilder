@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { TeamContext, TeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
+import { useTeamContext, useTeamDispatchContext, TeamDispatchFunctions } from '@/hooks/teamContext';
 import Modal from '@/components/Modal';
 import Button from '@/components/Button';
 import { getSinnerIdSrcImg, identityEquals } from '@/helpers/sinnerData';
@@ -16,8 +15,8 @@ interface IdSelectionProps {
 // Use setIdentity instead of just SinnerCard consuming context is just to prevent rerendering all 12 cards.
 // More of an exercise -- it's actually super fast either way.
 export default function IdentitySelection({idData, setModalOpen} : IdSelectionProps) {
-  const team = useContext(TeamContext);
-  const teamDispatch = useContext(TeamDispatchContext);
+  const team = useTeamContext();
+  const teamDispatch = useTeamDispatchContext();
   const [_, updateId] = TeamDispatchFunctions(teamDispatch);
 
   const sinner = idData[0]?.sinner;

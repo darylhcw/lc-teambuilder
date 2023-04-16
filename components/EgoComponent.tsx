@@ -1,5 +1,5 @@
-import { useState, useContext } from 'react';
-import { TeamResourcesContext, TeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
+import { useState } from 'react';
+import { useTeamResourcesContext, useTeamDispatchContext, EgoDispatchFunctions } from '@/hooks/teamContext';
 import EgoSelection from '@/components/EgoSelection';
 import { getSinCSSColor, getEgoRarityAsset } from '@/helpers/assets';
 import { getSinnerEgoSrcImg } from '@/helpers/sinnerData'
@@ -15,8 +15,8 @@ interface EgoComponentProps {
 export default function EgoComponent({member, egoData} : EgoComponentProps) {
   const memberEgos = member.egos;
 
-  const resources = useContext(TeamResourcesContext);
-  const dispatch = useContext(TeamDispatchContext);
+  const resources = useTeamResourcesContext();
+  const dispatch = useTeamDispatchContext();
   const [egoSelected] = EgoDispatchFunctions(dispatch);
 
   const [showEgoModal, setShowEgoModal] = useState(false);
