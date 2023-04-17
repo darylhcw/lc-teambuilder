@@ -51,7 +51,7 @@ function SkillSummaryBoard() {
       <h2>ATK AFFINITIES:</h2>
       <div className={styles["sin-container"]}>
         { SINS.map((sin) =>
-            <div className={styles["image-cost-pair"]}>
+            <div key={sin} className={styles["image-cost-pair"]}>
               <img src={getSinTypeAsset(sin)} alt={sin}/>
               <span>{`x${teamResources.get(sin) ?? 0}`}</span>
             </div>
@@ -59,7 +59,7 @@ function SkillSummaryBoard() {
       </div>
       <div className={styles["attacks-container"]}>
           { ATTACK_TYPES.map((attack) =>
-              <div className={styles["image-cost-pair"]}>
+              <div key={attack} className={styles["image-cost-pair"]}>
                 <SkillHexagon type={attack}/>
                 <span>{`x${attackCount(attack)}`}</span>
               </div>
@@ -106,7 +106,7 @@ function EgoSummaryBoard() {
       <h2>EGO AFFINITIES:</h2>
       <div className={styles["sin-container"]}>
         { SINS.map((sin) =>
-            <div className={styles["image-cost-pair"]}>
+            <div key={sin} className={styles["image-cost-pair"]}>
               <img src={getSinTypeAsset(sin)} alt={sin}/>
               <span>{`x${egoResources.get(sin) ?? 0}`}</span>
             </div>
@@ -114,7 +114,7 @@ function EgoSummaryBoard() {
       </div>
       <div className={styles["attacks-container"]}>
           { ATTACK_TYPES.map((attack) =>
-              <div className={styles["image-cost-pair"]}>
+              <div key={attack} className={styles["image-cost-pair"]}>
                 <SkillHexagon type={attack}/>
                 <span>{`x${attackCount(attack)}`}</span>
               </div>

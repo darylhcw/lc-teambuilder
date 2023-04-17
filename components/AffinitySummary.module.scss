@@ -17,7 +17,7 @@
 
     font-weight: normal;
     color: vars.$text-yellow;
-    font-size: vars.pxToRem(36px);
+    font-size: vars.pxToRem(30px);
     @media (max-width: vars.$mobile-screen) {
       font-size: vars.pxToRem(24px);
     }
@@ -43,7 +43,7 @@
   margin-bottom: 0.5rem;
 
   span {
-    font-size: vars.pxToRem(24px);
+    font-size: vars.pxToRem(20px);
   }
   img {
     width: 35px;
