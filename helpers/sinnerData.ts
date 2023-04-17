@@ -23,11 +23,11 @@ function getSinnerEgoSrcImg(ego: EgoData) {
 
   // Special case for some egos with chars unusable in filenames.
   if (ego.filename) {
-    return `/sinners/${sinner}/ego/${ego.filename}.webp`;
+    return `sinners/${sinner}/ego/${ego.filename}.webp`;
   }
 
   const egoName = ego.name.toLowerCase();
-  return `/sinners/${sinner}/ego/${egoName}.webp`;
+  return `sinners/${sinner}/ego/${egoName}.webp`;
 }
 
 function getSinnerIdSrcImg(id: IdentityData) {
@@ -35,11 +35,11 @@ function getSinnerIdSrcImg(id: IdentityData) {
 
   // Special case for some egos with chars unusable in filenames.
   if (id.filename) {
-    return `/sinners/${sinner}/identities/${id.filename}.webp`;
+    return `sinners/${sinner}/identities/${id.filename}.webp`;
   }
 
   const idName = id.name.toLocaleLowerCase();
-  return `/sinners/${sinner}/identities/${idName}.webp`;
+  return `sinners/${sinner}/identities/${idName}.webp`;
 }
 
 function identityEquals(a?: IdentityData, b?: IdentityData) {

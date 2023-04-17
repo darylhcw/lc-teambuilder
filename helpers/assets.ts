@@ -3,30 +3,30 @@ import css from './assets.module.scss';
 
 
 function getRarityAsset(rarity: number) {
-  return `/assets/${rarity}star.webp`;
+  return `assets/${rarity}star.webp`;
 }
 
 function getSkillTypeAsset(type: AttackType | DefenseType, defense: boolean) {
   if (defense && !DEFENSE_TYPES.includes(type)) {
     type = "counter";
   }
-  return `/assets/${type.toLowerCase()}.webp`;
+  return `assets/${type.toLowerCase()}.webp`;
 }
 
 function getSinTypeHexAsset(affinity?: Sin) {
   const name = affinity ? affinity : "none";
-  return `/assets/hex-${name.toLowerCase()}.svg`;
+  return `assets/hex-${name.toLowerCase()}.svg`;
 }
 
 function getSinTypeAsset(sin: Sin) {
   switch(sin) {
-    case 'Wrath': return '/assets/wrath.webp';
-    case 'Lust': return '/assets/lust.webp';
-    case 'Sloth': return '/assets/sloth.webp';
-    case 'Gluttony': return '/assets/gluttony.webp';
-    case 'Gloom': return '/assets/gloom.webp';
-    case 'Pride': return '/assets/pride.webp';
-    case 'Envy': return '/assets/envy.webp';
+    case 'Wrath': return 'assets/wrath.webp';
+    case 'Lust': return 'assets/lust.webp';
+    case 'Sloth': return 'assets/sloth.webp';
+    case 'Gluttony': return 'assets/gluttony.webp';
+    case 'Gloom': return 'assets/gloom.webp';
+    case 'Pride': return 'assets/pride.webp';
+    case 'Envy': return 'assets/envy.webp';
   }
 }
 
@@ -56,7 +56,7 @@ function getEgoRarityAsset(egoRarity: EgoRarity, bright : boolean=false) {
   }
   if (bright) name += "-bright"
 
-  return `/assets/${name}.webp`;
+  return `assets/${name}.webp`;
 }
 
 function getEgoRarityLabelAsset(egoRarity: EgoRarity, bright : boolean=false) {
@@ -69,7 +69,7 @@ function getEgoRarityLabelAsset(egoRarity: EgoRarity, bright : boolean=false) {
     case "ALEPH": name = "aleph"; break;
   }
 
-  return `/assets/${name}-label.webp`;
+  return `assets/${name}-label.webp`;
 }
 
 
