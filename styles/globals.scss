@@ -19,6 +19,7 @@ body {
 
   @include mixins.orange-scrollbar;
   &::-webkit-scrollbar {
+    // Please note BODY_SCROLLBAR_WIDTH in modal tsx file when changing this.
     width: 8px;
   }
   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {

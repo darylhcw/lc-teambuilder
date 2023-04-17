@@ -5,6 +5,7 @@ import styles from './Modal.module.scss'
 // Ensure only one modal open at a time;
 let modalIsOpen = false;
 const MODAL_ID = "THE-MODAL";
+const BODY_SCROLLBAR_WIDTH = "8px"
 
 interface ModalProps {
   children: React.ReactNode;
@@ -60,8 +61,8 @@ function modalOpen() {
   modalIsOpen = true;
   if (!document) return;
 
-  document.body.style.overflow = 'hidden';
-
+  document.body.style.overflow = "hidden";
+  document.body.style.paddingRight = BODY_SCROLLBAR_WIDTH;
   const main = document.querySelector('main');
   if (!main) return;
 
@@ -85,7 +86,8 @@ function modalClosed() {
   modalIsOpen = false;
   if (!document) return;
 
-  document.body.style.overflow = 'unset';
+  document.body.style.overflow = "unset";
+  document.body.style.paddingRight = "0px";
   for (const [elem, original] of focusRemoved) {
     if (original) {
       elem.setAttribute("tabindex", original);
