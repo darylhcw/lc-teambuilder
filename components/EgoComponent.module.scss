@@ -15,6 +15,11 @@ $item-border: 1px solid vars.$board-light;
     }
   }
 }
+.inactive {
+  &:not(:hover, :focus) {
+    @include mixins.gray-filter;
+  }
+}
 
 .ego-row {
   display: flex;
@@ -61,14 +66,15 @@ $item-border: 1px solid vars.$board-light;
   mix-blend-mode: exclusion;
 }
 
-.insufficient {
-  color: vars.$grey;
-}
-
 .ego-img {
   object-fit: cover;
   height: 98%;
   aspect-ratio: 1;
+}
 
-  filter: grayScale(0.75);
+.insufficient {
+  color: vars.$grey;
+  img {
+    @include mixins.gray-filter;
+  }
 }

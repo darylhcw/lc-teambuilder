@@ -37,7 +37,9 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
     const sufficient = egoSufficient(resources, ego);
 
     return (
-      <div key={egoRarity} className={styles["ego-row"]} onClick={() => ego ? egoSelected(ego) : {} }>
+      <div key={egoRarity}
+           className={`${styles["ego-row"]} ${sufficient ? "" : styles.insufficient}`}
+           onClick={() => ego ? egoSelected(ego) : {} }>
         <div className={styles["char-block"]}>
           <img src={getEgoRarityAsset(egoRarity, sufficient)}
                alt={egoRarity}/>
@@ -49,8 +51,7 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
           { ego &&
               <img className={styles["ego-img"]}
                    src={getSinnerEgoSrcImg(ego)}
-                   alt={ego.name}
-                   style={sufficient ? { filter: "grayScale(0)"} : {}}/>
+                   alt={ego.name}/>
           }
       </div>
     )
@@ -62,7 +63,7 @@ export default function EgoComponent({member, egoData} : EgoComponentProps) {
       { showEgoModal && <EgoSelection egoData={egoData}
                                       setModalOpen={setShowEgoModal}/>
       }
-      <div className={styles.container}
+      <div className={`${styles.container} ${member.active ? "" : styles.inactive}`}
            tabIndex={0}
            onKeyDown={handleKeyDown}
            onClick={() => setShowEgoModal(!showEgoModal)}
