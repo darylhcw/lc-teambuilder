@@ -11,10 +11,14 @@ $board-max-width: 1720px;
   @media (max-width: vars.$small-screen) {
     margin: 0 12px;
   }
+
+  footer {
+    margin-top: 5rem;
+  }
 }
 
 .board-buttons-container {
   display: flex;
   justify-content: flex-end;
-  margin: 1rem 0 7rem;
+  margin: 1rem 0 5rem;
 }

@@ -1,0 +1,13 @@
+@use 'vars';
+
+.footer {
+  text-align: center;
+
+  p {
+    margin: 0.4rem
+  }
+
+  @media (max-width: vars.$mobile-screen) {
+    font-size: 12px;
+  }
+}

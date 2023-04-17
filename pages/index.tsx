@@ -6,6 +6,7 @@ import TeamBoard from '@/components/TeamBoard';
 import Button from '@/components/Button';
 import AffinitySummary from '@/components/AffinitySummary';
 import EgoCostsSummary from '@/components/EgoCostSummary';
+import Footer from '@/components/Footer';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
@@ -46,19 +47,17 @@ export default function Index({idData, egoData} : HomeProps) {
   }
 
   return (
-    <>
-      <main className={`${NotoSansKR.className} ${styles.main}`}>
-          <TeamBoard idData={idData} egoData={egoData}/>
-          <div className={styles["board-buttons-container"]}>
-            <Button onClick={() => setInitialTeam()}>
-              Reset Team
-            </Button>
-          </div>
-          <AffinitySummary/>
-          <br/>
-          <EgoCostsSummary/>
-      </main>
-    </>
+    <main className={`${NotoSansKR.className} ${styles.main}`}>
+      <TeamBoard idData={idData} egoData={egoData}/>
+      <div className={styles["board-buttons-container"]}>
+        <Button onClick={() => setInitialTeam()}>
+          Reset Team
+        </Button>
+      </div>
+      <AffinitySummary/>
+      <EgoCostsSummary/>
+      <Footer/>
+    </main>
   )
 }
 
