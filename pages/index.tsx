@@ -5,6 +5,7 @@ import { useTeamDispatchContext, TeamDispatchFunctions, EgoDispatchFunctions } f
 import TeamBoard from '@/components/TeamBoard';
 import Button from '@/components/Button';
 import AffinitySummary from '@/components/AffinitySummary';
+import EgoCostsSummary from '@/components/EgoCostSummary';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
 import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
@@ -54,6 +55,8 @@ export default function Index({idData, egoData} : HomeProps) {
             </Button>
           </div>
           <AffinitySummary/>
+          <br/>
+          <EgoCostsSummary/>
       </main>
     </>
   )

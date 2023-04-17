@@ -1,0 +1,108 @@
+@use 'vars';
+@use 'mixins';
+
+$ego-img-width: 120px;
+$ego-img-width-mobile: 75px;
+
+$name-max-width: 250px;
+$sin-icon-width: 32px;
+$sin-icon-width-mobile: 22px;
+
+.container {
+  margin-top: 3rem;
+  padding: 10px;
+}
+
+.member-egos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.member-ego-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+
+  padding: 1rem;
+
+  overflow: hidden;
+}
+
+.ego-container {
+  display: flex;
+  align-items: center;
+
+  p {
+    max-width: $name-max-width;
+    margin-bottom: 0.5rem;
+
+    line-height: 1.3;
+    color: vars.$text-yellow;
+    font-size: vars.pxToRem(20px);
+    @media (max-width: vars.$mobile-screen) {
+      font-size: vars.pxToRem(12px);
+    }
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.ego-insufficient {
+  .ego-img-container, p {
+    @include mixins.gray-filter;
+    color: vars.$grey;
+  }
+}
+
+.ego-img-container {
+  position: relative;  // ref for absolute position p.
+  margin-right: 1rem;
+
+  isolation: isolate;
+  background: linear-gradient(
+    #FFFFFF00 60%,
+    #{vars.$page-bg}
+  );
+
+  img {
+    width: $ego-img-width;
+    @media (max-width: vars.$mobile-screen) {
+      width: $ego-img-width-mobile;
+    }
+    mix-blend-mode: overlay;
+  }
+}
+
+.ego-costs-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  @media (max-width: vars.$mobile-screen) {
+    gap: 0.25rem;
+  }
+}
+
+.ego-cost-pair {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: $sin-icon-width;
+    margin-right: 0.5rem;
+    @media (max-width: vars.$mobile-screen) {
+      width: $sin-icon-width-mobile;
+    }
+  }
+
+  font-size: vars.pxToRem(18px);
+  @media (max-width: vars.$mobile-screen) {
+    font-size: vars.pxToRem(14px);
+  }
+}
+.cost-insufficient {
+  color: vars.$text-red;
+}
