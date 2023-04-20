@@ -585,6 +585,52 @@
     ]
   },
   {
+    "sinner": 4,
+    "name": "R.B. Chef de Cuisine",
+    "filename": "chef de cuisine",
+    "rarity": 3,
+    "active": {
+      "affinity": "Lust",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 3,
+        "plus": 5,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 3,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
     "sinner": 5,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -1975,6 +2021,52 @@
         "affinity": "None",
         "base": 10,
         "plus": 4,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "filename": "rb sous chef",
+    "name": "R.B. Sous-chef",
+    "rarity": 2,
+    "active": {
+      "affinity": "Lust",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 2,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 6,
+        "plus": 8,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 1,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 8,
+        "plus": 5,
         "coins": 1,
         "type": "Guard"
       }

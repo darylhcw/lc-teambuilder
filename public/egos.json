@@ -187,6 +187,19 @@
     ]
   },
   {
+    "sinner": 3,
+    "name": "Lifetime Stew",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 5
+      }
+    ]
+  },
+  {
     "sinner": 4,
     "name": "Forest for the Flames",
     "rarity": "ZAYIN",
@@ -497,6 +510,27 @@
       {
         "affinity": "Lust",
         "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Lifetime Stew",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 3
+      },
+      {
+        "affinity": "Lust",
+        "cost": 2
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 1
       }
     ]
   },
