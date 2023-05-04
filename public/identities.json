@@ -358,6 +358,50 @@
         "type": "Dodge"
       }
     ]
+  },  {
+    "sinner": 3,
+    "name": "N Corp. Mittelhammer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Lust",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Lust",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 12,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 10,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
   },
   {
     "sinner": 3,
@@ -1708,6 +1752,51 @@
         "plus": 6,
         "coins": 1,
         "type": "Pierce"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "The One Who Shall Grip",
+    "rarity": 3,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 6,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 8,
+        "plus": 2,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "base": 16,
+        "plus": 4,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 30,
+        "plus": 12,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 17,
+        "plus": 7,
+        "coins": 1,
+        "type": "Guard"
       }
     ]
   },
