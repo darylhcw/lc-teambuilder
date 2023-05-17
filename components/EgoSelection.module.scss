@@ -46,7 +46,8 @@ $button-margin: 1rem;
 .container {
   @include mixins.orange-scrollbar;
 
-  max-height: 90vh;  // Need for scroll
+  // Need max-h for scroll.
+  max-height: calc(90vh - 2*vars.$button-h - 2*$button-margin);
   width: 98%;
   @media(max-width: vars.$small-screen) {
     width: 94%;
