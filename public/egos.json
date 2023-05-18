@@ -56,6 +56,23 @@
     ]
   },
   {
+    "sinner": 1,
+    "name": "Dimension Shredder",
+    "rarity": "HE",
+    "affinity": "Pride",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 3
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 3
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "Representation Emitter",
     "rarity": "ZAYIN",
@@ -328,6 +345,23 @@
       {
         "affinity": "Envy",
         "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "Dimension Shredder",
+    "rarity": "HE",
+    "affinity": "Pride",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": 3
+      },
+      {
+        "affinity": "Pride",
+        "cost": 3
       }
     ]
   },
