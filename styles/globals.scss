@@ -78,6 +78,9 @@ input[type="checkbox"]:checked::before {
 
 * {
   box-sizing: border-box;
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 
