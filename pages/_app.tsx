@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" href="icons/favicon-180x180.png" sizes="180x180" />
         <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="favicon.ico"/>
 
       {/* Worry about this later if doing PWA.
         <link rel="manifest" href="/manifest.json" />
