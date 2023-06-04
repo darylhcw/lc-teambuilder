@@ -36,7 +36,6 @@ function getEgoResourcesMap(egoData: EgoData[]) {
 }
 
 
-
 export {
   passiveSufficient, egoSufficient,
   getEgoResourcesMap,

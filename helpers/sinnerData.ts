@@ -1,4 +1,4 @@
-import { IdentityData, EgoData } from "@/types/data";
+import { EGO_RARITIES, IdentityData, EgoData } from "@/types/data";
 
 function sinnerNumberToName(number: number, caps: boolean=false) {
   switch(number) {
@@ -56,9 +56,40 @@ function egoEquals(a?: EgoData, b?: EgoData) {
   return a.name === b.name;
 }
 
+function egoSort(egoA: EgoData, egoB: EgoData) {
+  if (!egoA && !egoB) return 0;
+  if (!egoA) return 1;
+  if (!egoB) return -1;
+
+  if (egoA.sinner < egoB.sinner) return -1;
+  if (egoB.sinner < egoA.sinner) return 1;
+
+  const rarA = EGO_RARITIES.indexOf(egoA.rarity);
+  const rarB = EGO_RARITIES.indexOf(egoB.rarity);
+  if (rarA < rarB) return -1;
+  if (rarB < rarA) return 1;
+
+  return 0;
+}
+
+function idSort(idA: IdentityData, idB: IdentityData) {
+  if (!idA && !idB) return 0;
+  if (!idA) return 1;
+  if (!idB) return -1;
+
+  if (idA.sinner < idB.sinner) return -1;
+  if (idB.sinner < idA.sinner) return 1;
+
+  if (idA.rarity < idB.rarity) return -1;
+  if (idB.rarity < idA.rarity) return 1;
+
+  return idA.name.localeCompare(idB.name);
+}
+
 
 export {
   sinnerNumberToName,
   getSinnerEgoSrcImg, getSinnerIdSrcImg,
   identityEquals, egoEquals,
+  egoSort, idSort,
 }

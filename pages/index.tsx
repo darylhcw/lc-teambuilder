@@ -8,6 +8,7 @@ import AffinitySummary from '@/components/AffinitySummary';
 import EgoCostsSummary from '@/components/EgoCostSummary';
 import Footer from '@/components/Footer';
 import { importEgos, importIdentities } from '@/helpers/loadJson';
+import { egoSort, idSort } from '@/helpers/sinnerData';
 import { SINNER_NUMBERS, IdentityData, EgoData } from '@/types/data';
 import styles from '../styles/index.module.scss';
 
@@ -28,6 +29,9 @@ export default function Index({idData, egoData} : HomeProps) {
   const [setActive, updateId] = TeamDispatchFunctions(teamDispatch)
   const [_, setEgos] = EgoDispatchFunctions(teamDispatch);
 
+  const sortedIds = idData.sort(idSort);
+  const sortedEgos = egoData.sort(egoSort);
+
   // Set initial team.
   useEffect(() => {
     setInitialTeam();
@@ -35,10 +39,10 @@ export default function Index({idData, egoData} : HomeProps) {
 
   function setInitialTeam() {
     for (const num of SINNER_NUMBERS) {
-      const firstId = idData.find((id) => id.sinner === num);
+      const firstId = sortedIds.find((id) => id.sinner === num);
       if (firstId) updateId(firstId);
 
-      const firstEgo = egoData.find((ego) => ego.sinner === num);
+      const firstEgo = sortedEgos.find((ego) => ego.sinner === num);
       if (firstEgo) setEgos([firstEgo]);
 
       // Let Yi Sang be active to show how it works.
@@ -48,7 +52,7 @@ export default function Index({idData, egoData} : HomeProps) {
 
   return (
     <main className={`${NotoSansKR.className} ${styles.main}`}>
-      <TeamBoard idData={idData} egoData={egoData}/>
+      <TeamBoard idData={sortedIds} egoData={sortedEgos}/>
       <div className={styles["board-buttons-container"]}>
         <Button onClick={() => setInitialTeam()}>
           Reset Team
