@@ -856,6 +856,51 @@
     ]
   },
   {
+    "sinner": 5,
+    "name": "Rosespanner Workshop Fixer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 6,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 2,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 8,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
     "sinner": 6,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -1572,6 +1617,51 @@
         "plus": 6,
         "coins": 1,
         "type": "Slash"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "Rosespanner Workshop Rep.",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 6,
+        "plus": 3,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 4,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 10,
+        "plus": 4,
+        "coins": 1,
+        "type": "Guard"
       }
     ]
   },
