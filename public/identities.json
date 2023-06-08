@@ -1217,6 +1217,97 @@
   },
   {
     "sinner": 7,
+    "name": "Shi Section 5",
+    "rarity": 2,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 6,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 5,
+        "plus": 10,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 6,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 8,
+        "plus": 5,
+        "coins": 1,
+        "type": "Slash"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "filename": "lobotomy ego sunshower",
+    "name": "Lobotomy E.G.O::Sunshower",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 6,
+        "plus": -2,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 10,
+        "plus": -3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 18,
+        "plus": -7,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "sloth",
+        "base": 10,
+        "plus": -5,
+        "coins": 1,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
     "name": "R Corp. 4th Pack Rabbit",
     "rarity": 3,
     "active": {
@@ -1863,21 +1954,21 @@
       {
         "affinity": "Gloom",
         "base": 8,
-        "plus": 2,
+        "plus": -2,
         "coins": 2,
         "type": "Blunt"
       },
       {
         "affinity": "Lust",
         "base": 16,
-        "plus": 4,
+        "plus": -4,
         "coins": 4,
         "type": "Blunt"
       },
       {
         "affinity": "Wrath",
         "base": 30,
-        "plus": 12,
+        "plus": -12,
         "coins": 3,
         "type": "Blunt"
       },
@@ -2240,6 +2331,51 @@
         "base": 5,
         "plus": 1,
         "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 8,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Rosespanner Workshop Fixer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 12,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
         "type": "Slash"
       },
       {
