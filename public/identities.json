@@ -135,6 +135,52 @@
     ]
   },
   {
+    "sinner": 1,
+    "filename": "effloresced ego spicebush",
+    "name": "Effloresced E.G.O::Spicebush",
+    "rarity": 3,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 6,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "None",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -1483,6 +1529,52 @@
         "plus": 5,
         "coins": 1,
         "type": "Slash"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "filename": "lobotomy ego sloshing",
+    "name": "Lobotomy E.G.O::Sloshing",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 6,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 6,
+        "plus": 16,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 12,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
       }
     ]
   },
