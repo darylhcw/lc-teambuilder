@@ -1263,51 +1263,6 @@
   },
   {
     "sinner": 7,
-    "name": "Shi Section 5",
-    "rarity": 2,
-    "active": {
-      "affinity": "Wrath",
-      "cost": 3,
-      "activation": "Res"
-    },
-    "passive": {
-      "affinity": "Wrath",
-      "cost": 3,
-      "activation": "Res"
-    },
-    "skills": [
-      {
-        "affinity": "Lust",
-        "base": 4,
-        "plus": 6,
-        "coins": 1,
-        "type": "Slash"
-      },
-      {
-        "affinity": "Wrath",
-        "base": 5,
-        "plus": 10,
-        "coins": 1,
-        "type": "Pierce"
-      },
-      {
-        "affinity": "Envy",
-        "base": 5,
-        "plus": 6,
-        "coins": 2,
-        "type": "Slash"
-      },
-      {
-        "affinity": "Wrath",
-        "base": 8,
-        "plus": 5,
-        "coins": 1,
-        "type": "Slash"
-      }
-    ]
-  },
-  {
-    "sinner": 7,
     "filename": "lobotomy ego sunshower",
     "name": "Lobotomy E.G.O::Sunshower",
     "rarity": 3,
