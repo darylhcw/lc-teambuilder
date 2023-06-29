@@ -235,6 +235,48 @@
   },
   {
     "sinner": 4,
+    "name": "Red Eyes",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 2
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "Red Eyes (Open)",
+    "rarity": "HE",
+    "affinity": "Envy",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2
+      },
+      {
+        "affinity": "Lust",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "sinner": 4,
     "name": "4th Match Flame",
     "rarity": "HE",
     "affinity": "Wrath",
