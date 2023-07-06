@@ -1624,6 +1624,51 @@
     ]
   },
   {
+    "sinner": 8,
+    "name": "Liu Association South Section 4",
+    "rarity": 3,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 6,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 3,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 9,
+        "plus": 7,
+        "coins": 1,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
     "sinner": 9,
     "name": "LCB Sinner",
     "rarity": 1,
