@@ -73,6 +73,31 @@
     ]
   },
   {
+    "sinner": 1,
+    "name": "Sunshower",
+    "rarity": "HE",
+    "affinity": "Sloth",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 4
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 2
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "Representation Emitter",
     "rarity": "ZAYIN",
@@ -357,6 +382,27 @@
     ]
   },
   {
+    "sinner": 5,
+    "name": "Capote",
+    "rarity": "HE",
+    "affinity": "Wrath",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2
+      },
+      {
+        "affinity": "Lust",
+        "cost": 1
+      },
+      {
+        "affinity": "Sloth",
+        "cost": 2
+      }
+    ]
+  },
+  {
     "sinner": 6,
     "name": "Land of Illusion",
     "rarity": "ZAYIN",
@@ -426,6 +472,23 @@
   },
   {
     "sinner": 7,
+    "name": "AEDD",
+    "rarity": "TETH",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": 3
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 7,
     "name": "Telepole",
     "rarity": "HE",
     "affinity": "Envy",
@@ -476,6 +539,27 @@
       {
         "affinity": "Lust",
         "cost": 4
+      }
+    ]
+  },
+  {
+    "sinner": 8,
+    "name": "Capote",
+    "rarity": "TETH",
+    "affinity": "Wrath",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2
+      },
+      {
+        "affinity": "Lust",
+        "cost": 2
+      },
+      {
+        "affinity": "Sloth",
+        "cost": 1
       }
     ]
   },
@@ -650,6 +734,27 @@
   },
   {
     "sinner": 12,
+    "name": "Sunshower",
+    "rarity": "TETH",
+    "affinity": "Gluttony",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 2
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 2
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "sinner": 12,
     "name": "Ebony Stem",
     "rarity": "HE",
     "affinity": "Gluttony",
@@ -721,6 +826,23 @@
       {
         "affinity": "Gluttony",
         "cost": 4
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "AEDD",
+    "rarity": "HE",
+    "affinity": "Gloom",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": 3
+      },
+      {
+        "affinity": "Envy",
+        "cost": 3
       }
     ]
   }
