@@ -947,6 +947,51 @@
     ]
   },
   {
+    "sinner": 5,
+    "name": "R Corp. 4th Pack Rhino",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 6,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 3,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 6,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 12,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
     "sinner": 6,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -1800,6 +1845,50 @@
         "plus": 6,
         "coins": 1,
         "type": "Pierce"
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "Zwei Association South Section 5",
+    "rarity": 2,
+    "active": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Wrath",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 2,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 6,
+        "plus": 2,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 2,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "None",
+        "base": 10,
+        "plus": 5,
+        "type": "Guard"
       }
     ]
   },
