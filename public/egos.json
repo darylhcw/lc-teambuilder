@@ -260,6 +260,27 @@
   },
   {
     "sinner": 4,
+    "name": "Soda",
+    "rarity": "ZAYIN",
+    "affinity": "Gloom",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 4,
     "name": "Red Eyes",
     "rarity": "TETH",
     "affinity": "Lust",
@@ -433,6 +454,27 @@
       {
         "affinity": "Envy",
         "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "Soda",
+    "rarity": "TETH",
+    "affinity": "Envy",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": 3
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 1
       }
     ]
   },

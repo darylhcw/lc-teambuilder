@@ -496,6 +496,51 @@
   },
   {
     "sinner": 3,
+    "name": "Cinq South Section 5 Director",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 5,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 6,
+        "plus": 6,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
     "name": "W Corp. Cleanup Agent",
     "rarity": 3,
     "active": {
@@ -1670,6 +1715,51 @@
   },
   {
     "sinner": 8,
+    "name": "Molar Boatworks Fixer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 5,
+        "plus": 5,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 3,
+        "plus": 5,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 10,
+        "plus": 4,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 8,
     "name": "Liu Association South Section 4",
     "rarity": 3,
     "active": {
@@ -2203,6 +2293,51 @@
         "affinity": "None",
         "base": 8,
         "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Molar Boatworks Fixer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 2,
+        "plus": 1,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 12,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 8,
+        "plus": 8,
         "coins": 1,
         "type": "Guard"
       }
