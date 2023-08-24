@@ -359,6 +359,50 @@
         "type": "Dodge"
       }
     ]
+  },{
+    "sinner": 2,
+    "name": "Zwei Association South Section 4",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 2,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 2,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": 5,
+        "plus": 2,
+        "coins": 5,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 10,
+        "plus": 6,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
   },
   {
     "sinner": 3,
@@ -758,6 +802,51 @@
       },
       {
         "affinity": "None",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "W Corp. L3 Cleanup Agent",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 2,
+        "plus": 5,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 3,
+        "plus": 2,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
         "base": 4,
         "plus": 10,
         "coins": 1,
@@ -1166,6 +1255,51 @@
         "affinity": "None",
         "base": 8,
         "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 6,
+    "name": "W Corp. L2 Cleanup Agent",
+    "rarity": 2,
+    "active": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 6,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 5,
+        "plus": 4,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "base": 12,
+        "plus": 6,
         "coins": 1,
         "type": "Guard"
       }
@@ -2788,6 +2922,51 @@
       {
         "affinity": "None",
         "base": 8,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Zwei Association South Section 4",
+    "rarity": 3,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 3,
+        "plus": 3,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 3,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "None",
+        "base": 12,
         "plus": 5,
         "coins": 1,
         "type": "Guard"
