@@ -91,6 +91,51 @@
   },
   {
     "sinner": 1,
+    "name": "Molar Office Fixer",
+    "rarity": 2,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 12,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 10,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 1,
     "name": "Blade Lineage Salsu",
     "rarity": 3,
     "active": {
@@ -399,6 +444,51 @@
         "affinity": "None",
         "base": 10,
         "plus": 6,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 2,
+    "name": "Seven South Section 4",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 5,
+        "plus": 4,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 10,
         "coins": 1,
         "type": "Guard"
       }
@@ -1532,6 +1622,51 @@
   },
   {
     "sinner": 7,
+    "name": "Seven South Section 4",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "base": 6,
+        "plus": 10,
+        "coins": 1,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 2,
+        "coins": 4,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 8,
+        "plus": 8,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
     "filename": "lobotomy ego sunshower",
     "name": "Lobotomy E.G.O::Sunshower",
     "rarity": 3,
@@ -2207,6 +2342,51 @@
     ]
   },
   {
+    "sinner": 9,
+    "name": "Dieci South Section 4",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gloom",
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 3,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 15,
+        "plus": 5,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
     "sinner": 11,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -2697,6 +2877,51 @@
         "affinity": "None",
         "base": 13,
         "plus": 4,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "Molar Office Fixer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Sloth",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Sloth",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "base": 3,
+        "plus": 5,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 12,
+        "plus": 5,
         "coins": 1,
         "type": "Guard"
       }
