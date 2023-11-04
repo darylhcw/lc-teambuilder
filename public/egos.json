@@ -424,6 +424,23 @@
     ]
   },
   {
+    "name": "Regret",
+    "sinner": 5,
+    "affinity": "Wrath",
+    "rarity": "TETH",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": "3"
+      },
+      {
+        "affinity": "Pride",
+        "cost": "2"
+      }
+    ]
+  },
+  {
     "sinner": 6,
     "name": "Land of Illusion",
     "rarity": "ZAYIN",
@@ -547,6 +564,31 @@
       {
         "affinity": "Envy",
         "cost": 3
+      }
+    ]
+  },
+  {
+    "name": "Ya Śūnyatā Tad Rūpam",
+    "affinity": "Lust",
+    "sinner": 7,
+    "rarity": "HE",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": "2"
+      },
+      {
+        "affinity": "Lust",
+        "cost": "2"
+      },
+      {
+        "affinity": "Sloth",
+        "cost": "2"
+      },
+      {
+        "affinity": "Gloom",
+        "cost": "2"
       }
     ]
   },

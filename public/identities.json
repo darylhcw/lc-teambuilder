@@ -495,6 +495,39 @@
     ]
   },
   {
+    "name": "Lobotomy E.G.O::Regret",
+    "sinner": 2,
+    "rarity": 3,
+    "active": {
+      "cost": "6",
+      "affinity": "Wrath",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "5",
+      "affinity": "Wrath",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
     "sinner": 3,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -1392,6 +1425,39 @@
         "plus": 6,
         "coins": 1,
         "type": "Guard"
+      }
+    ]
+  },
+  {
+    "name": "Hook Office Fixer",
+    "sinner": 6,
+    "rarity": 2,
+    "active": {
+      "cost": "5",
+      "affinity": "Lust",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "5",
+      "affinity": "Lust",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
       }
     ]
   },
