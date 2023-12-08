@@ -317,7 +317,7 @@
   },
   {
     "sinner": 2,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L2 Cleanup Agent",
     "rarity": 2,
     "active": {
       "affinity": "Envy",
@@ -709,7 +709,7 @@
   },
   {
     "sinner": 3,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L3 Cleanup Agent",
     "rarity": 3,
     "active": {
       "affinity": "Gloom",
@@ -1116,7 +1116,7 @@
   },
   {
     "sinner": 5,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L2 Cleanup Agent",
     "rarity": 3,
     "active": {
       "affinity": "Envy",
