@@ -495,8 +495,9 @@
     ]
   },
   {
-    "name": "Lobotomy E.G.O::Regret",
     "sinner": 2,
+    "filename": "lobotomy ego regret",
+    "name": "Lobotomy E.G.O::Regret",
     "rarity": 3,
     "active": {
       "cost": "6",
@@ -2964,7 +2965,7 @@
     },
     "skills": [
       {
-        "affinity": "Lust",
+        "affinity": "Wrath",
         "base": 4,
         "plus": 7,
         "coins": 1,
