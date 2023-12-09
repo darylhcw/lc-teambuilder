@@ -556,6 +556,23 @@
     ]
   },
   {
+    "sinner": 6,
+    "name": "Effervescent Corrosion",
+    "rarity": "HE",
+    "affinity": "Gluttony",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": 6
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 1
+      }
+    ]
+  },
+  {
     "sinner": 7,
     "name": "Bodysack",
     "rarity": "ZAYIN",
