@@ -129,6 +129,28 @@
   },
   {
     "sinner": 2,
+    "name": "9:2",
+    "filename": "9 2",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 1
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 3
+      },
+      {
+        "affinity": "Pride",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "sinner": 2,
     "name": "Fluid Sac",
     "rarity": "HE",
     "affinity": "Gloom",
