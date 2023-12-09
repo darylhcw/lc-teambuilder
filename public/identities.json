@@ -1205,6 +1205,52 @@
   },
   {
     "sinner": 5,
+    "name": "The Middle Little Brother",
+    "filename": "the middle little brother",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 5,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
     "name": "N Corp. Großhammer",
     "filename": "n corp. grosshammer",
     "rarity": 3,
