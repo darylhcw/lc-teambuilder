@@ -226,6 +226,51 @@
     ]
   },
   {
+    "sinner": 1,
+    "name": "W Corp. L3 Cleanup Agent",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 5,
+        "plus": 6,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 5,
+        "plus": 5,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "LCB Sinner",
     "rarity": 1,
