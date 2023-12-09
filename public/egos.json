@@ -789,6 +789,27 @@
   },
   {
     "sinner": 9,
+    "name": "Effervescent Corrosion",
+    "rarity": "TETH",
+    "affinity": "Gluttony",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 2
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 9,
     "name": "4th Match Flame",
     "rarity": "HE",
     "affinity": "Wrath",
