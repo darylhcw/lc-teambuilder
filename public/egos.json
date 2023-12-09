@@ -129,6 +129,28 @@
   },
   {
     "sinner": 2,
+    "name": "9:2",
+    "filename": "9 2",
+    "rarity": "TETH",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 1
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 3
+      },
+      {
+        "affinity": "Pride",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "sinner": 2,
     "name": "Fluid Sac",
     "rarity": "HE",
     "affinity": "Gloom",
@@ -297,6 +319,27 @@
       {
         "affinity": "Envy",
         "cost": 3
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "Blind Obsession",
+    "rarity": "TETH",
+    "affinity": "Pride",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
       }
     ]
   },
@@ -513,6 +556,23 @@
     ]
   },
   {
+    "sinner": 6,
+    "name": "Effervescent Corrosion",
+    "rarity": "HE",
+    "affinity": "Gluttony",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": 6
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 1
+      }
+    ]
+  },
+  {
     "sinner": 7,
     "name": "Bodysack",
     "rarity": "ZAYIN",
@@ -669,6 +729,31 @@
     ]
   },
   {
+    "sinner": 8,
+    "name": "Blind Obsession",
+    "rarity": "WAW",
+    "affinity": "Pride",
+    "type": "Pierce",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2 
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 3
+      },
+      {
+        "affinity": "Pride",
+        "cost": 3
+      },
+      {
+        "affinity": "Envy",
+        "cost": 3
+      }
+    ]
+  },
+  {
     "sinner": 9,
     "name": "What is Cast",
     "rarity": "ZAYIN",
@@ -699,6 +784,27 @@
       {
         "affinity": "Envy",
         "cost": 3
+      }
+    ]
+  },
+  {
+    "sinner": 9,
+    "name": "Effervescent Corrosion",
+    "rarity": "TETH",
+    "affinity": "Gluttony",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 2
+      },
+      {
+        "affinity": "Gloom",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
       }
     ]
   },
@@ -774,6 +880,49 @@
       },
       {
         "affinity": "Gluttony",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "Lantern",
+    "rarity": "HE",
+    "affinity": "Gluttony",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 1
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 4
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "9:2",
+    "filename": "9 2",
+    "rarity": "HE",
+    "affinity": "Lust",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2
+      },
+      {
+        "affinity": "Lust",
+        "cost": 5
+      },
+      {
+        "affinity": "Envy",
         "cost": 1
       }
     ]

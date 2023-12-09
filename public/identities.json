@@ -226,6 +226,51 @@
     ]
   },
   {
+    "sinner": 1,
+    "name": "W Corp. L3 Cleanup Agent",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Gluttony",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 5,
+        "plus": 6,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 5,
+        "plus": 5,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -317,7 +362,7 @@
   },
   {
     "sinner": 2,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L2 Cleanup Agent",
     "rarity": 2,
     "active": {
       "affinity": "Envy",
@@ -495,8 +540,9 @@
     ]
   },
   {
-    "name": "Lobotomy E.G.O::Regret",
     "sinner": 2,
+    "filename": "lobotomy ego regret",
+    "name": "Lobotomy E.G.O::Regret",
     "rarity": 3,
     "active": {
       "cost": "6",
@@ -708,7 +754,7 @@
   },
   {
     "sinner": 3,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L3 Cleanup Agent",
     "rarity": 3,
     "active": {
       "affinity": "Gloom",
@@ -748,6 +794,51 @@
         "plus": 10,
         "coins": 1,
         "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 3,
+    "name": "The Middle Little Sister",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
       }
     ]
   },
@@ -793,6 +884,51 @@
         "plus": 10,
         "coins": 1,
         "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
+    "name": "LCCB Assistant Manager",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 5,
+        "plus": 5,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 5,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 8,
+        "plus": 8,
+        "coins": 1,
+        "type": "Guard"
       }
     ]
   },
@@ -1069,6 +1205,52 @@
   },
   {
     "sinner": 5,
+    "name": "The Middle Little Brother",
+    "filename": "the middle little brother",
+    "rarity": 2,
+    "active": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 5,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
+    "sinner": 5,
     "name": "N Corp. Großhammer",
     "filename": "n corp. grosshammer",
     "rarity": 3,
@@ -1115,7 +1297,7 @@
   },
   {
     "sinner": 5,
-    "name": "W Corp. Cleanup Agent",
+    "name": "W Corp. L2 Cleanup Agent",
     "rarity": 3,
     "active": {
       "affinity": "Envy",
@@ -1819,6 +2001,51 @@
         "plus": 10,
         "coins": 1,
         "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 7,
+    "name": "The Pequod Harpooneer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
       }
     ]
   },
@@ -2964,7 +3191,7 @@
     },
     "skills": [
       {
-        "affinity": "Lust",
+        "affinity": "Wrath",
         "base": 4,
         "plus": 7,
         "coins": 1,
@@ -3216,6 +3443,50 @@
         "plus": 5,
         "coins": 1,
         "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
+    "name": "Twinhook Pirates First Mate",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [{
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
       }
     ]
   },
