@@ -798,6 +798,51 @@
     ]
   },
   {
+    "sinner": 3,
+    "name": "The Middle Little Sister",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 3,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Envy",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Blunt"
+      }
+    ]
+  },
+  {
     "sinner": 4,
     "name": "LCB Sinner",
     "rarity": 1,
