@@ -324,6 +324,27 @@
   },
   {
     "sinner": 4,
+    "name": "Blind Obsession",
+    "rarity": "TETH",
+    "affinity": "Pride",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Gloom",
+        "cost": 2
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 4,
     "name": "Red Eyes (Open)",
     "rarity": "HE",
     "affinity": "Envy",
