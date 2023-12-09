@@ -2005,6 +2005,51 @@
     ]
   },
   {
+    "sinner": 7,
+    "name": "The Pequod Harpooneer",
+    "rarity": 3,
+    "active": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Envy",
+      "cost": 5,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      }
+    ]
+  },
+  {
     "sinner": 8,
     "name": "LCB Sinner",
     "rarity": 1,
