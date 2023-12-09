@@ -889,6 +889,51 @@
   },
   {
     "sinner": 4,
+    "name": "LCCB Assistant Manager",
+    "rarity": 2,
+    "active": {
+      "affinity": "Gluttony",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Lust",
+        "base": 5,
+        "plus": 5,
+        "coins": 1,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 5,
+        "coins": 2,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 3,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 8,
+        "plus": 8,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "sinner": 4,
     "name": "Seven Section 6",
     "rarity": 2,
     "active": {
