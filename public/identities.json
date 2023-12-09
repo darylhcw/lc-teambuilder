@@ -3448,6 +3448,50 @@
   },
   {
     "sinner": 13,
+    "name": "Twinhook Pirates First Mate",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 2,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [{
+        "affinity": "Sloth",
+        "base": 4,
+        "plus": 3,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 5,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 13,
     "name": "Zwei Association South Section 4",
     "rarity": 3,
     "active": {
