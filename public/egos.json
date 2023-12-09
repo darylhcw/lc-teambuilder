@@ -885,6 +885,49 @@
     ]
   },
   {
+    "sinner": 11,
+    "name": "Lantern",
+    "rarity": "HE",
+    "affinity": "Gluttony",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 1
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": 4
+      },
+      {
+        "affinity": "Pride",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 11,
+    "name": "9:2",
+    "filename": "9 2",
+    "rarity": "HE",
+    "affinity": "Lust",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": 2
+      },
+      {
+        "affinity": "Lust",
+        "cost": 5
+      },
+      {
+        "affinity": "Envy",
+        "cost": 1
+      }
+    ]
+  },
+  {
     "sinner": 12,
     "name": "To Páthos Máthos",
     "rarity": "ZAYIN",
