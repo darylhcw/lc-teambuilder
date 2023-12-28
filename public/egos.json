@@ -608,6 +608,23 @@
   },
   {
     "sinner": 7,
+    "name": "Holiday",
+    "rarity": "TETH",
+    "affinity": "Gluttony",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Gluttony",
+        "cost": 3
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "sinner": 7,
     "name": "Telepole",
     "rarity": "HE",
     "affinity": "Envy",
@@ -1008,6 +1025,31 @@
       {
         "affinity": "Pride",
         "cost": 4
+      }
+    ]
+  },
+  {
+    "sinner": 12,
+    "name": "Holiday",
+    "rarity": "HE",
+    "affinity": "Wrath",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Lust",
+        "cost": 2
+      },
+      {
+        "affinity": "Sloth",
+        "cost": 1
+      },
+      {
+        "affinity": "Pride",
+        "cost": 3
+      },
+      {
+        "affinity": "Envy",
+        "cost": 2
       }
     ]
   },

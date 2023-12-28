@@ -2996,6 +2996,39 @@
     ]
   },
   {
+    "name": "Cinq South Section 4 Director",
+    "sinner": 11,
+    "rarity": 3,
+    "active": {
+      "cost": "5",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "type": "Pierce"
+      }
+    ]
+  },
+  {
     "sinner": 12,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -3217,6 +3250,39 @@
         "plus": 5,
         "coins": 1,
         "type": "Guard"
+      }
+    ]
+  },
+  {
+    "name": "Cinq South Section 4",
+    "sinner": 12,
+    "rarity": 2,
+    "active": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
       }
     ]
   },
