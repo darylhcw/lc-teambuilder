@@ -843,6 +843,40 @@
     ]
   },
   {
+    "filename": "lobotomy ego lantern",
+    "name": "Lobotomy E.G.O::Lantern ",
+    "sinner": 3,
+    "rarity": 2,
+    "active": {
+      "cost": "4",
+      "affinity": "Gluttony",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "5",
+      "affinity": "Gluttony",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gluttony",
+        "type": "Slash"
+      }
+    ]
+  },
+  {
     "sinner": 4,
     "name": "LCB Sinner",
     "rarity": 1,
@@ -3283,6 +3317,40 @@
       {
         "affinity": "Pride",
         "type": "Pierce"
+      }
+    ]
+  },
+  {
+    "filename": "lobotomy ego magic bullet",
+    "name": "Lobotomy E.G.O::Magic Bullet ",
+    "sinner": 12,
+    "rarity": 3,
+    "active": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Blunt"
       }
     ]
   },
