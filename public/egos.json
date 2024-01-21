@@ -847,6 +847,23 @@
     ]
   },
   {
+    "sinner": 9,
+    "name": "Pursuance",
+    "rarity": "HE",
+    "affinity": "Sloth",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Sloth",
+        "cost": 4
+      },
+      {
+        "affinity": "Pride",
+        "cost": 3
+      },
+    ]
+  },
+  {
     "sinner": 11,
     "name": "Branch of Knowledge",
     "rarity": "ZAYIN",
