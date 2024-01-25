@@ -1768,6 +1768,51 @@
     ]
   },
   {
+    "sinner": 6,
+    "name": "Dieci South Section 4",
+    "rarity": 3,
+    "active": {
+      "affinity": "Gloom",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Gloom",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Wrath",
+        "base": 5,
+        "plus": 5,
+        "coins": 1,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Slash"
+      },
+      {
+        "affinity": "Sloth",
+        "base": 5,
+        "plus": 3,
+        "coins": 3,
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "base": 4,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
     "sinner": 7,
     "name": "LCB Sinner",
     "rarity": 1,
