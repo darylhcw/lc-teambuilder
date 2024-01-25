@@ -136,51 +136,6 @@
   },
   {
     "sinner": 1,
-    "name": "Dieci South Section 4",
-    "rarity": 2,
-    "active": {
-      "affinity": "Sloth",
-      "cost": 3,
-      "activation": "Owned"
-    },
-    "passive": {
-      "affinity": "Sloth",
-      "cost": 4,
-      "activation": "Owned"
-    },
-    "skills": [
-      {
-        "affinity": "Gluttony",
-        "base": 3,
-        "plus": 4,
-        "coins": 2,
-        "type": "Pierce"
-      },
-      {
-        "affinity": "Lust",
-        "base": 4,
-        "plus": 3,
-        "coins": 3,
-        "type": "Blunt"
-      },
-      {
-        "affinity": "Sloth",
-        "base": 4,
-        "plus": 2,
-        "coins": 4,
-        "type": "Blunt"
-      },
-      {
-        "affinity": "Sloth",
-        "base": 12,
-        "plus": 6,
-        "coins": 1,
-        "type": "Guard"
-      }
-    ]
-  },
-  {
-    "sinner": 1,
     "name": "Blade Lineage Salsu",
     "rarity": 3,
     "active": {
