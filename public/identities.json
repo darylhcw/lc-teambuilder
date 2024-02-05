@@ -136,6 +136,51 @@
   },
   {
     "sinner": 1,
+    "name": "The Pequod First Mate",
+    "rarity": 2,
+    "active": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 4,
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Gluttony",
+        "base": 4,
+        "plus": 6,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 3,
+        "plus": 10,
+        "coins": 1,
+        "type": "Dodge"
+      }
+    ]
+  },
+  {
+    "sinner": 1,
     "name": "Dieci South Section 4",
     "rarity": 2,
     "active": {
