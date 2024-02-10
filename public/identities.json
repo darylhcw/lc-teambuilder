@@ -2535,6 +2535,51 @@
     ]
   },
   {
+    "sinner": 8,
+    "name": "The Pequod Captain",
+    "rarity": 3,
+    "active": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "passive": {
+      "affinity": "Pride",
+      "cost": 3,
+      "activation": "Res"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Wrath",
+        "base": 4,
+        "plus": 3,
+        "coins": 4,
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "base": 10,
+        "plus": 4,
+        "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
     "sinner": 9,
     "name": "LCB Sinner",
     "rarity": 1,
