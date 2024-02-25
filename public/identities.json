@@ -585,6 +585,39 @@
     ]
   },
   {
+    "name": "Blade Lineage Salsu",
+    "sinner": 2,
+    "rarity": 3,
+    "active": {
+      "cost": "4",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "4",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Slash"
+      }
+    ]
+  },
+  {
     "sinner": 2,
     "name": "Seven South Section 4",
     "rarity": 3,
@@ -794,6 +827,39 @@
         "plus": 10,
         "coins": 1,
         "type": "Dodge"
+      }
+    ]
+  },
+    {
+    "name": "Blade Lineage Salsu",
+    "sinner": 3,
+    "rarity": 2,
+    "active": {
+      "cost": "2",
+      "affinity": "Pride",
+      "activation": "Res"
+    },
+    "passive": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Envy",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Sloth",
+        "type": "Pierce"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Pierce"
       }
     ]
   },
@@ -1551,6 +1617,39 @@
         "plus": 5,
         "coins": 1,
         "type": "Guard"
+      }
+    ]
+  },
+  {
+    "name": "Blade Lineage Mentor",
+    "sinner": 5,
+    "rarity": 3,
+    "active": {
+      "cost": "3",
+      "affinity": "Pride",
+      "activation": "Res"
+    },
+    "passive": {
+      "cost": "5",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Envy",
+        "type": "Slash"
       }
     ]
   },
@@ -3845,6 +3944,39 @@
         "base": 12,
         "plus": 5,
         "coins": 1,
+        "type": "Guard"
+      }
+    ]
+  },
+  {
+    "name": "Kurokumo Clan Captain",
+    "sinner": 13,
+    "rarity": 2,
+    "active": {
+      "cost": "4",
+      "affinity": "Lust",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "4",
+      "affinity": "Lust",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Sloth",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
         "type": "Guard"
       }
     ]
