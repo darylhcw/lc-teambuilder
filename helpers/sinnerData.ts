@@ -38,7 +38,7 @@ function getSinnerIdSrcImg(id: IdentityData) {
     return `sinners/${sinner}/identities/${id.filename}.webp`;
   }
 
-  const idName = id.name.toLocaleLowerCase();
+  const idName = id.name.toLocaleLowerCase().trim();
   return `sinners/${sinner}/identities/${idName}.webp`;
 }
 
