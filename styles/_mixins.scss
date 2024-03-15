@@ -82,8 +82,10 @@ $scrollbar-w: 6px;
 $scrollbar-w-mobile: 3px;
 
 @mixin orange-scrollbar {
-  /* Foreground, Background */
-  scrollbar-color: vars.$orange-highlight vars.$grey;
+  @supports not(selector(::-webkit-scrollbar)) {
+    scrollbar-width: thin;
+    scrollbar-color: vars.$orange-highlight vars.$grey;
+  }
 
   &::-webkit-scrollbar {
     width: $scrollbar-w;
