@@ -26,7 +26,7 @@ function getSinnerEgoSrcImg(ego: EgoData) {
     return `sinners/${sinner}/ego/${ego.filename}.webp`;
   }
 
-  const egoName = ego.name.toLowerCase();
+  const egoName = ego.name.toLowerCase().trim();
   return `sinners/${sinner}/ego/${egoName}.webp`;
 }
 
