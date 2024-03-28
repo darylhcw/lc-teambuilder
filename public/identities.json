@@ -1168,6 +1168,39 @@
     ]
   },
   {
+    "name": "Liu Assoc. South Section 4 ",
+    "sinner": 4,
+    "rarity": 2,
+    "active": {
+      "cost": "4",
+      "affinity": "Wrath",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "4",
+      "affinity": "Wrath",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Gluttony",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Slash"
+      }
+    ]
+  },
+  {
     "sinner": 4,
     "name": "Kurokumo Wakashu",
     "rarity": 3,
@@ -2273,6 +2306,40 @@
     ]
   },
   {
+    "filename": "oufi assoc. south section 3",
+    "name": "Öufi Assoc. South Section 3 ",
+    "sinner": 7,
+    "rarity": 3,
+    "active": {
+      "cost": "4",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "passive": {
+      "cost": "6",
+      "affinity": "Pride",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Envy",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Gloom",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Slash"
+      },
+      {
+        "affinity": "Pride",
+        "type": "Slash"
+      }
+    ]
+  },
+  {
     "sinner": 7,
     "name": "The Pequod Harpooneer",
     "rarity": 3,
@@ -2989,6 +3056,39 @@
         "plus": 5,
         "coins": 1,
         "type": "Guard"
+      }
+    ]
+  },
+  {
+    "name": "Liu Assoc. South Section 4 Director",
+    "sinner": 9,
+    "rarity": 3,
+    "active": {
+      "cost": "3",
+      "affinity": "Wrath",
+      "activation": "Res"
+    },
+    "passive": {
+      "cost": "6",
+      "affinity": "Wrath",
+      "activation": "Owned"
+    },
+    "skills": [
+      {
+        "affinity": "Pride",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Lust",
+        "type": "Blunt"
+      },
+      {
+        "affinity": "Wrath",
+        "type": "Blunt"
       }
     ]
   },

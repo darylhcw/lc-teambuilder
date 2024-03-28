@@ -264,6 +264,27 @@
     ]
   },
   {
+    "name": "Wishing Cairn ",
+    "sinner": 3,
+    "rarity": "TETH",
+    "affinity": "Sloth",
+    "type": "Blunt",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": "2"
+      },
+      {
+        "affinity": "Pride",
+        "cost": "1"
+      },
+      {
+        "affinity": "Sloth",
+        "cost": "2"
+      }
+    ]
+  },
+  {
     "sinner": 4,
     "name": "Forest for the Flames",
     "rarity": "ZAYIN",
@@ -754,7 +775,7 @@
     "costs": [
       {
         "affinity": "Wrath",
-        "cost": 2 
+        "cost": 2
       },
       {
         "affinity": "Gloom",
@@ -1135,6 +1156,31 @@
       {
         "affinity": "Envy",
         "cost": 3
+      }
+    ]
+  },
+  {
+    "name": "Garden of Thorns ",
+    "sinner": 13,
+    "rarity": "WAW",
+    "affinity": "Lust",
+    "type": "Slash",
+    "costs": [
+      {
+        "affinity": "Wrath",
+        "cost": "2"
+      },
+      {
+        "affinity": "Lust",
+        "cost": "2"
+      },
+      {
+        "affinity": "Sloth",
+        "cost": "2"
+      },
+      {
+        "affinity": "Gluttony",
+        "cost": "2"
       }
     ]
   }
